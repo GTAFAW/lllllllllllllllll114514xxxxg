@@ -75,22 +75,11 @@ OrionLib:MakeNotification({
 })
 
 local Tab = Window:MakeTab({
-    Name = "主要",
+    Name = "通用",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
 
-Tab:AddToggle({
-	Name = "夜视",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-		    game.Lighting.Ambient = Color3.new(1, 1, 1)
-		else
-		    game.Lighting.Ambient = Color3.new(0, 0, 0)
-		end
-	end
-})
  Tab:AddButton({
 	Name = "无限跳",
     Default = false,
@@ -126,6 +115,12 @@ Tab:AddButton({
     Name ="动作🎊",
     Callback = function()
     loadstring(game:HttpGet("https://yarhm.goteamst.com/scr?channel=afem"))()
+    end
+})
+Tab:AddButton({
+    Name ="goto飞车",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/n5SbuasR"))()
     end
 })
 Tab:AddButton({
@@ -200,12 +195,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
     end
 })
-Tab:AddButton({
-    Name ="动画中心",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
-    end
-})
+
 Tab:AddButton({
     Name ="光影v4",
     Callback = function()
@@ -224,12 +214,7 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
     end
 })
-Tab:AddButton({
-	Name = "转起来",
-	Callback = function()
-      	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
-  	end
-})
+
 Tab:AddButton({
     Name="立即死亡",
     Callback= function()
@@ -356,28 +341,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
   end
 })
-Tab:AddToggle({
-	Name = "穿墙(可用)",
-	Default = false,
-	Callback = function(Value)
-	local Workspace = game:GetService("Workspace")
-local Players = game:GetService("Players")
-local Clipon = true
- 
-Stepped = game:GetService("RunService").Stepped:Connect(function()
-	if not Clipon == false then
-		for a, b in pairs(Workspace:GetChildren()) do
-        if b.Name == Players.LocalPlayer.Name then
-        for i, v in pairs(Workspace[Players.LocalPlayer.Name]:GetChildren()) do
-        if v:IsA("BasePart") then
-        v.CanCollide = false
-        end end end end
-	else
-		Stepped:Disconnect()
-	end
-end)
-    end
-})
+
 local Tab =Window:MakeTab({
 	Name = "驾驶帝国",
 	Icon = "rbxassetid://17360377302",
@@ -893,7 +857,7 @@ Tab:AddButton({
     end
 })
 local Tab = Window:MakeTab({
-    Name = "极速传奇",
+    Name = "极速传奇⛷",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
@@ -915,4 +879,23 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
 	end
+})
+
+local Tab = Window:MakeTab({
+    Name = "俄亥俄州👀",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name ="xK",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%20Ohio.lua"))()
+    end
+})p
+Tab:AddButton({
+    Name ="普通一拳秒杀",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/main/Games/Ohio"))()
+    end
 })
