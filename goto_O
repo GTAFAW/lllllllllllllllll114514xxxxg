@@ -427,9 +427,15 @@ loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
 })
 
 local Tab = Window:MakeTab({
-    Name = "压力",
+    Name = "压力🍏",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
+})
+Tab:AddButton({
+    Name ="creepyV2.4",
+    Callback = function()
+    loadstring(game:HttpGet("https://github.com/Drop56796/CreepyEyeHub/blob/main/obfuscate.lua?raw=true"))()
+    end
 })
 Tab:AddButton({
     Name ="人机压力",
