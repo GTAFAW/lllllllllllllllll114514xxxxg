@@ -428,17 +428,10 @@ Tab:AddButton({
     local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
     end
 })
-})
 Tab:AddButton({
     Name ="吸铁石",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
-    end
-})
-Tab:AddButton({
-    Name ="圣光炸弹我用过一次，不过炸完之后就不能游戏了，只能娱乐",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
     end
 })
 
