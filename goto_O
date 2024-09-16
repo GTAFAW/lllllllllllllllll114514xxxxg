@@ -525,6 +525,12 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+    Name ="作者喜欢的一个外国脚本，不喜勿喷",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ByNami/dkhub/main/Script", true))()
+    end
+})
+Tab:AddButton({
     Name ="禁漫中心◇",
     Callback = function()
     getgenv().lishichuan="禁漫中心1001390385" loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/anlushanjinchangantangwanle/main/jmjmjmjmjmjmjmjmjmjmjmjmjmjmjmjm.lua"))()
