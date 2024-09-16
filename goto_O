@@ -46,8 +46,6 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddParagraph("goto_O脚本"," "💗💗💗💗"")
-Tab:AddParagraph("持续云更新"," "(ಡωಡ)"")
 Tab:AddParagraph("用户名:"," "..game.Players.LocalPlayer.Name.."")
 Tab:AddParagraph("你的注入器:"," "..identifyexecutor().."")
 Tab:AddParagraph("服务器的ID"," "..game.GameId.."")
