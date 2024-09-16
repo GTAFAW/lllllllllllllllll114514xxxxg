@@ -458,6 +458,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
     end
 })
+Tab:AddButton({
+    Name ="控制物体大小的枪在不可能模式中使用",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
