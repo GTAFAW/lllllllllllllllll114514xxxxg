@@ -1006,13 +1006,6 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-)
-Tab:AddButton({
-    Name ="菜单版",
-    Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/cheat', true))()
-    end
-})
 Tab:AddButton({
     Name ="超级简洁ui",
     Callback = function()
