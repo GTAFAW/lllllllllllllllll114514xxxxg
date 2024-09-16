@@ -429,10 +429,10 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name ="吸铁石",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
-    end
+  Name = "手电筒",
+  Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
+  end
 })
 
 local Tab = Window:MakeTab({
