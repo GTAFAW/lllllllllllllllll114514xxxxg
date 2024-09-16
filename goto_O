@@ -452,6 +452,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
     end
 })
+Tab:AddButton({
+    Name ="臭猫😽",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
