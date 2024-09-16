@@ -428,55 +428,6 @@ Tab:AddButton({
     local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
     end
 })
-Tab:AddButton({
-    Name ="吸铁石",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
-    end
-})
-Tab:AddButton({
-    Name ="圣光炸弹我用过一次，不过炸完之后就不能游戏了，只能娱乐",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/HolyGrenadeByNerd.lua"))()
-    end
-})
-Tab:AddButton({
-    Name ="剪刀",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
-    end
-})
-Tab:AddButton({
-  Name = "手电筒",
-  Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
-  	end
-})
-Tab:AddButton({
-    Name ="臭猫😽",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
-    end
-})
-Tab:AddButton({
-    Name ="香蕉🍌枪只有在困难模式才能发射香蕉子弹",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
-    end
-})
-Tab:AddButton({
-    Name ="控制物体大小的枪在不可能模式中使用",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
-    end
-})
-Tab:AddButton({
-    Name ="变身菜单娱乐娱乐😉这变不回去哦",
-    Callback = function()
-    loadstring(game:HttpGet
-("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
-    end
-})
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
