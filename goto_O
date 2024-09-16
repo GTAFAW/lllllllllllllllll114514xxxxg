@@ -464,6 +464,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/SizeChangerByNerd.lua"))()
     end
 })
+Tab:AddButton({
+    Name ="香蕉🍌枪只有在困难模式才能发射香蕉子弹",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
