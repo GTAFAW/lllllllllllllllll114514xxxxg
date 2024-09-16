@@ -440,6 +440,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
     end
 })
+Tab:AddButton({
+    Name ="剪刀",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/shears_done.lua"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
