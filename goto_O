@@ -434,6 +434,12 @@ Tab:AddButton({
 loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
   	end
 })
+Tab:AddButton({
+    Name ="吸铁石",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/MagnetByNerd.lua"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
