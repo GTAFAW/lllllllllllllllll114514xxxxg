@@ -1006,6 +1006,25 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
+)
+Tab:AddButton({
+    Name ="菜单版",
+    Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/cheat', true))()
+    end
+})
+Tab:AddButton({
+    Name ="超级简洁ui",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/GoodScript/main/LegendOfSpeed(Chinese)"))()
+    end
+})
+Tab:AddButton({
+    Name =" AL有交易恶心系统",
+    Callback = function()
+    AL = "制作人员 123fa98（AL）"loadstring(game:HttpGet("https://raw.githubusercontent.com/renlua/Roblox/main/%E6%9E%81%E9%80%9F%E4%BC%A0%E5%A5%87.lua"))()
+    end
+})
 Tab:AddButton({
     Name ="安",
     Callback = function()
