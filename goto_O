@@ -522,7 +522,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "林🌲",
+    Name = "林🌲卡密:林nb",
     Callback = function()
 lin = "作者林"lin ="林QQ群 747623342"loadstring(game:HttpGet("https://raw.githubusercontent.com/linnblin/lin/main/lin"))()
     end
@@ -831,6 +831,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddButton({
+    Name ="安",
+    Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/ninjalegend')))()
+    end
+})
+Tab:AddButton({
 	Name = "剑客:需加群组",
 	Callback = function()
 jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
@@ -983,6 +989,12 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
+Tab:AddButton({
+    Name ="安",
+    Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/speedoflegend')))()
+    end
+})
 Tab:AddButton({
 	Name = "剑客:需要加群组",
 	Callback = function()
