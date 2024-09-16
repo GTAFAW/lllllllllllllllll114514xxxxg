@@ -1096,6 +1096,22 @@ Tab:AddButton({
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/speedoflegend')))()
     end
 })
+local Section = Tab:AddSection({
+
+	Name = "传送岛屿"
+
+})
+Tab:AddButton({
+
+	Name = "返还出生岛",
+
+	Callback = function()
+
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9682.98828125, 58.87917709350586, 3099.033935546875)      
+
+  	end    
+
+})
 Tab:AddButton({
 	Name = "剑客:需要加群组",
 	Callback = function()
