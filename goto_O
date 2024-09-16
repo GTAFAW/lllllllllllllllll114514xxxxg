@@ -432,7 +432,7 @@ Tab:AddButton({
   Name = "手电筒",
   Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/9Daqa4hD'))()
-  end
+  	end
 })
 
 local Tab = Window:MakeTab({
