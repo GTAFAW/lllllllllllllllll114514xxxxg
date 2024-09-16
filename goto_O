@@ -419,13 +419,6 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
     end
 })
-Tab:AddButton({
-    Name ="变身菜单娱乐娱乐😉这变不回去哦",
-    Callback = function()
-    loadstring(game:HttpGet
-("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
-    end
-})
 local Section = Tab:AddSection({
 	Name = "娱乐ก็ʕ•͡ᴥ•ʔ ก้"
 })
