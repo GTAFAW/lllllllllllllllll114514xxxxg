@@ -1298,7 +1298,13 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "你可以理解为其他游戏脚本在里边，主要的那些通用都在这边有的一些是之前加的，我就不想搬过去了，看着玩吧"
+	Name = "你可以理解为其他游戏脚本在里边，主要的那些通用都在这边有的一些是之前加的，我就不想搬过去了"
+})
+local Section = Tab:AddSection({
+	Name = "goto游戏中心v1💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗"
+})
+local Section = Tab:AddSection({
+	Name = "游戏:刀刃球，伐木大亨2,"
 })
 Tab:AddButton({
     Name="游戏ui",
