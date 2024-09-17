@@ -411,19 +411,6 @@ Tab:AddButton({
     end
 })
 
-local Tab =Window:MakeTab({
-	Name = "伐木大亨2",
-	Icon = "rbxassetid://17360377302",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name ="伐木大亨2",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf"))()
-    end
-})
-
 local Tab = Window:MakeTab({
 	Name = "鲨口求生2",
 	Icon = "rbxassetid://17360377302",
