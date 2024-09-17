@@ -299,22 +299,6 @@ Tab:AddTextbox({
 	end
 })
 Tab:AddButton({
-	Name = "转圈圈",
-	Callback = function()
-    local speed = 50
-local plr = game:GetService("Players").LocalPlayer
-repeat task.wait() until plr.Character
-local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
-plr.Character:WaitForChild("Humanoid").AutoRotate = false
-local velocity = Instance.new("AngularVelocity")
-velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
-velocity.MaxTorque = math.huge
-velocity.AngularVelocity = Vector3.new(0, speed, 0)
-velocity.Parent = humRoot
-velocity.Name = "Spinbot"
-    end
-})
-Tab:AddButton({
     Name ="穿墙汉化",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
@@ -334,50 +318,8 @@ Tab:AddToggle({
 Tab:AddButton({
 	Name = "透视",
 	Callback = function()
-	local Players = game:GetService("Players"):GetChildren()
-local RunService = game:GetService("RunService")
-local highlight = Instance.new("Highlight")
-highlight.Name = "Highlight"
-
-for i, v in pairs(Players) do
-    repeat wait() until v.Character
-    if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
-        local highlightClone = highlight:Clone()
-        highlightClone.Adornee = v.Character
-        highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
-        highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-        highlightClone.Name = "Highlight"
+	loadstring(game:GetObjects("rbxassetid://10092697033")[1].Source)()
     end
-end
-
-game.Players.PlayerAdded:Connect(function(player)
-    repeat wait() until player.Character
-    if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
-        local highlightClone = highlight:Clone()
-        highlightClone.Adornee = player.Character
-        highlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
-        highlightClone.Name = "Highlight"
-    end
-end)
-
-game.Players.PlayerRemoving:Connect(function(playerRemoved)
-    playerRemoved.Character:FindFirstChild("HumanoidRootPart").Highlight:Destroy()
-end)
-
-RunService.Heartbeat:Connect(function()
-    for i, v in pairs(Players) do
-        repeat wait() until v.Character
-        if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
-            local highlightClone = highlight:Clone()
-            highlightClone.Adornee = v.Character
-            highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
-            highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-            highlightClone.Name = "Highlight"
-            task.wait()
-        end
-end
-end)
-	end 
 })
 Tab:AddButton({
 	Name = "自瞄",
