@@ -85,17 +85,7 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://17360377302",
 	Time = 2
 })
-local Tab = Window:MakeTab({
-    Name = "goto游戏中心",
-    Icon = "rbxassetid://17360377302",
-    PremiumOnly = false
-})
-TabAddButton({
-    Name="游戏ui",
-    Callback=function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
-  end
-})
+
 local Tab = Window:MakeTab({
     Name = "如果fl不能用，可以启用这里",
     Icon = "rbxassetid://17360377302",
@@ -405,6 +395,18 @@ Tab:AddButton({
   Name = "隐身道具",
   Callback = function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
+  end
+})
+
+local Tab = Window:MakeTab({
+    Name = "goto游戏中心",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+TabAddButton({
+    Name="游戏ui",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
   end
 })
 
