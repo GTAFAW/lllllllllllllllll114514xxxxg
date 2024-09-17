@@ -1200,3 +1200,15 @@ Tab:AddButton({
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/Gymlm')))()
     end
 })
+local Tab = Window:MakeTab({
+    Name = "河北唐县",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+Tab:AddButton({
+    Name ="卡车刷钱",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/ok/T%20ang%20County"))()
+    end
+})
+
