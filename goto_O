@@ -302,7 +302,6 @@ Tab:AddButton({
 	Name = "转圈圈",
 	Callback = function()
     local speed = 50
-
 local plr = game:GetService("Players").LocalPlayer
 repeat task.wait() until plr.Character
 local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
