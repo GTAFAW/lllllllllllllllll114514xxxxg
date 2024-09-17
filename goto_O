@@ -1297,7 +1297,7 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
-TabAddButton({
+Tab:AddButton({
     Name="游戏ui",
     Callback=function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
