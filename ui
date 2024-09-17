@@ -54,7 +54,7 @@ about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 
 local UITab2 = win:Tab("『刀刃球』",'18927496614')
 
-local about = UITab2:section("『🕊️🕊️』",true)
+local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 about:Button("Bake hub v0.1.1",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/BakaIsNoname/Releases_bladeball_bakahub/main/Blade"))()
 
@@ -72,8 +72,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/
 end)
 about:Button("Auto  parry  v2.55",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
-end)
 
+local UITab2 = win:Tab("『木筏大亨』",'18927496614')
+
+local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)end)
+
+about:Button("lua Ware  v4.3",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))())
+end)
 
 
 
