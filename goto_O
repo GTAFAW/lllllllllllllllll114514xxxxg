@@ -738,6 +738,13 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name ="独家",
+    Callback = function()
+    loadstring(game:HttpGet("https://gitee.com/kbms1223/rbolox/raw/main/JIOBEN"))()
+    end
+})
+
+Tab:AddButton({
 	Name = "幻想",
 	Callback = function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/RPMMiF5y"))()
