@@ -60,6 +60,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/BakaIsNoname/Releases
 
 -- key is "scripthubopfrfr"
 end)
+about:Button("R3TH PRIV",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
+end)
 
 
 
