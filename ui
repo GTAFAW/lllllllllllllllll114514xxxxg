@@ -75,11 +75,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 
 local UITab2 = win:Tab("『木筏大亨』",'18927496614')
 
-local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)end)
+local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 
-about:Button("lua Ware  v4.3",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/frencaliber/LuaWareLoader.lw/main/luawareloader.wtf",true))())
+about:Button("汉化版",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()
 end)
+
 
 
 
