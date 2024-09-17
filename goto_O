@@ -79,35 +79,6 @@ local Section = Tab:AddSection({
 local Section = Tab:AddSection({
 	Name = "💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗"
 })
-localSection=Tab:AddSection({Name="哈哈，臣服我" 
-})
-localSection=Tab:AddSection({Name="gotoへ         ／|"
-})
-localSection=Tab:AddSection({Name="goto　　         /＼7　　　 ∠＿/            🕊️🕊️"
-})
-localSection=Tab:AddSection({Name="goto　          /　│　　 ／　／             🕊️🕊️"
-})
-localSection=Tab:AddSection({Name="goto　         │　Z ＿,＜　／　　 /`ヽ"
-})
-localSection=Tab:AddSection({Name="goto　         │　　　　　ヽ　　 /　　〉"
-})
-localSection=Tab:AddSection({Name="goto       　  Y　　　　　`　 /　　/"
-})
-localSection=Tab:AddSection({Name="goto          ｲ●　､　●　　⊂⊃〈　　/      小宇子"
-})
-localSection=Tab:AddSection({Name="goto        　()　 へ　　　　|　＼〈"
-})
-localSection=Tab:AddSection({Name="goto       　　>ｰ ､_　 ィ　 │ ／／"
-})
-localSection=Tab:AddSection({Name="goto         / へ　　 /　ﾉ＜| ＼＼"
-})
-localSection=Tab:AddSection({Name="goto     　  ヽ_ﾉ　　(_／　 │／／"
-})
-localSection=Tab:AddSection({Name="goto        　7　　　　　　　|／"
-})
-localSection=Tab:AddSection({Name="goto          ＞―r￣￣`ｰ―＿6    "
-})
-})
 OrionLib:MakeNotification({
 	Name = "稀🍚你 ",
 	Content = "持续更新",
