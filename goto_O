@@ -90,7 +90,12 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
+TabAddButton({
+    Name="游戏ui",
+    Callback=function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
+  end
+})
 local Tab = Window:MakeTab({
     Name = "如果fl不能用，可以启用这里",
     Icon = "rbxassetid://17360377302",
