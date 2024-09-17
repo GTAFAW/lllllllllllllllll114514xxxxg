@@ -175,9 +175,9 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-BLACK-HOLE/main/kawaii-black-hole.lua",true))()
     end
 })
-Tab2:Button(
-    "黑洞脚本（按E）",
-    function()
+Tab:AddButton({
+	Name = "黑洞  E",
+	Callback = function()
         local UserInputService = game:GetService("UserInputService")
         local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
         local Folder = Instance.new("Folder", game:GetService("Workspace"))
