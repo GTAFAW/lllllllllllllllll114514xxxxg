@@ -73,13 +73,11 @@ end)
 about:Button("Auto  parry  v2.55",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
 
-local UITab3 = win:Tab("『木筏大亨』",'18927496614')
+local UITab3 = win:Tab("『木筏大亨2』",'18927496614')
 
 local about = UITab3:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 
-about:Button("汉化版",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()
-end)
+
 
 
 
