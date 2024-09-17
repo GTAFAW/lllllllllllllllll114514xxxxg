@@ -703,6 +703,13 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name ="黑鸦",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/game123xjp/arw.15604934247-bj/main/Protected_5884649977234684.txt"))()
+    end
+})
+
+Tab:AddButton({
 	Name = "落叶🍃",
 	Callback = function()
 	getgenv().LS="落叶中心"loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt"))()
