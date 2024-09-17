@@ -1293,7 +1293,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "goto游戏中心",
+    Name = "goto☃️☃️",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
