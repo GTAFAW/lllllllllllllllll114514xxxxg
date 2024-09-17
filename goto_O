@@ -182,12 +182,6 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name ="人物体积",
-    Callback = function()
-    loadstring(game:HttpGet("https://shz.al/~KSJXBC62"))()
-    end
-})
-Tab:AddButton({
     Name ="反挂机",
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
