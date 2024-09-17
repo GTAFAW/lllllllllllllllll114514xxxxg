@@ -86,6 +86,12 @@ OrionLib:MakeNotification({
 	Time = 2
 })
 local Tab = Window:MakeTab({
+    Name = "goto游戏中心",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
+local Tab = Window:MakeTab({
     Name = "如果fl不能用，可以启用这里",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
