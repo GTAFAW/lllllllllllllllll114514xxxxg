@@ -313,7 +313,8 @@ velocity.MaxTorque = math.huge
 velocity.AngularVelocity = Vector3.new(0, speed, 0)
 velocity.Parent = humRoot
 velocity.Name = "Spinbot"
-    end)
+    end
+})
 Tab:AddButton({
     Name ="穿墙汉化",
     Callback = function()
