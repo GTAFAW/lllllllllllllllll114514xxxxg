@@ -152,9 +152,9 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name ="飞行v3",
+    Name ="goto制作小宇飞",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/c2FPNuRC"))()
     end
 })
 Tab:AddButton({
