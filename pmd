@@ -1,8 +1,8 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "正在检查",
-    Text = "脚本加载请耐心等待...",
+    Title = "小go正在查看你是否白名单",
+    Text = "查看中.....",
     Duration = 5,
 })
 
@@ -93,8 +93,8 @@ long = {
 if long then
    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "检测结果",
-    Text = "检测到您("..game.Players.LocalPlayer.Name..")已经被加入白名单",
+    Title = "查看完成",
+    Text = "谢谢配合("..game.Players.LocalPlayer.Name..")你已经是小go的尊贵用户了",
     Duration = 5,
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/goto_O"))()
