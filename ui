@@ -33,6 +33,7 @@ local function HeartbeatUpdate()
     end
     FrameUpdateTable[1] = LastIteration
     local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
