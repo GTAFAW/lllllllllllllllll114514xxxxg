@@ -72,6 +72,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/
 end)
 about:Button("Auto  parry  v2.55",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+end)
 
 local UITab3 = win:Tab("『木筏大亨2』",'18927496614')
 
