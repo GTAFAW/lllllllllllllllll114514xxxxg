@@ -780,6 +780,13 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name ="猫剑😼卡密：支持猫王和阴星和龙和霖溺",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kmlyfcbjyd/22222/main/Protected_7156604127243871.lua.txt", true))()
+    end
+})
+
+Tab:AddButton({
     Name ="黑子中心",
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/mnMaZwBQ"))()
