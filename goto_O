@@ -398,18 +398,6 @@ Tab:AddButton({
   end
 })
 
-local Tab = Window:MakeTab({
-    Name = "goto游戏中心",
-    Icon = "rbxassetid://17360377302",
-    PremiumOnly = false
-})
-TabAddButton({
-    Name="游戏ui",
-    Callback=function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
-  end
-})
-
 local Tab =Window:MakeTab({
 	Name = "驾驶帝国",
 	Icon = "rbxassetid://17360377302",
@@ -1304,3 +1292,14 @@ Tab:AddButton({
     end
 })
 
+local Tab = Window:MakeTab({
+    Name = "goto游戏中心",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+TabAddButton({
+    Name="游戏ui",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
+  end
+})
