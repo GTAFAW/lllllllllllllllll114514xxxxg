@@ -85,6 +85,17 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://17360377302",
 	Time = 2
 })
+local Tab = Window:MakeTab({
+    Name = "如果fl不能用，可以启用这里",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+Tab:AddButton({
+    Name ="阿尔宙斯",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "通用",
