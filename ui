@@ -56,7 +56,9 @@ local UITab2 = win:Tab("『刀刃球』",'18927496614')
 
 local about = UITab2:section("『🕊️🕊️』",true)
 about:Button("Bake hub v0.1.1",function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BakaIsNoname/Releases_bladeball_bakahub/main/Blade"))()
+
+-- key is "scripthubopfrfr"
 end)
 
 
