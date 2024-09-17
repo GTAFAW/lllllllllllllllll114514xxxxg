@@ -70,7 +70,9 @@ about:Button("红圈格挡",function()
 getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
 end)
-
+about:Button("Auto  parry  v2.55",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+end)
 
 
 
