@@ -325,7 +325,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "自瞄",
 	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/UDwWYdCV"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/gXsy4tYU"))()
 end
 })
 Tab:AddButton({
