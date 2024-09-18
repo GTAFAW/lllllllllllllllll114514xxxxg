@@ -1,8 +1,34 @@
-local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "goto_O",
+    Text = "小go努力加载中..（启动反挂机系统）",
+    Duration = 6, 
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "goto脚本",
+    Text = "🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",
+    Duration = 7, 
+})
+
+CoreGui:SetCore("SendNotification", {
+    Title = "୧⍤⃝🍓୧⍤⃝🌸୧⍤⃝🍎୧⍤⃝🍉",
+    Text = "加载成功⸝ヽ(๏~๏)ﾉ",
+    Duration = 8, 
+})
+
+print("开启成功")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+
 local LBLG = Instance.new("ScreenGui", getParent)
 local LBL = Instance.new("TextLabel", getParent)
 local player = game.Players.LocalPlayer
-
 LBLG.Name = "LBLG"
 LBLG.Parent = game.CoreGui
 LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
