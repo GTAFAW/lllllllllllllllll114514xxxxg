@@ -13,7 +13,7 @@ CoreGui:SetCore("SendNotification", {
 })
 
 CoreGui:SetCore("SendNotification", {
-    Title = "(⋌▀¯▀)=☞盘他",
+    Title = "<(￣3￣)>哼！=☞盘他",
     Text = "加载成功⸝ヽ(๏~๏)ﾉ",
     Duration = 8, 
 })
@@ -65,6 +65,8 @@ local function HeartbeatUpdate()
 end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
+
+local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/v9Pdp6kx"))()
 local Window = OrionLib:MakeWindow({Name = "goto_Oฅ●ω●ฅ🥂", HidePremium = false, SaveConfig = true,IntroText = "goto_O会一直更新", ConfigFolder = "krx"})
 local Tab = Window:MakeTab({
     Name = "用户",
