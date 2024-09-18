@@ -84,6 +84,14 @@ about:Button("白",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E4%BC%90%E6%9C%A8%E5%A4%A7%E4%BA%A822.lua", true))()
 end)
 
+local UITab4 = win:Tab("『最强战场』",'18927496614')
+
+local about = UITab4:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
+
+about:Button("杀死脚本",function()
+loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
+end)
+
 
 
 
