@@ -13,7 +13,7 @@ CoreGui:SetCore("SendNotification", {
 })
 
 CoreGui:SetCore("SendNotification", {
-    Title = "୧⍤⃝🍓୧⍤⃝🌸୧⍤⃝🍎୧⍤⃝🍉",
+    Title = "(⋌▀¯▀)=☞盘他",
     Text = "加载成功⸝ヽ(๏~๏)ﾉ",
     Duration = 8, 
 })
@@ -68,8 +68,13 @@ Heartbeat:Connect(HeartbeatUpdate)
 local Window = OrionLib:MakeWindow({Name = "goto_Oฅ●ω●ฅ🥂", HidePremium = false, SaveConfig = true,IntroText = "goto_O会一直更新", ConfigFolder = "krx"})
 local Tab = Window:MakeTab({
     Name = "用户",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://7734053495",
     PremiumOnly = false
+})
+CoreGui:SetCore("SendNotification", {
+    Title = "goto_O",
+    Text = "小go欢迎各位",
+    Duration = 10, 
 })
 OrionLib:MakeNotification({
 	Name = "goto_O",
