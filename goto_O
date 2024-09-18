@@ -212,6 +212,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
     end
 })
+Tab:AddButton({
+    Name ="光影菜单",
+    Callback = function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Shader-RTX-New-12425"))()
+    end
+})
 
 Tab:AddButton({
     Name ="光影v4",
