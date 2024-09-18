@@ -94,6 +94,9 @@ end)
 about:Button("最强战场卡密:RoscriptsOnTop",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RealOfficialSkully/Smm/main/Smm"))()
 end)
+about:Button("组合技",function()
+loadstring(game:HttpGet("https://pastefy.app/UY1oh6PG/raw"))()
+end)
 
 
 
