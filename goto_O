@@ -1280,7 +1280,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-    Name = "goto☃️☃️",
+    Name = "goto☃️",
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
@@ -1294,13 +1294,25 @@ local Section = Tab:AddSection({
 	Name = "游戏:刀刃球，伐木大亨2,"
 })
 Tab:AddButton({
-    Name="游戏ui",
+    Name="游戏1",
     Callback=function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
   end
 })
 
-
+local Tab = Window:MakeTab({
+    Name = "goto☃️☃️",
+    Icon = "rbxassetid://17360377302",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "暂时没有游戏哦，ui"
+Tab:AddButton({
+    Name="游戏2",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))()
+  end
+})
 
 
 
