@@ -12,7 +12,97 @@ if a=="GTAFAW"then
 _G.whitelisted=true
 elseif a=="GTAFAW2"then
 _G.whitelisted=true
-elseif a=="zyczyc5142311"then
+elseif a=="GTA_FAW"then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
 _G.whitelisted=true
 end
 if _G.whitelisted==true then
