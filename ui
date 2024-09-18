@@ -128,6 +128,13 @@ about:Button("Project-Spectrum9.0",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/SpectrumX.lua"))() 
 end)
 
+local UITab6 = win:Tab("『飞行靴子赛车模拟器』",'18927496614')
+
+local about = UITab6:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
+
+about:Button("无限小苗",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Vylo-dev/SoulSociety/main/Boot%20Race%20Sim'))()
+end)
 
 
 
