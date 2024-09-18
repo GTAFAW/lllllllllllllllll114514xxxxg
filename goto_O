@@ -1284,6 +1284,7 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
+
 local Section = Tab:AddSection({
 	Name = "你可以理解为其他游戏脚本在里边，主要的那些通用都在这边有的一些是之前加的，我就不想搬过去了"
 })
@@ -1305,6 +1306,7 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://17360377302",
     PremiumOnly = false
 })
+
 local Section = Tab:AddSection({
 	Name = "暂时没有游戏哦，ui"
 Tab:AddButton({
