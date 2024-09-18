@@ -114,9 +114,6 @@ loadstring(game:HttpGet(SCC_CharPool[1]))()
 --内脏与黑火药guts&blackpowder清风(星火交辉版)
 end)
 
-local UITab5 = win:Tab("『Blox Fruits』",'18927496614')
-
-local about = UITab5:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 
 
 
