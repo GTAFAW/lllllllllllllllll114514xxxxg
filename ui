@@ -97,7 +97,9 @@ end)
 about:Button("组合技",function()
 loadstring(game:HttpGet("https://pastefy.app/UY1oh6PG/raw"))()
 end)
-
+about:Button("操作",function()
+loadstring(game:HttpGet('https://freenote.biz/raw/xkcdkgyhkx',true))()
+end)
 
 
 
