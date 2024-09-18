@@ -1,110 +1,53 @@
-local CoreGui = game:GetService("StarterGui")
+Skip to content
+Sign up
+IIIIIIIIIIIIllllllllIIIIIIIllllllllIIlI
+/
+baijiaobengv4beta
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+baijiaobengv4beta/白名单/用户2.txt
+@IIIIIIIIIIIIllllllllIIIIIIIllllllllIIlI
+IIIIIIIIIIIIllllllllIIIIIIIllllllllIIlI Update 用户2.txt
+ 1 contributor
+1272 lines (1271 sloc)  29.2 KB
+repeat
+    task.wait()
+until game.Players.LocalPlayer.Character~=nil;
+local a=tostring(game.Players.LocalPlayer.Character);
+if a=="GTAFAW"then
+_G.whitelisted=true
+elseif a=="GTAFAW2"then
+_G.whitelisted=true
+elseif a=="zyczyc"then
+_G.whitelisted=true
+elseif a==""then
+_G.whitelisted=true
 
-CoreGui:SetCore("SendNotification", {
-    Title = "小go正在查看你是否白名单",
-    Text = "查看中.....",
-    Duration = 5,
-})
-
-wait(3)
-
-long = game.Players.LocalPlayer.Name
-long = {
-    "GTAFAW",
-    "GTAFAW2",
-    "zyczyc5142311",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-}
-if long then
-   local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "查看完成",
-    Text = "谢谢配合("..game.Players.LocalPlayer.Name..")你已经是小go的尊贵用户了",
-    Duration = 5,
-})
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/goto_O"))()
-
-    else 
-  setclipboard("877251886")
-      local CoreGui = game:GetService("StarterGui")
-CoreGui:SetCore("SendNotification", {
-    Title = "检测结果",
-    Text = "已自动复制QQ群群号，请加入",
-    Duration = 5,
-})
 end
+if _G.whitelisted==true then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/goto_O"))()
+    else
+ 
+game.Players.LocalPlayer:Kick(a.."你未被加入白名去求我帮你加白名单")
+end
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+baijiaobengv4beta/用户2.txt at main · IIIIIIIIIIIIllllllllIIIIIIIllllllllIIlI/baijiaobengv4beta · GitHub
