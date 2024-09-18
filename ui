@@ -115,7 +115,7 @@ loadstring(game:HttpGet(SCC_CharPool[1]))()
 end)
 
 local UITab5 = win:Tab("『Blox Fruits』",'18927496614')
-jhhuv
+
 local about = UITab5:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 
 about:Button("无密钥",function()
