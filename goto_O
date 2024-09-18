@@ -1309,6 +1309,7 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "暂时没有游戏哦，ui"
+})
 Tab:AddButton({
     Name="游戏2",
     Callback=function()
