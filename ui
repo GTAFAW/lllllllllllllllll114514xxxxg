@@ -113,18 +113,13 @@ loadstring(game:HttpGet(SCC_CharPool[1]))()
 
 --内脏与黑火药guts&blackpowder清风(星火交辉版)
 end)
+
 local UITab5 = win:Tab("『Blox Fruits』",'18927496614')
 
 local about = UITab5:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 
 about:Button("无密钥",function()
 getgenv().Team = "Pirates"loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-end)
-about:Button("Lunar X  Hudb",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NguyenLam2504/anhyeuem/main/bloxshitfarm.lua"))() 
-end)
-about:Button("Project-Spectrum9.0",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/SpectrumX.lua"))() 
 end)
 
 
