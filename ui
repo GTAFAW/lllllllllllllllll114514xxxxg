@@ -143,7 +143,9 @@ local about = UITab5:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊�
 about:Button("破解无密钥",function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Margman/whynot/main/oil%20warfare%20tycoon%20autofarm"))()
 end)
-
+about:Button("剑客v4需进群组",function()
+jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
+end)
 
 
 
