@@ -136,6 +136,15 @@ about:Button("无限小苗",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Vylo-dev/SoulSociety/main/Boot%20Race%20Sim'))()
 end)
 
+local UITab5 = win:Tab("『战争大亨』",'18927496614')
+
+local about = UITab5:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
+
+about:Button("破解无密钥",function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Margman/whynot/main/oil%20warfare%20tycoon%20autofarm"))()
+end)
+
+
 
 
 
