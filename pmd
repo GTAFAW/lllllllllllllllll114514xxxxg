@@ -14,7 +14,7 @@ elseif a=="GTAFAW2"then
 _G.whitelisted=true
 elseif a=="GTA_FAW"then
 _G.whitelisted=true
-elseif a==""then
+elseif a=="zyczyc5142311"then
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
