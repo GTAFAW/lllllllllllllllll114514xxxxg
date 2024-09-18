@@ -91,6 +91,9 @@ local about = UITab4:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊�
 about:Button("杀死脚本",function()
 loadstring(Game:HttpGet("https://pastefy.app/oKLqVHKF/raw"))()
 end)
+about:Button("最强战场卡密:RoscriptsOnTop",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RealOfficialSkully/Smm/main/Smm"))()
+end)
 
 
 
