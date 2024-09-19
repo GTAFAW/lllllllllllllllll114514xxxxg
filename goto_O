@@ -88,12 +88,10 @@ OrionLib:MakeNotification({
 Tab:AddParagraph("小go为你查看账户年龄:"..player.AccountAge.."天")
 Tab:AddParagraph("小go查看了你的加入日期:"joinDate.day.."/"..joinDate.month.."/"..joinDate.year)
 Tab:AddParagraph("用户名:"," "..game.Players.LocalPlayer.Name.."")
-Tab:AddParagraph("你的设备" _G.IsPc)
 Tab:AddParagraph("注入器查看:"," "..identifyexecutor().."")
 Tab:AddParagraph("服务器的ID"," "..game.GameId.."")
 Tab:AddParagraph("获取客户端ID:"..game:GetService("RbxAnalyticsService"):GetClientId())
 Tab:AddParagraph("服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
-Tab:AddParagraph("HWID"gethwid())
 local Tab =Window:MakeTab({
 	Name = "关于作者",
 	Icon = "rbxassetid://17360377302",
