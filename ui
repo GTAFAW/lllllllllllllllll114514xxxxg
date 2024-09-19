@@ -40,7 +40,7 @@ Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
 local ui = loadstring(game:HttpGet("https://pastebin.com/raw/Ey3CpCHS"))();       
-local win = ui:new("goto游戏中心")
+local win = ui:new("goto游戏中心v1")
 --
 local UITab1 = win:Tab("『信息』",'6035145364')
 
@@ -48,7 +48,7 @@ local about = UITab1:section("『信息』",true)
 
 
 about:Label("作者：goto_O")
-about:Label("goto游戏中心")
+about:Label("goto游戏中心v1")
 about:Label("你的注入器:"..identifyexecutor())
 about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 
