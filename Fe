@@ -1,0 +1,78 @@
+local IMAGE = "rbxassetid://16060333448"
+local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
+local Sizes = UDim2.new(0, 76, 0, 70)
+
+local KINGHUBMOBILE = Instance.new("ScreenGui")
+local _100x100 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+
+KINGHUBMOBILE.Name = "LinniScriptcharge"
+KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
+KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_100x100.Name = "100x100"
+_100x100.Parent = KINGHUBMOBILE
+_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100x100.Position = Positions
+_100x100.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = _100x100
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Size = Sizes
+ImageButton.Image = IMAGE
+ImageButton.MouseButton1Down:connect(function()
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(true, "RightControl", false, game)
+
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(false, "RightControl", false, game)
+end)
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
+local win = UILib:Window("goto_O游戏中心2",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+
+local UITab99 = win:Tab("小goFe",'7734068321')
+
+local about = UITab99:section("『FE』",true)
+
+about:Button("FE C00lgui", function()
+loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+end)
+about:Button("FE 1x1x1x1", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/JipYNCht'),true))()
+end)
+about:Button("FE大长腿", function()
+    loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/7291747e9f093555573e027621f08d6e/raw/23b48f2463942befe19d81aa8a06e3222996242c/FE%2520Da%2520Feets'))()
+end)
+about:Button("FE用头", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/BK4Q0DfU"))()
+end)
+about:Button("复仇者", function()
+    loadstring(game:HttpGet(('https://pastefy.ga/iGyVaTvs/raw'),true))()
+end)
+about:Button("鼠标", function()
+    loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
+end)
+about:Button("变怪物", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
+end)
+about:Button("香蕉枪", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
+end)
+about:Button("超长🐔巴", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ESWSFND7", true))()
+end)
+about:Button("操人", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/AHAJAJAKAK/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A/A.LUA", true))()
+end)
+about:Button("FE动画中心", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+end)
+about:Button("FE变玩家", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
+end)
+about:Button("FE猫娘R63", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+end)
+about:Button("FE", function()
+    loadstring(game:HttpGet('https://pastefy.ga/a7RTi4un/raw'))()
+end)
