@@ -335,27 +335,6 @@ Tab:AddTextbox({
 		game.Workspace.Gravity = Value
 	end
 })
-Tab:AddToggle({
-	Name = "自动互动",
-	Default = false,
-	Callback = function(state)
-      if state then
-            autoInteract = true
-            while autoInteract do
-                for _, descendant in pairs(workspace
-:GetDescendants()) do
-                    if descendant:IsA("ProximityPrompt") then
-                        fireproximityprompt(descendant)
-                    end
-                end
-                task.wait(0.25) -- Adjust the wait time as 
-needed
-            end
-        else
-            autoInteract = false
-        end
-    end
-})
 Tab:AddButton({
     Name ="穿墙汉化",
     Callback = function()
