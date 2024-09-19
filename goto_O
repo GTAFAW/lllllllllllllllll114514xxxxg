@@ -342,12 +342,14 @@ Tab:AddToggle({
       if state then
             autoInteract = true
             while autoInteract do
-                for _, descendant in pairs(workspace:GetDescendants()) do
+                for _, descendant in pairs(workspace
+:GetDescendants()) do
                     if descendant:IsA("ProximityPrompt") then
                         fireproximityprompt(descendant)
                     end
                 end
-                task.wait(0.25) -- Adjust the wait time as needed
+                task.wait(0.25) -- Adjust the wait time as 
+needed
             end
         else
             autoInteract = false
