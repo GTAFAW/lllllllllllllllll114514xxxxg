@@ -1,0 +1,64 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local GUI = Mercury:Create{
+    Name = "Space Hub",
+    Size = UDim2.fromOffset(500, 330),
+    Theme = Mercury.Themes.Legacy,
+    Link = "小go空间🕊️🕊️️️"
+}
+local Tab = GUI:Tab{
+	Name = "小go主页🕊️️🕊️",
+	Icon = "rbxassetid://4483362748"
+}
+local Premium = GUI:Tab{
+	Name = "功能栏🕊🕊️",
+	Icon = "rbxassetid://3610239960"
+}
+
+
+
+
+
+
+
+Tab:Button{
+	Name = "goto脚本主页",
+	Description = "Space Hub",
+	Callback = function() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ym"))() end
+}
+Tab:Button{
+	Name = "🕊️小go游戏中心v1🕊️",
+	Description = "Space Hub Universal",
+	Callback = function()  
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))() end
+}
+Tab:Button{
+	Name = "🕊️小go游戏中心v2🕊️",
+	Description = "Space Hub",
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/gameslocal"))() end
+}
+GUI:Notification{
+	Title = "小go脚本ui界面🕊️🕊️🕊️🕊️",
+	Text = "小go以为你加载..🥂",
+	Duration = 5,
+	Callback = function() end
+}
+Premium:Button{
+	Name = "Load Space Hub Premium",
+	Description = "Space Hub Premium",
+	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/othershub.txt")))() end
+     
+}
+Premium:Button{
+	Name = "Load Space Hub Premium Games",
+	Description = "Space Hub Premium Games",
+	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/premiumgamses.lua")))() end
+     
+}
+
+
+getgenv().InviteCode = "nezurai"
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
