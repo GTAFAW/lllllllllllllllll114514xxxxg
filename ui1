@@ -1,41 +1,17 @@
-local IMAGE = "rbxassetid://16060333448"
-local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
-local Sizes = UDim2.new(0, 76, 0, 70)
-
-local KINGHUBMOBILE = Instance.new("ScreenGui")
-local _100x100 = Instance.new("Frame")
-local ImageButton = Instance.new("ImageButton")
-
-KINGHUBMOBILE.Name = "LinniScriptcharge"
-KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
-KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-_100x100.Name = "100x100"
-_100x100.Parent = KINGHUBMOBILE
-_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-_100x100.Position = Positions
-_100x100.Size = UDim2.new(0, 76, 0, 70)
-
-ImageButton.Parent = _100x100
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.Size = Sizes
-ImageButton.Image = IMAGE
-ImageButton.MouseButton1Down:connect(function()
-        local vim = game:service("VirtualInputManager")
-        vim:SendKeyEvent(true, "RightControl", false, game)
-
-        local vim = game:service("VirtualInputManager")
-        vim:SendKeyEvent(false, "RightControl", false, game)
-end)
-local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
-local win = UILib:Window("goto_O游戏中心2",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
-
-local Tab = win:Tab("1")
-Tab:Button("暂时没有游戏哦", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
-end)
-local Tab1 = win:Tab("2")
-local Tab2 = win:Tab("3")
-local Tab3 = win:Tab("4")
-local Tab4 = win:Tab("5")
-local Tab5 = win:Tab("6")
+   local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/Cracks/main/BearUI.lua", true))()
+    local window = library:new("goto_Oฅ●ω●ฅ🥂")
+    local creds = window:Tab("关于", "6035145364")
+    local bin = creds:section("信息", true)
+    bin:Label("你的注入器:" .. identifyexecutor())
+    bin:Label("更新9月18日")
+    
+    local credits = creds:section("关闭", true)
+    credits:Button(
+        "关闭脚本",
+        function()
+            game:GetService("CoreGui")["frosty"]:Destroy()
+        end
+    )
+    local creds = window:Tab("小go游戏中心v2", "16060333448")
+    local credits = creds:section("内容", true)
+    
