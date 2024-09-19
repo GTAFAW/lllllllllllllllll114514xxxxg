@@ -148,7 +148,7 @@ end
 
 local Tab = Window:MakeTab({
     Name = "通用",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://15613376871",
     PremiumOnly = false
 })
 Tab:AddButton({
@@ -472,7 +472,7 @@ Tab:AddButton({
 
 local Tab =Window:MakeTab({
 	Name = "驾驶帝国",
-	Icon = "rbxassetid://17360377302",
+	Icon = "rbxassetid://1000140976",
 	PremiumOnly = false
 })
 
@@ -485,7 +485,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "鲨口求生2",
-	Icon = "rbxassetid://17360377302",
+	Icon = "rbxassetid://1000140976",
 	PremiumOnly = false
 })
 
@@ -507,7 +507,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "DOORS🚪",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -541,7 +541,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
     Name ="骷髅钥匙我感觉应该没用",
     Callback = function()
-    local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
+    local item = game:GetObjects("rbxassetid://1000140976")[1]item.Parent = game.Players.LocalPlayer.Backpack
     end
 })
 Tab:AddButton({
@@ -589,7 +589,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "压力🍏",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 Tab:AddButton({
@@ -612,7 +612,7 @@ Tab:AddButton({
 })
 local Tab = Window:MakeTab({
     Name = "力量传奇💪",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 Tab:AddButton({
@@ -687,7 +687,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "其他脚本",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1020,7 +1020,7 @@ end
 
 local Tab = Window:MakeTab({
     Name = "监狱人生",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1060,7 +1060,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "战斗勇士",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1073,7 +1073,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
 	Name = "忍者传奇👾",
-	Icon = "rbxassetid://17360377302",
+	Icon = "rbxassetid://1000140976",
 	PremiumOnly = false
 })
 Tab:AddButton({
@@ -1231,7 +1231,7 @@ Tab:AddButton({
 })
 local Tab = Window:MakeTab({
     Name = "极速传奇⛷",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1303,7 +1303,7 @@ Tab:AddButton({
 })
 local Tab = Window:MakeTab({
     Name = "彩虹朋友🌈",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1316,7 +1316,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 
 local Tab = Window:MakeTab({
     Name = "俄亥俄州👀",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1335,7 +1335,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "健身房联盟🤝",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1347,7 +1347,7 @@ Tab:AddButton({
 })
 local Tab = Window:MakeTab({
     Name = "河北唐县",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 Tab:AddButton({
@@ -1359,7 +1359,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "goto☃️",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
@@ -1384,7 +1384,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui")
 
 local Tab = Window:MakeTab({
     Name = "goto☃️☃️",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
