@@ -124,7 +124,7 @@ OrionLib:MakeNotification({
 
 local Tab = Window:MakeTab({
     Name = "如果fl不能用，可以启用这里",
-    Icon = "rbxassetid://1000161323",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 Tab:AddButton({
