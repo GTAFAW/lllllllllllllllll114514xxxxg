@@ -1419,12 +1419,6 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "小go提醒:由于脚本过于强大 脚本启动后，后果自行承担🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️"
 })
-Tab:AddButton({
-    Name="‍🔥小go‍🔥",
-    Callback=function()
-loadstring(game:HttpGet("https://pastebin.com/raw/AuxiT9CS"))()
-  end
-})
 
 
 
