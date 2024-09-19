@@ -697,20 +697,7 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ByNami/dkhub/main/Script", true))()
     end
 })
-Tab:AddButton({
-    Name ="LSKing第2版本"，
---Star Moon is the developer
---libraryuiDrag = true
---It doesn't support any servers, but it has very, very strong general purpose functionality
---Click sound from Roblox Music
---Cross sight
---He's completely free
-LSTMArchive = "LSScripts"
-KingteamandLSteam = "LSKing"
-Version = "2.0"
-loadstring(game:HttpGet("https://github.com/XiaoyeQWQ/what/raw/main/Done.txt"))()
-end
-})
+
 Tab:AddButton({
     Name ="禁漫中心◇",
     Callback = function()
