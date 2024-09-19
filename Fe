@@ -32,7 +32,7 @@ local win = UILib:Window("小goFe合集",Color3.fromRGB(0, 150, 150), Enum.KeyCo
 
 local UITab99 = win:Tab("gotoFe",'7734068321')
 
-local about = UITab99:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+local Tab = win:Tab("小goFe")
 
 Tab:Button("FE C00lgui", function()
 loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
