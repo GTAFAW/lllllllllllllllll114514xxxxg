@@ -12,7 +12,7 @@ local Tab = GUI:Tab{
 }
 local Premium = GUI:Tab{
 	Name = "功能栏🕊🕊🕊️️",
-	Icon = "rbxassetid://3610239960"
+	Icon = "rbxassetid://16060333448"
 }
 
 
