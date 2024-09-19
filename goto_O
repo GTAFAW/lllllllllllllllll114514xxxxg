@@ -512,6 +512,12 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
+    Name ="zs lll 2",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III"))()
+    end
+})
+Tab:AddButton({
     Name ="FLOOR2",
     Callback = function()
     loadstring(game:HttpGet("https://github.com/DocYogurt/Main/raw/main/Scripts/DF2RW.lua"))()
