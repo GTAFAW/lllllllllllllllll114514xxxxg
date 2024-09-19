@@ -1361,10 +1361,13 @@ local Section = Tab:AddSection({
 	Name = "你可以理解为其他游戏脚本在里边，主要的那些通用都在这边有的一些是之前加的，我就不想搬过去了"
 })
 local Section = Tab:AddSection({
-	Name = "goto游戏中心v1💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗"
+        Name = " V2和v1都会覆盖,这两个是我的宝藏，里面都是游戏脚本,这两个我基本会随机添加几个游戏在里面"
 })
 local Section = Tab:AddSection({
-	Name = "游戏:刀刃球，伐木大亨2,"
+	Name = "goto游戏中心v1💗💗💗💗💗💗💗💗💗💗💗💗🕊️爱你们🕊️💗💗💗💗💗💗💗💗💗💗💗💗💗💗"
+})
+local Section = Tab:AddSection({
+	Name = "游戏:刀刃球，伐木大亨2,内脏与火药，飞行靴子赛车模拟器， Bf，战争大亨，"
 })
 Tab:AddButton({
     Name="游戏v1",
@@ -1380,7 +1383,7 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "暂时没有游戏哦，ui"
+	Name = "火箭发射模拟器,以后还会加载"
 })
 Tab:AddButton({
     Name="游戏v2",
