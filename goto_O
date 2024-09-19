@@ -118,7 +118,7 @@ local Section = Tab:AddSection({
 OrionLib:MakeNotification({
 	Name = "稀🍚你 ",
 	Content = "持续更新",
-	Image = "rbxassetid://15613376871",
+	Image = "rbxassetid://17360377302",
 	Time = 2
 })
 
