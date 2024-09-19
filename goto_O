@@ -154,7 +154,8 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="小goFe合集",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/Fe"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/Fe"))()
+    end
 })
  Tab:AddButton({
 	Name = "无限跳",
