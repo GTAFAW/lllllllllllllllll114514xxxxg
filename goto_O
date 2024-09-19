@@ -334,7 +334,7 @@ Tab:AddTextbox({
 	Callback = function(Value)
 		game.Workspace.Gravity = Value
 	end
-}）
+})
 Tab:AddToggle({
 	Name = "自动互动",
 	Default = false,
