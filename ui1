@@ -46,6 +46,11 @@ credits:Button(
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/main/Games/Ohio"))()
         end
     )
-
+credits:Button(
+        "小go制作玩家控制喜欢俄亥俄的，可以搭配起来超级好用",
+        function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/SrVZX318"))()
+        end
+    )
 
     
