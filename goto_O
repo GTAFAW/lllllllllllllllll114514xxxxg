@@ -139,6 +139,12 @@ Tab:AddButton({
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
     end
 })
+Tab:AddButton({
+	Name = "管理员权限",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/sZpgTVas"))()
+end
+})
 
 local Tab = Window:MakeTab({
     Name = "通用",
