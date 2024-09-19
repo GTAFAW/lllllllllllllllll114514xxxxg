@@ -599,6 +599,12 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
+    Name ="无敌，唯一缺点就是能被机枪扫到",
+    Callback = function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Pressure-*-Mode-15992"))()
+    end
+})
+Tab:AddButton({
     Name ="人机压力",
     Callback = function()
     loadstring(game:HttpGet(('https://github.com/DocYogurt/Main/raw/main/Scripts/Pressure')))()
