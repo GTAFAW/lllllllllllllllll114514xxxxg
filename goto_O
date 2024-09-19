@@ -512,7 +512,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-    Name ="zs lll 2",
+    Name ="zs lll 2 卡密:nrty",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/zuohongjian/bjb/main/ZS%20III"))()
     end
