@@ -70,7 +70,7 @@ local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/3CadBKtN"))()
 local Window = OrionLib:MakeWindow({Name = "goto_Oฅ●ω●ฅ🥂", HidePremium = false, SaveConfig = true,IntroText = "goto_O会一直更新", ConfigFolder = "krx"})
 local Tab = Window:MakeTab({
     Name = "用户",
-    Icon = "rbxassetid://7734053495",
+    Icon = "rbxassetid://7734068321",
     PremiumOnly = false
 })
 CoreGui:SetCore("SendNotification", {
