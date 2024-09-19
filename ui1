@@ -13,7 +13,7 @@
         end
     )
     local creds = window:Tab("火箭发射模拟器", "16060333448")
-    local credits = creds:section("内容", true)
+    local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
     credits:Button(
         "小go制作",
         function()
@@ -30,6 +30,20 @@ credits:Button(
         "火箭发射模拟器2",
         function()
             loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9245/%E7%8C%AB%E9%80%9A%E7%94%A8.txt?sign=hrWROZdVfK2mtJcIFa3Tvbl-TojP1C86_Zd3q03qttc%3D%3A0"))()
+        end
+    )
+    local creds = window:Tab("俄亥俄州👀", "16060333448")
+    local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+credits:Button(
+        "xk",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%20Ohio.lua"))()
+        end
+    )
+credits:Button(
+        "杀戮光环",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/main/Games/Ohio"))()
         end
     )
 
