@@ -295,7 +295,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "通用2",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 Tab:AddButton({
@@ -507,7 +507,7 @@ Tab:AddButton({
 
 local Tab = Window:MakeTab({
     Name = "DOORS🚪",
-    Icon = "rbxassetid://1000140976",
+    Icon = "rbxassetid://15613376871",
     PremiumOnly = false
 })
 
@@ -1384,7 +1384,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui")
 
 local Tab = Window:MakeTab({
     Name = "goto☃️☃️",
-    Icon = "rbxassetid://1000140976",
+    Icon = "rbxassetid://15613376871",
     PremiumOnly = false
 })
 
