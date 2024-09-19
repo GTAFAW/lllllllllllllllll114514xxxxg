@@ -313,7 +313,7 @@ end
 
 local Tab = Window:MakeTab({
     Name = "玩家",
-    Icon = "rbxassetid://17360377302",
+    Icon = "rbxassetid://1000140976",
     PremiumOnly = false
 })
 
