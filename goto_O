@@ -1411,15 +1411,6 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))()
   end
 })
-local Tab = Window:MakeTab({
-    Name = "小go超级无敌脚本",
-    Icon = "rbxassetid://16060333448",
-    PremiumOnly = false
-})
-local Section = Tab:AddSection({
-	Name = "小go提醒:由于脚本过于强大 脚本启动后，后果自行承担🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️"
-})
-
 
 
 
