@@ -93,7 +93,7 @@ Tab:AddParagraph("获取客户端ID:"..game:GetService("RbxAnalyticsService"):Ge
 Tab:AddParagraph("服务器名称:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
 local Tab =Window:MakeTab({
 	Name = "关于作者",
-	Icon = "rbxassetid://17360377302",
+	Icon = "rbxassetid://7734053495",
 	PremiumOnly = false
 })
 
