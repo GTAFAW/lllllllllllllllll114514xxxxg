@@ -1,5 +1,5 @@
    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/IIIlll1ll1/Cracks/main/BearUI.lua", true))()
-    local window = library:new("goto_Oฅ●ω●ฅ🥂")
+    local window = library:new("小go游戏中心v2")
     local creds = window:Tab("关于", "6035145364")
     local bin = creds:section("信息", true)
     bin:Label("你的注入器:" .. identifyexecutor())
@@ -12,6 +12,26 @@
             game:GetService("CoreGui")["frosty"]:Destroy()
         end
     )
-    local creds = window:Tab("小go游戏中心v2", "16060333448")
+    local creds = window:Tab("火箭发射模拟器", "16060333448")
     local credits = creds:section("内容", true)
+    credits:Button(
+        "小go制作",
+        function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/w2DuRFZ7"))()
+        end
+    )
+    credits:Button(
+        "火箭发射模拟器1",
+        function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/dizyhvh/rbx_scripts/main/321_blast_off_simulator')))()
+        end
+    )
+credits:Button(
+        "火箭发射模拟器2",
+        function()
+            loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/9245/%E7%8C%AB%E9%80%9A%E7%94%A8.txt?sign=hrWROZdVfK2mtJcIFa3Tvbl-TojP1C86_Zd3q03qttc%3D%3A0"))()
+        end
+    )
+
+
     
