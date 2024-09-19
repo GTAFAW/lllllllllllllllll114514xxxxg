@@ -86,7 +86,6 @@ OrionLib:MakeNotification({
 })
 
 Tab:AddParagraph("小go为你查看账户年龄:"..player.AccountAge.."天")
-Tab:AddParagraph("小go查看了你的加入日期:"joinDate.day.."/"..joinDate.month.."/"..joinDate.year)
 Tab:AddParagraph("用户名:"," "..game.Players.LocalPlayer.Name.."")
 Tab:AddParagraph("注入器查看:"," "..identifyexecutor().."")
 Tab:AddParagraph("服务器的ID"," "..game.GameId.."")
