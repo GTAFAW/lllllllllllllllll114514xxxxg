@@ -151,6 +151,11 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
     end
 })
+Tab:AddButton({
+    Name ="小goFe合集",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/Fe"))()
+})
  Tab:AddButton({
 	Name = "无限跳",
     Default = false,
