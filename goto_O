@@ -81,7 +81,7 @@ CoreGui:SetCore("SendNotification", {
 OrionLib:MakeNotification({
 	Name = "goto_O",
 	Content = "欢迎使用goto脚本",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://1000140976",
 	Time = 2
 })
 
