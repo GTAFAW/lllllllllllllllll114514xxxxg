@@ -1322,25 +1322,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 })
 
 local Tab = Window:MakeTab({
-    Name = "俄亥俄州👀",
-    Icon = "rbxassetid://1000140976",
-    PremiumOnly = false
-})
-
-Tab:AddButton({
-    Name ="xK",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BINjiaobzx6/BINjiao/main/XK%20Ohio.lua"))()
-    end
-})
-Tab:AddButton({
-    Name ="杀戮光环",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/main/Games/Ohio"))()
-    end
-})
-
-local Tab = Window:MakeTab({
     Name = "健身房联盟🤝",
     Icon = "rbxassetid://1000140976",
     PremiumOnly = false
