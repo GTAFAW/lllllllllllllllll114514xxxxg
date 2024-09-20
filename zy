@@ -57,7 +57,7 @@ Premium:Button{
      
 }
 Premium:Button{
-	Name = "Load Space Hub Premium Games",
+	Name = "游戏空间:进入游戏后自动加载该游戏脚本,未汉化",
 	Description = "Space Hub Premium Games",
 	Callback = function() loadstring(game:HttpGet(("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/premiumgamses.lua")))() end
      
