@@ -1,5 +1,2 @@
---By = "2378518248" 
---aHR0cHM6Ly9ub3ZlbC5odG1sNS5xcS5jb20vcG9ydGFsL25vdmVsLWludHJvP2Jvb2tpZD1UWFQw
-MDViMDQ1MzVhJmlzRnJvbVNoYXJlPTEmY2g9MDA1NDM4JnRhYmZyb209JnRyYWNlaWQ9JnJlcWlk
-PSZzY2VuZWlkPSZzdHJhZ2VpZD0manVtcF9mcm9tPSZlbnRyeVRpbWU9JmVudHJ5U2NlbmU9
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/pmd"))()
