@@ -5,6 +5,11 @@ CoreGui:SetCore("SendNotification", {
     Text = "🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",
     Duration = 5,
 })
+CoreGui:SetCore("SendNotification", {
+    Title = "ฅ●ω●ฅ🥂",
+    Text = "你好("..game.Players.LocalPlayer.Name..")小go欢迎你🕊️",
+    Duration = 5,
+})
 
 wait(3)
 
@@ -16,7 +21,7 @@ if long then
    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "🕊️感谢师傅加密🕊️",
-    Text = "爱你师傅("..game.Players.LocalPlayer.Name..")💗💗💗💗💗",
+    Text = "爱你师傅💗💗💗💗💗",
     Duration = 5,
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/pmd"))()
