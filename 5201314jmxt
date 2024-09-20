@@ -1,25 +1,31 @@
-local a=tostring(game.Players.LocalPlayer.Character);
-if a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
-elseif a=="名字"then
-_G.whitelisted=true
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "小go加载中.....",
+    Text = "🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",
+    Duration = 5,
+})
+
+wait(3)
+
+long = game.Players.LocalPlayer.Name
+long = {
+    "",
+}
+if long then
+   local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "",
+    Text = "感谢师傅加密("..game.Players.LocalPlayer.Name..")💗💗💗💗💗💗💗💗💗💗💗💗",
+    Duration = 5,
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/pmd"))()
+    else 
+  setclipboard("??????????")
+      local CoreGui = game:GetService("StarterGui")
+CoreGui:SetCore("SendNotification", {
+    Title = "������",
+    Text = "������",
+    Duration = 5,
+})
 end
-if _G.whitelisted==true then
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/pmd"))()
-
-else
-game.Players.LocalPlayer:Kick(a.."你没有白名单🖕")
-eed
