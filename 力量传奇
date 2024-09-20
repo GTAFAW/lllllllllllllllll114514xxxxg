@@ -57,7 +57,7 @@ local win = UILib:Window("小go力量传奇🕊️",Color3.fromRGB(0, 150, 150),
 
 local UITab4 = win:Tab("🕊️力量传奇🕊️",''16060333448)
 
-local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
+local about = UITab4:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 about:Toggle("自动比赛开关🕊️", "AR", false, function(AR)
   while AR do wait() wait(2) game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl") end
 end)
