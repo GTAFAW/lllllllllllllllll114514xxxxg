@@ -622,6 +622,12 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 Tab:AddButton({
+    Name ="小go力量传奇🕊️",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87"))()
+    end
+})
+Tab:AddButton({
 	Name = "剑客:需加群组",
 	Callback = function()
 jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
