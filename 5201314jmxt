@@ -15,8 +15,8 @@ long = {
 if long then
    local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "",
-    Text = "感谢师傅加密("..game.Players.LocalPlayer.Name..")💗💗💗💗💗💗💗💗💗💗💗💗",
+    Title = "🕊️感谢师傅加密🕊️",
+    Text = "爱你师傅("..game.Players.LocalPlayer.Name..")💗💗💗💗💗",
     Duration = 5,
 })
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/pmd"))()
