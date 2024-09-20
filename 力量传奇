@@ -39,7 +39,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/%E5%8A%9B%E9%87%8F%E4%BC%A0%E5%A5%87"))();        
+local ui = loadstring(game:HttpGet("https://pastebin.com/raw/Ey3CpCHS"))();        
 local win = ui:new("goto力量传奇")
 --
 local UITab1 = win:Tab("『信息』",'6035145364')
