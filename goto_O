@@ -1372,7 +1372,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui")
 
 local Tab = Window:MakeTab({
     Name = "goto☃️☃️",
-    Icon = "rbxassetid://16060333448",
+    Icon = "rbxassetid://6031302934",
     PremiumOnly = false
 })
 
