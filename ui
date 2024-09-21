@@ -78,8 +78,6 @@ local UITab3 = win:Tab("『伐木大亨2』",'16060333448')
 
 local about = UITab3:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
 
-local Section = Tab:AddSection({	Name = "传送地点"}) 
-
 about:Button({"火木",function()  
      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1615.8934326171875, 622.9998779296875, 1086.1234130859375)             
   end                                   
