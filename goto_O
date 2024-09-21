@@ -243,6 +243,12 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
+    Name ="F3X",
+    Callback = function()
+     loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+    end
+})
+Tab:AddButton({
     Name ="工具包（三个经典工具）",
     Callback = function()
     loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()	  	
@@ -318,7 +324,7 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddTextbox({
-	Name = "视角",
+	Name = "视角  目前有 Bug",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(V)
