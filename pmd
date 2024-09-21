@@ -34,7 +34,7 @@ elseif a=="zzzzzzzkysgw"then
 _G.whitelisted=true
 elseif a=="examplekey123$"then 
 _G.whitelisted=true
-elseif a==""then
+elseif a=="fenyun_mad"then
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
