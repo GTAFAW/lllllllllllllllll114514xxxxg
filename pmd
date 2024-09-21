@@ -18,7 +18,7 @@ elseif a=="zyczyc5142311"then
 _G.whitelisted=true
 elseif a=="xiaoming03"then
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="bajidashe"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
