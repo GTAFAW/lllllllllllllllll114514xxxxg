@@ -1951,6 +1951,19 @@ Tab:AddButton({
 jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
 	end
 })
+Tab:AddButton({
+	Name = "开启卡宠",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/uR6azdQQ"))()
+	end
+})
+Tab:AddButton({
+	Name = "自动重生和自动刷等级",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/T9wTL150"))()        
+  	end    
+})
+
 local Section = Tab:AddSection({
 	Name = "传送岛屿"
 })
