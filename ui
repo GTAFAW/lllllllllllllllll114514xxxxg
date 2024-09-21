@@ -207,6 +207,17 @@ about:Button("恐怖奶奶1",function()
 loadstring(game:HttpGet("https://pastefy.app/o688Jvmn/raw"))()
 end)
 
+local UITab11 = win:Tab("『旗帜战争』",'16060333448')
+
+local about = UITab11:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("旗帜战争1",function()
+      loadstring(game:HttpGet("https://pastefy.app/otEg6PJV/raw"))()
+end)
+
+about:Button("旗帜战争2",function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Flag%20Wars.txt'))()
+end)
 
 
 
