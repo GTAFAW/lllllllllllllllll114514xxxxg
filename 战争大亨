@@ -32,10 +32,8 @@ local win = UILib:Window("小go战争大亨",Color3.fromRGB(0, 150, 150), Enum.K
 
 local UITab = win:Tab("战争大亨",'16060333448')
 
-Tab:Button(
-    "基地",
-    function()
-for _, v in pairs({"Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Kilo","Lima","Omega","Tango","Victor","Zulu"}) do
+Tab:Button("基地",function()
+    for _, v in pairs({"Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Kilo","Lima","Omega","Tango","Victor","Zulu"}) do
     if(v ~= Player.leaderstats.Team.Value) then
         TycoonsSection:AddButton({
             Name = v,
@@ -48,22 +46,16 @@ end;
     end
 );
 wait(1)
-Tab:Button(
-    "捕获点",
-    function()
-Player.Character.HumanoidRootPart.CFrame = Workspace.Beams.CapturePoint1.CFrame;
+Tab:Button( "捕获点",function()
+  Player.Character.HumanoidRootPart.CFrame = Workspace.Beams.CapturePoint1.CFrame;
     end
 )
-Tab:Button(
-    "查看游戏中的所有玩家（包括血量条）",
-    function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/G2zb992X'),true))()
+Tab:Button("查看游戏中的所有玩家（包括血量条）", function()
+  loadstring(game:HttpGet(('https://pastebin.com/raw/G2zb992X'),true))()
     end
 )
-Tab:Button(
-    "油桶",
-    function()
-for _, v in pairs(Workspace.Beams:GetChildren()) do
+Tab:Button( "油桶", function()
+  for _, v in pairs(Workspace.Beams:GetChildren()) do
             if(v.Name:find("Warehouse")) then
                 Player.Character.HumanoidRootPart.CFrame = Workspace.Beams[v.Name].CFrame;
                 break
@@ -72,19 +64,15 @@ for _, v in pairs(Workspace.Beams:GetChildren()) do
     end
 )
 
-Tab:Button(
-    "车辆货箱",
-    function()
-for _,v in pairs(Workspace.Beams:GetChildren()) do
+Tab:Button("车辆货箱",function()
+  for _,v in pairs(Workspace.Beams:GetChildren()) do
             if(v.Name:find("Airdrop_")) then Player.Character.HumanoidRootPart.CFrame = v.CFrame; end;
         end;
     end
 )
 
-Tab:Button(
-    "隔空投送",
-    function()
-for _, v in pairs(Workspace.Beams:GetChildren()) do
+Tab:Button( "隔空投送",function()
+  for _, v in pairs(Workspace.Beams:GetChildren()) do
             if(v.Name:find("Warehouse")) then
                 Player.Character.HumanoidRootPart.CFrame = Workspace.Beams[v.Name].CFrame;
                 break
@@ -93,13 +81,11 @@ for _, v in pairs(Workspace.Beams:GetChildren()) do
     end
 )
 
+local UITab = win:Tab("传送",'16060333448')
 
-local Tab27 = Wartycoon:section("传送", true)
-Tab:Button(
-    "传送到空投",
-    function()
-local Folder = workspace["Game Systems"]
-local player = game.Players.LocalPlayer.Character.HumanoidRootPart
+Tab:Button("传送到空投",function()
+  local Folder = workspace["Game Systems"]
+  local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 
 
 for _, Child in ipairs(Folder:GetDescendants()) do
@@ -110,17 +96,13 @@ end
     end
 )
 
-Tab:Button(
-    "传送你的基地",
-    function()
-function getTycoon()
+Tab:Button("传送你的基地",function()
+  function getTycoon()
     game:GetService("Players").LocalPlayer.Character:MoveTo(workspace.Tycoon.Tycoons[game:GetService("Players").LocalPlayer.leaderstats.Team.Value].Essentials.Spawn.Position)
 end
     end
 )
-Tab27:Button(
-    "酒店基地",
-    function()
+Tab:Button("酒店基地",function()
 local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 local location = CFrame.new(2853, 48, -1282)
 local Humanoid = game.Players.LocalPlayer.Character.Humanoid
@@ -129,37 +111,27 @@ wait(0.2)
 pl.CFrame = location
     end
 )
-Tab:Button(
-    "传送旗帜",
-    function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(73.22032928466797, 47.9999885559082, 191.06993103027344)
+Tab:Button( "传送旗帜",function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(73.22032928466797, 47.9999885559082, 191.06993103027344)
     end
 )
 
-Tab:Button(
-    "传送油桶",
-    function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.748652458190918, 48.662540435791016, 700.2245483398438)
+Tab:Button("传送油桶", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.748652458190918, 48.662540435791016, 700.2245483398438)
     end
 )
 
-Tab:Button(
-    "传送油桶",
-    function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(76.48243713378906, 105.25657653808594, -2062.3896484375)
+Tab:Button("传送油桶",function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(76.48243713378906, 105.25657653808594, -2062.3896484375)
     end
 )
 
-Tab:Button(
-    "传送油桶",
-    function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.840208053588867, 49.34040069580078, -416.9921569824219)
+Tab:Button( "传送油桶",function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.840208053588867, 49.34040069580078, -416.9921569824219)
     end
 )
 
-Tab:Button(
-    "传送油桶",
-    function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.48390197753906, 105.25657653808594, 3434.9033203125)
+Tab:Button("传送油桶",function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.48390197753906, 105.25657653808594, 3434.9033203125)
     end
 )
