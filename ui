@@ -207,6 +207,91 @@ about:Button("恐怖奶奶1",function()
 loadstring(game:HttpGet("https://pastefy.app/o688Jvmn/raw"))()
 end)
 
+local UITab11 = win:Tab("『怪兽宇宙』",'16060333448')
+
+local about = UITab11:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️,true)
+
+about:Button("怪兽宇宙1",function()
+     loadstring(game:HttpGet("https://pastefy.app/oRWEIEcJ/raw"))()
+end)
+
+local UITab12 = win:Tab("『旗帜战争』",'16060333448')
+
+local about = UITab12:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("旗帜战争1",function()
+      loadstring(game:HttpGet("https://pastefy.app/otEg6PJV/raw"))()
+end)
+
+about:Button("旗帜战争2",function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Flag%20Wars.txt'))()
+end)
+
+local UITab13 = win:Tab("『奎尔湖』",'16060333448')
+
+local about = UITab13:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("奎尔湖1",function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/Master.lua'))()
+end)
+
+about:Toggle("无敌模式","", false, function(Value)
+        game.ReplicatedStorage.DamageHumanoid:FireServer(-2e9)
+    end)
+    
+    about:Button("无限金钱", function()
+    local money = {
+       [1] = -9999,
+       [2] = "Buy"
+    }
+    
+    game:GetService("ReplicatedStorage").Pay:FireServer(unpack(money))
+    end)
+    
+    about:Button("无限金币", function()
+    local gold = {
+       [1] = game:GetService("Players").LocalPlayer.GoldCoins,
+       [2] = 99999
+    }
+    
+    game:GetService("ReplicatedStorage").ChangeValue:FireServer(unpack(gold))
+    end)
+    
+    about:Button("给所有物品", function()
+    game.ReplicatedStorage.GiveTool:FireServer("SeaScooter")
+    game.ReplicatedStorage.GiveTool:FireServer("Lantern")
+    game.ReplicatedStorage.GiveTool:FireServer("Compass")
+    game.ReplicatedStorage.GiveTool:FireServer("ItemFinder")
+    game.ReplicatedStorage.GiveTool:FireServer("Aquabreather")
+    end)
+    
+    about:Button("红色套装", function()
+          game.ReplicatedStorage.ChangeOutfits:FireServer("FireSuit")
+    end)
+    
+    about:Button("黄色套装", function()
+          game.ReplicatedStorage.ChangeOutfits:FireServer("HazmatSuit")
+    end)
+    
+    about:Button("海盗套装", function()
+          game.ReplicatedStorage.ChangeOutfits:FireServer("PirateCostume")
+    end)
+    
+    about:Button("动力套装", function()
+          game.ReplicatedStorage.ChangeOutfits:FireServer("SuperScuba")
+    end)
+    
+local UITab14 = win:Tab("我的餐厅",'16060333448')
+
+local about = UITab14:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("我的餐厅1",function()
+      loadstring(game:HttpGet("https://pastefy.app/5R1Ch6kk/raw"))()
+end)
+
+local UITab15 = win:Tab("我的餐厅大亨2",'16060333448')
+
+local about = UITab15:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
 
 
