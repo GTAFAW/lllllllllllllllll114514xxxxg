@@ -20,7 +20,7 @@ elseif a=="xiaoming03"then
 _G.whitelisted=true
 elseif a=="bajidashe"then 
 _G.whitelisted=true
-elseif a=="ZXCZXC15892276801"then 
+elseif a=="zxczxc15892276801"then 
 _G.whitelisted=true
 elseif a=="Dan_Zai114514"then 
 _G.whitelisted=true
