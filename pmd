@@ -32,7 +32,7 @@ elseif a=="qwqcnm3"then
 _G.whitelisted=true
 elseif a=="zzzzzzzkysgw"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="examplekey123$"then 
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
