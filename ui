@@ -175,6 +175,14 @@ about:Button("鲨口求生刷船",function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/ghostapustaja/legionhub/main/sharkbite2'),true))()
 end)
 
+local UITab7 = win:Tab("『射击光束模拟器』",'16060333448')
+
+local about = UITab7:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("射击光束模拟器1",function()
+      loadstring(game:HttpGet("https://pastefy.app/51yMuaCc/raw"))()
+end)
+
 
 
 
