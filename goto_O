@@ -267,16 +267,33 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name ="光影菜单",
+    Name ="光影菜单  小go推荐",
     Callback = function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Shader-RTX-New-12425"))()
     end
 })
-
+Tab:AddButton({
+    Name ="国外高质量光影菜单  ",
+    Callback = function()
+      loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+    end
+})
+Tab:AddButton({
+    Name ="RTX 高仿",
+    Callback = function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
+    end
+})
+Tab:AddButton({
+    Name ="光影v2",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+    end
+})
 Tab:AddButton({
     Name ="光影v4",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
+    loadstring(game:HttpGet('https://pastebin.com/raw/gUceVJig'))()
     end
 })
 Tab:AddButton({
