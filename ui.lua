@@ -992,7 +992,7 @@ function Library:notification(options)
 	})
 
 	local exit = noti:object("ImageButton", {
-		Image = "http://www.roblox.com/asset/?id=18942249554",
+		Image = "http://www.roblox.com/asset/?id=8497487650",
 		AnchorPoint = Vector2.new(1, 0),
 		ImageColor3 = Color3.fromRGB(255, 255, 255),
 		Position = UDim2.new(1, -3,0, 3),
