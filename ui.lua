@@ -658,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "大家好我是小go脚本作者  脚本永久免费 切勿被圈 小go在这里诅咒那些贩卖的狗 不得好死",
+		Text = "大家好我是小go 脚本永久免费 切勿被圈 小go祝福玩家:永远不会禁止 小go在这里诅咒那些贩卖的狗 不得好死 🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -828,7 +828,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(24, 24),
 		Position = UDim2.new(1, -10, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
-		Image = "http://www.roblox.com/asset/?id=8559790237"
+		Image = "http://www.roblox.com/asset/?id=18942249554"
 	}):tooltip("settings")
 
 	local creditsTabIcon = profile:object("ImageButton", {
@@ -914,14 +914,14 @@ function Library:create(options)
 	local creditsTab = Library.tab(mt, {
 		Name = "名片",
 		Internal = creditsTabIcon,
-		Icon = "http://www.roblox.com/asset/?id=8577523456"
+		Icon = "http://www.roblox.com/asset/?id=16060333448"
 	})
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
 	creditsTab:credit{Name = "小go超强汉化", Description = "这是脚本ui 国外的大牛", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
 	creditsTab:credit{Name = "🕊️🕊️🕊️🕊️", Description = "UI开发人员", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-	creditsTab:credit{Name = "储存库", Description = "UI 所有储蓄储存 小go把这个ui放在这了，随时拿走", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
+	creditsTab:credit{Name = "储存库", Description = "UI 所有储蓄储存 小go把这个ui放在这了，随时拿走 小go不提供汉化", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
 
 	return mt
 end
