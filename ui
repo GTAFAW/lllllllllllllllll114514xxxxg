@@ -74,9 +74,38 @@ about:Button("Auto  parry  v2.55",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
 end)
 
-local UITab3 = win:Tab("『木筏大亨2』",'16060333448')
+local UITab3 = win:Tab("『伐木大亨2』",'16060333448')
 
 local about = UITab3:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
+
+local Section = Tab:AddSection({	Name = "传送地点"}) 
+
+about:Button({"火木",function()  
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1615.8934326171875, 622.9998779296875, 1086.1234130859375)             
+  end                                   
+})                                                                              
+about:Button({ "画室",function()                
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5241.55810546875, -166.00003051757812, 709.5656127929688)               
+   end                                   
+})                                                              
+
+about:Button ({"幻影木",function()   
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-56.28166198730469, -213.13137817382812, -1357.8018798828125)       
+   end                                 
+})                                                                
+about:Button({"木材反斗城",function()           
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(252.31906127929688, 2.9999992847442627, 56.9854850769043)         
+   end                                 
+})                                                                             
+about:Button({"冰木",function()             
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1522.8817138671875, 412.3657531738281, 3277.71826171875)             
+  end                                  
+})                                                               
+about:Button({ "椰子木",function()             
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2615.709228515625, -5.899986743927002, -21.30138397216797)              
+end                         
+})                                             
+
 about:Button("汉化版",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/LuaWare.lua", true))()
 end)
