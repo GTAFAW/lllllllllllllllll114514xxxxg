@@ -68,9 +68,6 @@ credits:Button(
          loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
     end
 )
-credits:Button(
-        "杀戮光环",
-        function()
 
 local creds = window:Tab("索尔的RNG", "16060333448")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
