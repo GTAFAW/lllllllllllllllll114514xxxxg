@@ -22,9 +22,9 @@ elseif a=="bajidashe"then
 _G.whitelisted=true
 elseif a=="ZXCZXC15892276801"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="Dan_Zai114514"then 
 _G.whitelisted=true
-elseif a==""then
+elseif a=="nise66669"then
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
