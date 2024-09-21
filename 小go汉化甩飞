@@ -1,5 +1,5 @@
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "小go甩飞"; Text ="欢迎使用小go甩飞"; Duration = 4; })
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "小go甩飞"; Text ="原作者: topit 汉化者: 小go"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "小go甩飞🕊️🕊️"; Text ="欢迎使用小go甩飞🕊️"; Duration = 4; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "小go甩飞🕊️🕊️"; Text ="原作者: topit 汉化者: 小go🕊️"; Duration = 4; })
 
 local PlayerService = game:GetService("Players")--:GetPlayers()
 local TweenService = game:GetService("TweenService")
@@ -218,7 +218,7 @@ TitleText.Parent = TitleBar
 TitleText.AnchorPoint = Vector2.new(0, 0)
 TitleText.Position = UDim2.new(0, 100, 0, 25)
 TitleText.Font = font
-TitleText.Text = "小go甩飞"..version
+TitleText.Text = "小go甩飞🕊️"..version
 TitleText.TextColor3 = SelectedTheme[8]
 TitleText.TextSize = 28
 TitleText.ZIndex = 300
@@ -250,7 +250,7 @@ CreditText.Name = "Credit Text"
 CreditText.Parent = Menu
 CreditText.Position = UDim2.new(0, 20, 0, 300)
 CreditText.Font = font
-CreditText.Text = "原作者: topit 汉化者: 小go"
+CreditText.Text = "原作者: topit 汉化者: 小go🕊️"
 CreditText.TextColor3 = SelectedTheme[7]
 CreditText.TextSize = 20
 CreditText.TextXAlignment = Enum.TextXAlignment.Left
@@ -327,7 +327,7 @@ Respawn.TextColor3 = SelectedTheme[7]
 Respawn.Position = UDim2.new((AxisPositionX[1]), 0, 0, (AxisPositionY[3]))
 Respawn.Size = UDim2.new(0, 100, 0, 25)
 Respawn.Font = Enum.Font.FredokaOne
-Respawn.Text = "汉化者: 小皮"
+Respawn.Text = "汉化者:小go🕊️"
 Respawn.TextScaled = true
 Respawn.ZIndex = 300
 
@@ -339,7 +339,7 @@ NoVertGain.TextColor3 = SelectedTheme[7]
 NoVertGain.Position = UDim2.new((AxisPositionX[2]), 0, 0, (AxisPositionY[2]))
 NoVertGain.Size = UDim2.new(0, 100, 0, 25)
 NoVertGain.Font = Enum.Font.FredokaOne
-NoVertGain.Text = "稳定推荐开启"
+NoVertGain.Text = "稳定推荐开启（必开）"
 NoVertGain.TextScaled = true
 NoVertGain.ZIndex = 300
 
