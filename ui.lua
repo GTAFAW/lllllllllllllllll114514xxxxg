@@ -658,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "大家好我是小go 脚本永久免费 切勿被圈 小go祝福玩家:永远不会禁止 小go在这里诅咒那些贩卖的狗 不得好死 🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",
+		Text = "大家好我是小go 脚本永久免费 切勿被圈 小go祝福玩家:永远不会禁止 小go在这里诅咒那些贩卖的狗 不得好死 🕊️🕊️,
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -828,7 +828,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(24, 24),
 		Position = UDim2.new(1, -10, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
-		Image = "http://www.roblox.com/asset/?id=18942249554"
+		Image = "http://www.roblox.com/asset/?id=8577523456"
 	}):tooltip("settings")
 
 	local creditsTabIcon = profile:object("ImageButton", {
@@ -992,7 +992,7 @@ function Library:notification(options)
 	})
 
 	local exit = noti:object("ImageButton", {
-		Image = "http://www.roblox.com/asset/?id=8497487650",
+		Image = "http://www.roblox.com/asset/?id=18942249554",
 		AnchorPoint = Vector2.new(1, 0),
 		ImageColor3 = Color3.fromRGB(255, 255, 255),
 		Position = UDim2.new(1, -3,0, 3),
