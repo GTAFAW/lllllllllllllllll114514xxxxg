@@ -207,13 +207,6 @@ about:Button("恐怖奶奶1",function()
 loadstring(game:HttpGet("https://pastefy.app/o688Jvmn/raw"))()
 end)
 
-local UITab11 = win:Tab("『怪兽宇宙』",'16060333448')
-
-local about = UITab11:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️,true)
-
-about:Button("怪兽宇宙1",function()
-     loadstring(game:HttpGet("https://pastefy.app/oRWEIEcJ/raw"))()
-end)
 
 
 
