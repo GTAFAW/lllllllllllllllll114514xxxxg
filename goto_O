@@ -586,9 +586,9 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name ="宙斯汉化自瞄",
+    Name ="小go宙斯二年改汉化自瞄",
     Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/sgbs/main/%E4%B8%81%E4%B8%81%20%E6%B1%89%E5%8C%96%E8%87%AA%E7%9E%84.txt"))()
+      loadstring(game:HttpGet("https://pastebin.com/raw/0K2bLjJ5"))()
     end
 })
 Tab:AddButton({
