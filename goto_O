@@ -1782,6 +1782,7 @@ Tab:AddButton(
 )
 local Section = Tab:AddSection({
 	Name = "位置传送"
+})
 Tab:AddButton({
 	Name = "传送到出生点",
 	Callback = function()
