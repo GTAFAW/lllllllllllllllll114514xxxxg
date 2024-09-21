@@ -215,37 +215,10 @@ about:Button("怪兽宇宙1",function()
      loadstring(game:HttpGet("https://pastefy.app/oRWEIEcJ/raw"))()
 end)
 
-local UITab12 = win:Tab("『旗帜战争』",'16060333448')
 
-local about = UITab12:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
-about:Button("旗帜战争1",function()
-      loadstring(game:HttpGet("https://pastefy.app/otEg6PJV/raw"))()
-end)
 
-about:Button("旗帜战争2",function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Flag%20Wars.txt'))()
-end)
 
-local UITab13 = win:Tab("『举重模拟器』",'16060333448')
-
-local about = UITab13:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
-
-about:Button("举重模拟器1",function()
-    loadstring(game:HttpGet("https://pastefy.app/KSriAk53/raw"))()
-end)
-    
-local UITab14 = win:Tab("我的餐厅",'16060333448')
-
-local about = UITab14:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
-
-about:Button("我的餐厅1",function()
-      loadstring(game:HttpGet("https://pastefy.app/5R1Ch6kk/raw"))()
-end)
-
-local UITab15 = win:Tab("我的餐厅大亨2",'16060333448')
-
-local about = UITab15:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
 
 
