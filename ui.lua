@@ -118,7 +118,7 @@ end
 function Library:change_theme(toTheme)
 	Library.CurrentTheme = toTheme
 	local c = self:lighten(toTheme.Tertiary, 20)
-	Library.DisplayName.Text = "欢迎, <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>"
+	Library.DisplayName.Text = "小go欢迎, <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>"
 	for color, objects in next, Library.ThemeObjects do
 		local themeColor = Library.CurrentTheme[color]
 		for _, obj in next, objects do
@@ -567,7 +567,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(14, 14),
 		Position = UDim2.new(1, -11, 0, 11),
 		Theme = {ImageColor3 = "StrongText"},
-		Image = "http://www.roblox.com/asset/?id=8497487650",
+		Image = "http://www.roblox.com/asset/?id=18942249554",
 		AnchorPoint = Vector2.new(1)
 	})
 
@@ -658,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "小go ui 我也是不得已为之 有的注入打不开 所以我就加了个这种 ui",
+		Text = "大家好我是小go脚本作者  脚本永久免费 切勿被圈 小go在这里诅咒那些贩卖的狗 不得好死",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -919,9 +919,9 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "小go超强汉化", Description = "这是脚本ui人员国外的大牛", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
+	creditsTab:credit{Name = "小go超强汉化", Description = "这是脚本ui 国外的大牛", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
 	creditsTab:credit{Name = "🕊️🕊️🕊️🕊️", Description = "UI开发人员", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-	creditsTab:credit{Name = "储存库", Description = "UI 所有储蓄储存", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
+	creditsTab:credit{Name = "储存库", Description = "UI 所有储蓄储存 小go把这个ui放在这了，随时拿走", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
 
 	return mt
 end
