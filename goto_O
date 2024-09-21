@@ -1236,7 +1236,7 @@ end
 
 local Tab = Window:MakeTab({
     Name = "监狱人生",
-    Icon = "rbxassetid://1000140976",
+    Icon = "rbxassetid://18942249554",
     PremiumOnly = false
 })
 
@@ -1447,7 +1447,7 @@ Tab:AddButton({
 })
 local Tab = Window:MakeTab({
     Name = "极速传奇⛷",
-    Icon = "rbxassetid://1000140976",
+    Icon = "rbxassetid://18942670945",
     PremiumOnly = false
 })
 
