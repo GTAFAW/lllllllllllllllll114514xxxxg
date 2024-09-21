@@ -39,7 +39,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 
-local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/hun/main/jmlibrary1.lua"))();        
+local ui = loadstring(game:HttpGet("https://github.com/GTAFAW/goto/blob/main/%E4%BA%8C%E6%94%B9%E7%A6%81%E6%BC%ABui"))();        
 local win = ui:new("goto游戏中心v1")
 --
 local UITab1 = win:Tab("『信息』",'6035145364')
