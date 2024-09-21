@@ -183,7 +183,29 @@ about:Button("射击光束模拟器1",function()
       loadstring(game:HttpGet("https://pastefy.app/51yMuaCc/raw"))()
 end)
 
+local UITab8 = win:Tab("『极速奔驰』",'16060333448')
 
+local about = UITab8:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("极速奔驰1",function()
+    loadstring(game:HttpGet("https://pastefy.app/Y7607jwb/raw"))()
+end)
+
+local UITab9 = win:Tab("『奶酪逃亡』",'16060333448')
+
+local about = UITab9:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("奶酪逃亡1",function()
+      loadstring(game:HttpGet("https://pastefy.app/IIpzN8f5/raw"))()
+end)
+
+local UITab10 = win:Tab("『恐怖奶奶』",'16060333448')
+
+local about = UITab10 :section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("恐怖奶奶1",function()
+loadstring(game:HttpGet("https://pastefy.app/o688Jvmn/raw"))()
+end)
 
 
 
