@@ -468,6 +468,17 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E5%B0%8Fgo%E6%B1%89%E5%8C%96%E7%94%A9%E9%A3%9E"))()
 end
 })
+Tab:AddButton({
+
+	Name = "鼠标（手机非常不建议用）",
+
+	Callback = function()
+
+loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
+
+	end
+
+})
 local Tab = Window:MakeTab({
     Name = "玩家",
     Icon = "rbxassetid://1000140976",
