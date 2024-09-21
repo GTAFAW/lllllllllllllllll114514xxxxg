@@ -295,8 +295,8 @@ local function WVKVQ_fake_script() -- SwitchBackground.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		local data = {
  
-			Title = "Access Granted.";
-			Text = "Thank you for Executing Flaze11 Free Gamepass GUI!'.";
+			Title = "小go已帮你获取通行证🕊";
+			Text = "小go并没有测试!是否已获得游戏通行证";
 			Duration = 5;
  
  
