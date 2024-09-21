@@ -658,7 +658,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "大家好我是小go 脚本永久免费 切勿被圈 小go祝福玩家:永远不会禁止 小go在这里诅咒那些贩卖的狗 不得好死 🕊️🕊️,
+		Text = "大家好我是小go 脚本永久免费 切勿被圈 小go祝福玩家 永远不会禁止 小go在这里诅咒那些贩卖的狗 不得好死 🕊️🕊️",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -777,7 +777,7 @@ function Library:create(options)
 
 		local displayName = profile:object("TextLabel", {
 			RichText = true,
-			Text = "欢迎, <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>",
+			Text = "小go欢迎, <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" .. LocalPlayer.DisplayName .. "</b> </font>",
 			TextScaled = true,
 			Position = UDim2.new(0, 105,0, 10),
 			Theme = {TextColor3 = {"Tertiary", 10}},
@@ -828,7 +828,7 @@ function Library:create(options)
 		Size = UDim2.fromOffset(24, 24),
 		Position = UDim2.new(1, -10, 1, -10),
 		AnchorPoint = Vector2.new(1, 1),
-		Image = "http://www.roblox.com/asset/?id=8577523456"
+		Image = "http://www.roblox.com/asset/?id=8559790237"
 	}):tooltip("settings")
 
 	local creditsTabIcon = profile:object("ImageButton", {
@@ -912,7 +912,7 @@ function Library:create(options)
 	}
 
 	local creditsTab = Library.tab(mt, {
-		Name = "名片",
+		Name = "Credits",
 		Internal = creditsTabIcon,
 		Icon = "http://www.roblox.com/asset/?id=16060333448"
 	})
@@ -921,7 +921,7 @@ function Library:create(options)
 
 	creditsTab:credit{Name = "小go超强汉化", Description = "这是脚本ui 国外的大牛", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
 	creditsTab:credit{Name = "🕊️🕊️🕊️🕊️", Description = "UI开发人员", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
-	creditsTab:credit{Name = "储存库", Description = "UI 所有储蓄储存 小go把这个ui放在这了，随时拿走 小go不提供汉化", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
+	creditsTab:credit{Name = "储存库", Description = "UI 所有储蓄储存小go把这个ui放在这了随时拿走小go不提供汉化", Github="https://github.com/deeeity/mercury-lib/blob/master/src.lua"}
 
 	return mt
 end
@@ -2060,8 +2060,8 @@ function Library:color_picker(options)
 					end
 
 					local hueBar = cpHolder:object("TextButton", {
-                        BackgroundColor3 = Color3.new(255, 255, 255),
-						BorderSizePixel = 0,
+						BackgroundColor3 = Color3.new(255, 255, 255),
+								BorderSizePixel = 0,
 						Text = "",
 						Size = UDim2.new(0, 5, 1, 0),
 						ZIndex = 12,
@@ -2979,7 +2979,7 @@ function Library:_theme_selector()
 			}):round(100)
 
 			local colorTertiary = colorSecondary:object("Frame", {
-						Size = UDim2.new(1, -40, 0, 9),
+				Size = UDim2.new(1, -40, 0, 9),
 				BackgroundColor3 = themeColors.WeakText
 			}):round(100)
 
@@ -3560,4 +3560,15 @@ return setmetatable(Library, {
 	__index = function(_, i)
 		return rawget(Library, i:lower())
 	end
-})		
+})
+
+
+
+
+
+
+
+
+
+
+
