@@ -1448,7 +1448,7 @@ jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑�
 	end
 })
 local Section = Tab:AddSection({
-	Name = "自动功能/位置传送"
+	Name = "小go内置"
 })
 autoswing = false
 function swinging()
@@ -1780,6 +1780,8 @@ Tab:AddButton(
         end
     }
 )
+local Section = Tab:AddSection({
+	Name = "位置传送"
 Tab:AddButton({
 	Name = "传送到出生点",
 	Callback = function()
