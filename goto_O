@@ -318,7 +318,15 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddTextbox({
-	Name = "血量",
+	Name = "视角",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(V)
+		  game.Workspace.CurrentCamera.FieldOfView = v
+	end
+})
+Tab:AddTextbox({
+	Name = "血量 可能是假血",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
