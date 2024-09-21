@@ -462,6 +462,33 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/tLf6YKkD"))()
 end
 })
+Tab:AddButton({
+    Name ="字符",
+    Callback = function()
+     repeat
+            chlplr.Health = 0
+            task.wait()
+        until chlplr.Health ~= 0
+    end
+})
+Tab:AddButton({
+    Name ="重置字符",
+    Callback = function()
+        loadstring(
+            game:HttpGetAsync("https://raw.githubusercontent.com/AnAvaragelilmemer/scripts/main/refresh%20character")
+        )()
+    end
+})
+Tab:AddButton({
+    Name ="重新加入Rejoin",
+    Callback = function()
+      game:GetService("TeleportService"):TeleportToPlaceInstance(
+            game.PlaceId,
+            game.JobId,
+            game:GetService("Players").LocalPlayer
+        )
+    end
+})
 
 local Tab = Window:MakeTab({
     Name = "玩家",
