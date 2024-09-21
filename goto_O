@@ -462,25 +462,15 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/tLf6YKkD"))()
 end
 })
-Tab:AddButton({
-    Name ="字符",
-    Callback = function()
-     repeat
-            chlplr.Health = 0
-            task.wait()
-        until chlplr.Health ~= 0
-    end
+
+local Tab = Window:MakeTab({
+    Name = "玩家",
+    Icon = "rbxassetid://1000140976",
+    PremiumOnly = false
 })
+
 Tab:AddButton({
-    Name ="重置字符",
-    Callback = function()
-        loadstring(
-            game:HttpGetAsync("https://raw.githubusercontent.com/AnAvaragelilmemer/scripts/main/refresh%20character")
-        )()
-    end
-})
-Tab:AddButton({
-    Name ="重新加入Rejoin",
+    Name ="重新加入游戏",
     Callback = function()
       game:GetService("TeleportService"):TeleportToPlaceInstance(
             game.PlaceId,
@@ -489,13 +479,24 @@ Tab:AddButton({
         )
     end
 })
-
-local Tab = Window:MakeTab({
-    Name = "玩家",
-    Icon = "rbxassetid://1000140976",
-    PremiumOnly = false
+Tab:AddButton({
+    Name ="保存游戏",
+    Callback = function()
+    saveinstance()
+    end
 })
-
+Tab:AddButton({
+    Name ="离开游戏",
+    Callback = function()
+      game:Shutdown()
+    end
+})
+Tab:AddButton({
+    Name ="最高帧率",
+    Callback = function()
+         setfpscap(999)
+    end
+})
 Tab:AddTextbox({
 	Name = "视角  目前有 Bug",
 	Default = "",
