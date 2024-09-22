@@ -56,7 +56,7 @@ elseif a=="sshjsjhe"then
 _G.whitelisted=true
 elseif a=="458C63cBLuX"then
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="CN_jh7"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
