@@ -258,9 +258,9 @@ local UITab15 = win:Tab("『我的餐厅大亨2』",'16060333448')
 
 local about = UITab15:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
     
-local UITab13 = win:Tab("『奎尔湖』",'16060333448')
+local UITab16 = win:Tab("『奎尔湖』",'16060333448')
 
-local about = UITab13:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+local about = UITab16:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
 about:Button("奎尔湖1",function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/Master.lua'))()
@@ -311,6 +311,17 @@ about:Toggle("无敌模式","", false, function(Value)
     about:Button("动力套装", function()
           game.ReplicatedStorage.ChangeOutfits:FireServer("SuperScuba")
     end)
+
+local UITab16 = win:Tab("『造船寻宝』",'16060333448')
+
+local about = UITab16:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("复制别人的船",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
+  	end)
+about:Butt"(自动刷金条", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan1"))()
+  	end)
 
 
 
