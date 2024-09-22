@@ -40,7 +40,7 @@ elseif a=="qwertyuiop632522"then
 _G.whitelisted=true
 elseif a=="1q2wertasdfzxcv"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="fgsaqwtuiojvx"then 
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
