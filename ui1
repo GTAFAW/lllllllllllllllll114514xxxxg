@@ -12,7 +12,7 @@
             game:GetService("CoreGui")["frosty"]:Destroy()
         end
     )
-    local creds = window:Tab("火箭发射模拟器", "11403719739")
+    local creds = window:Tab("火箭发射模拟器", "4483345875")
     local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
     credits:Button(
         "小go制作",
