@@ -312,15 +312,18 @@ about:Toggle("无敌模式","", false, function(Value)
           game.ReplicatedStorage.ChangeOutfits:FireServer("SuperScuba")
     end)
 
-local UITab17 = win:Tab("『造船寻宝』",'16060333448')
+local UITab18 = win:Tab("『法宝模拟器』",'16060333448')
 
-local about = UITab17:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+local about = UITab18:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
-about:Button("复制别人的船",function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
-  	end)
-about:Button"(自动刷金条", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan1"))()
+about:Button( "法宝模拟器1",function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/zhanghuihuihuil/Script/main/%E6%B3%95%E5%AE%9D%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%B1%89%E5%8C%96'))()
+	end)
+about:Button("法宝模拟器2",function()
+	loadstring(game:HttpGet("https://pastefy.app/9bGpv4H3/raw"))()
+	end)
+about:Button("法宝自动刷（任何地方）",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/fabao"))()
   	end)
 
 
