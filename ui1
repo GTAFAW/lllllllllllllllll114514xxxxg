@@ -91,19 +91,3 @@ credits:Button(
   	end
 )
 
-local creds = window:Tab("造船寻宝", "16060333448")
-local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
-
-credits:Button(
-       "复制别人的船",
-        function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuild.txt"))()
-  	end
-)
-credits:Button
-       "自动刷金条", 
-        function()
-	    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/zaochuan1"))()
-  	end
-)
-    
