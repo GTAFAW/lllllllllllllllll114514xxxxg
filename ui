@@ -254,14 +254,20 @@ about:Button("我的餐厅1",function()
       loadstring(game:HttpGet("https://pastefy.app/5R1Ch6kk/raw"))()
 end)
 
-local UITab15 = win:Tab("『我的餐厅大亨2』",'16060333448')
+local UITab15 = win:Tab("『餐厅大亨2』",'16060333448')
 
 local about = UITab15:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
 about:Button("zeld  Hub",function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/iz037/Zeld-Hub/main/Script/Restaurant%20Tycoon%202.lua"))()
 end)
-    
+about:Button("Eclipse Hub",function()
+     getgenv().mainKey = "nil"
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))()
+
 local UITab16 = win:Tab("『奎尔湖』",'16060333448')
 
 local about = UITab16:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
