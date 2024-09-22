@@ -90,6 +90,7 @@ credits:Button(
          loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/upd/main/rng"))()
   	end
 )
+
 local creds = window:Tab("造船寻宝", "16060333448")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
