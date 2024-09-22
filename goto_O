@@ -2037,6 +2037,12 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 Tab:AddButton({
+    Name ="皮",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/Pi-script-Hebeitangxian.lua"))()
+    end
+})
+Tab:AddButton({
     Name ="卡车刷钱",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/ok/T%20ang%20County"))()
