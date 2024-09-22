@@ -50,7 +50,7 @@ elseif a=="Awabrrrrr"then
 _G.whitelisted=true
 elseif a=="barris997"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="458C63cBLuX"then 
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
