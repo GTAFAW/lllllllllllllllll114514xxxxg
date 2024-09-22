@@ -76,7 +76,7 @@ elseif a=="zhhvw6"then
 _G.whitelisted=true
 elseif a=="mynameishakekj"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="BaoZi_icu6"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
