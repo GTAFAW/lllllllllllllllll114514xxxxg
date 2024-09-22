@@ -70,7 +70,7 @@ elseif a=="gahuotu"then
 _G.whitelisted=true
 elseif a=="zxczxc1581"then
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="1145454545fg"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
