@@ -80,7 +80,7 @@ elseif a=="BaoZi_icu6"then
 _G.whitelisted=true
 elseif a=="GF10083"then 
 _G.whitelisted=true
-elseif a==""then
+elseif a=="qwq147147147"then
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
