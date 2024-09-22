@@ -115,33 +115,5 @@ local Section = Tab:AddSection({
 local Section = Tab:AddSection({
 	Name = "💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗"
 })
-OrionLib:MakeNotification({
-	Name = "稀🍚你 ",
-	Content = "持续更新",
-	Image = "rbxassetid://17360377302",
-	Time = 2
-})
 
-local Tab = Window:MakeTab({
-    Name = "如果fl不能用，可以启用这里",
-    Icon = "rbxassetid://1000140976",
-    PremiumOnly = false
-})
-Tab:AddButton({
-    Name ="阿尔宙斯",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
-    end
-})
-Tab:AddButton({
-    Name ="管理员注入 暂时无法使用，可能会被踢出去",
-    Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
-    end
-})
-Tab:AddButton({
-	Name = "管理员权限 可获得游戏内的通行证",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E5%B0%8Fgo%E6%B1%89%E5%8C%96%E7%AE%A1%E7%90%86%E5%91%98"))()
-end
-})
+
