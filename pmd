@@ -60,7 +60,7 @@ elseif a=="CN_jh7"then
 _G.whitelisted=true
 elseif a=="gahuotu"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="hdhdvdhd098"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
