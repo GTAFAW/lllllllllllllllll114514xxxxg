@@ -36,7 +36,7 @@ elseif a=="habzbazb12"then
 _G.whitelisted=true
 elseif a=="fenyun_mad"then
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="qwertyuiop632522"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
