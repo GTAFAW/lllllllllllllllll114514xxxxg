@@ -1926,6 +1926,14 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "小go内置"
 })
+Tab:AddTextbox({
+	Name = "腰角高  貌似无法移动",
+	Default = " ",
+	TextDisappear = false,
+	Callback = function(phh)
+		game.Players.LocalPlayer.Character.Humanoid.HipHeight = phh
+	end	  
+})
 
 Tab:AddButton({
 	Name = "开启卡宠",
@@ -2168,6 +2176,184 @@ Tab:AddToggle({
         end
 	end    
 })
+local MainCrystalsSection = Tab:AddSection({
+	Name = "城市抽奖区"
+})
+
+Tab:AddToggle({
+	Name = "红色水晶",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Red Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "紫色水晶",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Purple Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "黄色晶体",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Yellow Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "闪电水晶",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Lightning Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "雪晶",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Snow Crystal") 
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "地狱水晶",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Inferno Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "欧米伽晶体",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Electro Legends Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+
+local SpaceCrystalsSection = Tab:AddSection({
+	Name = "太空抽奖"
+})
+
+Tab:AddToggle({
+	Name = "太空晶体",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Space Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "异形晶体",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Alien Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+local DesertCrystalsSection = Tab:AddSection({
+	Name = "沙漠抽奖区"
+})
+
+Tab:AddToggle({
+	Name = "沙漠水晶",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Desert Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
+
+
+Tab:AddToggle({
+	Name = "电子晶体",
+	Default = false,
+	Callback = function(state)
+		if state then
+           _G.loop = true
+           while _G.loop == true do wait()
+                 game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Electro Crystal")
+           end
+        else
+           _G.loop = false
+        end
+	end    
+})
 local Section = Tab:AddSection({
 	Name = "传送城市和赛道"
 })
@@ -2215,6 +2401,9 @@ Tab:AddButton({
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1013.4, 1.007, -10997))
 	end    
+})
+local Section = Tab:AddSection({
+	Name = "其他脚本"
 })
 Tab:AddButton({
     Name ="超级简洁ui",
