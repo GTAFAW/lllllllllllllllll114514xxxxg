@@ -92,7 +92,7 @@ elseif a=="yayayuo5jl"then
 _G.whitelisted=true
 elseif a=="tyrxfgfsd"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="JKruixuan"then 
 _G.whitelisted=true
 elseif a==""then
 _G.whitelisted=true
