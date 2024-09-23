@@ -41,7 +41,7 @@ Tab:Button( "木头人到达终点", function()
      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-131.06849670410156, 6.099994659423828, -628.919677734375)
   	end)
 
-Tab:Button({ "熄灯时安全位置", function()
+Tab:Button("熄灯时安全位置", function()
      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.447216033935547, -184.45005798339844, 836.5003051757812)
   	end)
 
