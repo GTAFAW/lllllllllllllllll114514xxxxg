@@ -740,6 +740,16 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/gXsy4tYU"))()
 end
 })
+Tab:AddToggle({
+
+	Name = "穿墙",
+
+	Default = AMG,
+
+	Callback = function(enabled)
+    if enabled then ENABLED = true for _, player in ipairs(Players:GetPlayers()) do onPlayerAdded(player) end Players.PlayerAdded:Connect(onPlayerAdded) Players.PlayerRemoving:Connect(onPlayerRemoving) local localPlayer = Players.LocalPlayer if localPlayer and localPlayer.Character then for _, player in ipairs(Players:GetPlayers()) do if player.Character then createNameLabel(player) end end end RunService.Heartbeat:Connect(function() if ENABLED then for _, player in ipairs(Players:GetPlayers()) do if player.Character then createNameLabel(player) end end end end) else ENABLED = false for _, player in ipairs(Players:GetPlayers()) do onPlayerRemoving(player) end RunService:UnbindFromRenderStep("move") end
+   end
+})
 Tab:AddButton({
 	Name = "范围",
 	Callback = function()
