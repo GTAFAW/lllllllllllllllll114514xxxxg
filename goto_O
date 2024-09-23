@@ -824,7 +824,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="goto制作小宇飞",
     Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/c2FPNuRC"))()
+loadstring(game:HttpGet("https://github.com/GTAFAW/goto/blob/main/%E5%B0%8F%E5%AE%87%E9%A3%9E"))()
     end
 })
 Tab:AddButton({
