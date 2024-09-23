@@ -486,11 +486,26 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-
+        Name = "自动互动",
+	Callback = function(state)
+        if state then
+            autoInteract = true
+            while autoInteract do
+                for _, descendant in pairs(workspace:GetDescendants()) do
+                    if descendant:IsA("ProximityPrompt") then
+                        fireproximityprompt(descendant)
+                    end
+                end
+                task.wait(0.25) --小go虽然你破解了我的源码,还要告诉你这是调整等待时间
+            end
+        else
+            autoInteract = false
+        end
+    end
+})
+Tab:AddButton({
 	Name = "无敌",
-
 	Callback = function()
-
 local lp = game:GetService "Players".LocalPlayer
 
 if lp.Character:FindFirstChild "Head" then
