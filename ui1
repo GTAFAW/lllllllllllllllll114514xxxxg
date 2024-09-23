@@ -6,7 +6,7 @@
     bin:Label("更新9月18日")
     
     local credits = creds:section("关闭", true)
-credits:Button("脚本框架变小一点", "", false, function(state)
+credits:Button("脚本框架变小一点 抱歉暂时无法使用", "", false, function(state)
         if state then
         game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
         else
