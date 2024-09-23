@@ -485,22 +485,6 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddButton({"自动互动", "Auto Interact", false, function(state)
-        if state then
-            autoInteract = true
-            while autoInteract do
-                for _, descendant in pairs(workspace:GetDescendants()) do
-                    if descendant:IsA("ProximityPrompt") then
-                        fireproximityprompt(descendant)
-                    end
-                end
-                task.wait(0.25) --小go虽然你破解了我的源码,还要告诉你这是调整等待时间
-            end
-        else
-            autoInteract = false
-        end
-    end
-})
 Tab:AddButton({
 	Name = "无敌",
 	Callback = function()
