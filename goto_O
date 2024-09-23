@@ -893,58 +893,6 @@ loadstring(game:HttpGet("https://github.com/DXuwu/OK/raw/main/clip"))()
 local Section = Tab:AddSection({
 	Name = "娱乐ก็ʕ•͡ᴥ•ʔ ก้也包括小go内置🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️"
 })
-Tab:AddToggle(
-    {
-        Name = "怪物提示",
-        Default = false,
-        Callback = function(x)
-    local objectName = "monster"
-local objectStatus = false
-local StarterGui = game:GetService("StarterGui")
-local notifyCount = {
-    appear = 0,
-    disappear = 0,
-    notExist = 0
-}
-local function notify(title, text, type)
-    if (type == "appear" and notifyCount.appear < 2) or
-       (type == "disappear" and notifyCount.disappear < 2) or
-       (type == "notExist" and notifyCount.notExist < 2) then
-        OrionLib:MakeNotification({
-            Name = title,
-            Content = text,
-            Time = 6
-        })
-        notifyCount[type] = notifyCount[type] + 1
-    end
-end
-local function checkObject()
-    local object = workspace:FindFirstChild(objectName)
-    if object then
-        if not objectStatus then
-            notify("小go提示", "怪物已刷新，请快躲避 ", "appear")
-            objectStatus = true
-        end
-    else
-        if objectStatus then
-            notify("小go提示", "怪物消失", "disappear")
-            objectStatus = false
-        else
-            notify("小go提示", "A60小跟班没提示，记得注意", "notExist")
-            wait(5)
-        end
-    end
-end
-local function startMonitoring()
-    while true do
-        checkObject()
-        wait(0)
-    end
-end
-spawn(startMonitoring)
-  end
-})
-
 Tab:AddButton({
   Name = "全局高亮",
   Callback = function()
