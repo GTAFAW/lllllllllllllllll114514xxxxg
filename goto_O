@@ -828,6 +828,13 @@ loadstring(game:HttpGet("https://pastebin.com/raw/c2FPNuRC"))()
     end
 })
 Tab:AddButton({
+    Name ="黑洞 0.4",
+    Callback = function()
+--blackhole script 0.4: fixed all issues
+loadstring(game:HttpGet('https://gist.githubusercontent.com/AxolotlBmgo/8888080921c2b426a32dd9ff587baff1/raw/d45e03afed3c1716f36523bbf6dd741d3d2aad00/gistfile1.txt'))()
+    end
+})
+Tab:AddButton({
     Name ="黑洞v2",
     Callback = function()
     loadstring(game:HttpGet("https://pastefy.app/t0djamGi/raw"))()
