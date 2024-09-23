@@ -485,9 +485,7 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 
-Tab:AddButton({
-        Name = "自动互动",
-	Callback = function(state)
+Tab:AddButton({"自动互动", "Auto Interact", false, function(state)
         if state then
             autoInteract = true
             while autoInteract do
