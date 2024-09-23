@@ -325,9 +325,9 @@ about:Toggle("无敌模式","", false, function(Value)
           game.ReplicatedStorage.ChangeOutfits:FireServer("SuperScuba")
     end)
 
-local UITab18 = win:Tab("『法宝模拟器』",'16060333448')
+local UITab17 = win:Tab("『法宝模拟器』",'16060333448')
 
-local about = UITab18:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+local about = UITab17:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
 about:Button( "法宝模拟器1",function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/zhanghuihuihuil/Script/main/%E6%B3%95%E5%AE%9D%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%B1%89%E5%8C%96'))()
@@ -339,9 +339,37 @@ about:Button("法宝自动刷（任何地方）",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/fabao"))()
   	end)
 
+local UITab18 = win:Tab("『地下城任务』",'16060333448')
 
+local about = UITab18:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
+about:Button("地下城任务1",function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/StepBroFurious/Script/main/FuriousFall.lua"))()
+  	end)
+about:Button("地下城任务2",function()
+     loadstring(game:HttpGet("https://gist.githubusercontent.com/hngamingroblox/659adbebad6a9b3a07527e5f7e446d66/raw"))()   
+  	end)
+local UITab19 = win:Tab("『死亡球』",'16060333448')
 
+local about = UITab19:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("死亡球1",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Ball1/main/Death"))()
+	end)
+about:Button("死亡球2",function()
+	loadstring(game:HttpGet("https://github.com/Hosvile/InfiniX/releases/latest/download/main.lua",true))()
+        end)
+
+local UITab20 = win:Tab("『骨折VI』",'16060333448')
+
+local about = UITab20:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("骨折1",function()	
+      loadstring(game:HttpGet('https://pastebin.com/raw/5rEAVmcC'))()	
+	end)
+about:Button("骨折2",function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingResources/GamingResources-Script-Hub/main/Key%20System", true))()
+    end)	
 
 
 
