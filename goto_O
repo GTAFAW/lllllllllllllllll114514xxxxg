@@ -1951,8 +1951,48 @@ jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑�
 Tab:AddButton({
 	Name = "开启卡宠",
 	Callback = function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/uR6azdQQ"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BYJUBDuz"))()
 	end
+})
+Tab:AddButton({
+	Name = "反踢出 小go推荐卡宠使用，降低被踢风险",
+	Callback = function()
+      	local vu = game:GetService("VirtualUser")
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+                    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+                    wait(1)
+                vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            end)	
+	end 
+})
+Tab:AddButton({
+	Name = "低分辨率图形",
+	Callback = function()
+      	        _G.Settings = {
+            Players = {
+                ["Ignore Me"] = true, -- Ignore your Character
+                ["Ignore Others"] = true -- Ignore other Characters
+            },
+            Meshes = {
+            Destroy = false,
+            LowDetail = true
+        },
+        Images = {
+            Invisible = true,
+            LowDetail = false,
+            Destroy = false,
+        },
+        ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+        ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+        ["No Explosions"] = true, -- Makes Explosion's invisible
+        ["No Clothes"] = true, -- Removes Clothing from the game
+        ["Low Water Graphics"] = true, -- Removes Water Quality
+        ["No Shadows"] = true, -- Remove Shadows
+        ["Low Rendering"] = true, -- Lower Rendering
+        ["Low Quality Parts"] = true -- Lower quality parts
+    }
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()	
+	end    
 })
 Tab:AddButton({
 	Name = "自动重生和自动刷等级",
@@ -1962,7 +2002,7 @@ Tab:AddButton({
 })
 
 local Section = Tab:AddSection({
-	Name = "传送岛屿"
+	Name = "传送城市和赛道"
 })
 Tab:AddButton({
 	Name = "城市",
@@ -1989,6 +2029,30 @@ Tab:AddButton({
 	Name = "传奇公路",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3594.68, 214.804, 7274.56))
+	end    
+})
+Tab:AddButton({
+	Name = "草原赛道",
+	Callback = function()
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1687.65, 1.007, -5943.91))
+	end    
+})
+Tab:AddButton({
+	Name = "沙漠赛道",
+	Callback = function()
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(58.8, 1.007, -8684.72))
+	end    
+})
+TeleportTab:AddButton({
+	Name = "岩浆赛道",
+	Callback = function()
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1013.4, 1.007, -10997))
+	end    
+})
+TeleportTab:AddButton({
+	Name = "高速公路赛道",
+	Callback = function()
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(2053.67, 71.93, 17943.08))
 	end    
 })
 
