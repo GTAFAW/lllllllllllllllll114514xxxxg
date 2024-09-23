@@ -6,6 +6,13 @@
     bin:Label("更新9月18日")
     
     local credits = creds:section("关闭", true)
+credits:Button("脚本框架变小一点", "", false, function(state)
+        if state then
+        game:GetService("CoreGui")["frosty"].Main.Style = "DropShadow"
+        else
+            game:GetService("CoreGui")["frosty"].Main.Style = "Custom"
+        end
+    end)
     credits:Button(
         "关闭脚本",
         function()
