@@ -138,9 +138,18 @@ Tab:AddButton({
     end
 })
 local Section = Tab:AddSection({ 
-       Name = "注意音乐功无法关闭"
-       Name = "杂音区"
+       Name = "小go提示:音乐功无法关闭哦  bj区域"
 })
+Tab:AddButton({
+    Name ="bj", 
+    Callback =function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://15689448519"
+    sound.Parent = game.Workspace
+    sound:Play()
+    end
+})
+
 Tab:AddButton({
     Name ="防空警报", 
     Callback =function()
