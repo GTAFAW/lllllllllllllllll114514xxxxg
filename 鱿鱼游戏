@@ -61,7 +61,7 @@ Tab:Button( "玻璃桥直接通关", function()
      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-311.7968444824219, -124.78739929199219, -381.4742736816406)
   	end)
 
-Tab:Button"(水楼梯最高层", function()
+Tab:Button("水楼梯最高层", function()
      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(102.51017761230469, -73.91390228271484, -50.787132263183594)
   	end)
 
