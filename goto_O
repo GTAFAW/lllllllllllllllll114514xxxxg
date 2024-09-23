@@ -893,7 +893,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
     Name ="骷髅钥匙我感觉应该没用",
     Callback = function()
-    local item = game:GetObjects("rbxassetid://1000140976")[1]item.Parent = game.Players.LocalPlayer.Backpack
+    local item = game:GetObjects("rbxassetid://11697889137")[1]item.Parent = game.Players.LocalPlayer.Backpack
     end
 })
 Tab:AddButton({
@@ -921,7 +921,7 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
-    Name ="臭猫😽",
+    Name ="臭猫😽  加载有点慢",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
     end
