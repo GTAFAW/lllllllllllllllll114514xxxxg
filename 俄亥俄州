@@ -1,0 +1,73 @@
+local IMAGE = "rbxassetid://16060333448"
+local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
+local Sizes = UDim2.new(0, 76, 0, 70)
+
+local KINGHUBMOBILE = Instance.new("ScreenGui")
+local _100x100 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+
+KINGHUBMOBILE.Name = "LinniScriptcharge"
+KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
+KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_100x100.Name = "100x100"
+_100x100.Parent = KINGHUBMOBILE
+_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100x100.Position = Positions
+_100x100.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = _100x100
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Size = Sizes
+ImageButton.Image = IMAGE
+ImageButton.MouseButton1Down:connect(function()
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(true, "RightControl", false, game)
+
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(false, "RightControl", false, game)
+end)
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
+local win = UILib:Window("小go俄亥俄州",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+
+local Tab = win:Tab("goto_O🕊️🕊️资源功能区")
+
+Tab:Button("瞬移", function()
+
+Tab:Button("银行", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1055.94153, 15.11950874, -344.58374)
+end)
+
+Tab:Button("珠宝店", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(719.02637, 14.2831011, -714.293091)
+end)
+Tab:Button("沙滩", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(998.4656372070312, 15, 395.9789733886719)
+end)
+Tab:Button("武器店（撬锁）", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(660.5284423828125, 6.4081127643585205, -716.489990234375)
+end)
+Tab:Button("武士刀", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(175.191, 13.937, -132.69)
+end)
+Tab:Button("射线枪", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(148.685471, -90, -529.280945)
+end)
+Tab:Button("加特林", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(364.97076416015625, 0.764974117279053, -1447.3302001953125)
+end)
+Tab:Button("锯掉", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1179.98523,40,-436.812683)
+end)
+Tab:Button("沙漠之鹰", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(363.341461, 26.0798492, -259.681396)
+end)
+Tab:Button("警察局（M4A1）", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(603.4676513671875,25.662811279296875,-922.0442504882812)
+end)
+Tab:Button("AUG", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1170.500244140625,48.37138366699219,-772.55859375)
+end)
+Tab:Button("军事基地（军甲）", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(563.4422607421875,28.502071380615234,-1472.780517578125)
+end)
