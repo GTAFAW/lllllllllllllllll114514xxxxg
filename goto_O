@@ -873,6 +873,12 @@ Tab:AddButton({
     end
 })
 Tab:AddButton({
+    Name = "小go汉化版",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/DOORS"))()
+    end
+})
+Tab:AddButton({
     Name ="嗯，本人喜欢用😘",
     Callback = function()
     loadstring(game:HttpGet('https://rawscripts.net/raw/DOORS-FFJ-Hub-11365'))()
