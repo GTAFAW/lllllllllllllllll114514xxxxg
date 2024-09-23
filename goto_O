@@ -291,7 +291,7 @@ Tab:AddButton({
         sun.Parent = light
         blur.Parent = light
 
-        -- enable or disable shit
+        enable or disable shit
 
         local config = {
             Terrain = true,
@@ -301,7 +301,7 @@ Tab:AddButton({
             BloomEffect = true
         }
 
-        -- settings {
+        settings {
 
         color.Enabled = false
         color.Contrast = 0.15
@@ -324,7 +324,7 @@ Tab:AddButton({
         blur.Enabled = false
         blur.Size = 6
 
-        -- settings }
+        settings }
 
         if config.ColorCorrection then
             color.Enabled = true
@@ -335,12 +335,12 @@ Tab:AddButton({
         end
 
         if config.Terrain then
-            -- settings {
+             settings {
             ter.WaterWaveSize = 0.1
             ter.WaterWaveSpeed = 22
             ter.WaterTransparency = 0.9
             ter.WaterReflectance = 0.05
-        -- settings }
+        settings }
         end
         if config.Lighting then
             -- settings {
@@ -353,7 +353,7 @@ Tab:AddButton({
             light.GlobalShadows = true
             light.OutdoorAmbient = Color3.fromRGB(112, 117, 128)
             light.Outlines = false
-        -- settings }
+        settings }
         end
         local a = game.Lighting
         a.Ambient = Color3.fromRGB(33, 33, 33)
@@ -739,13 +739,6 @@ Tab:AddButton({
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/gXsy4tYU"))()
 end
-})
-
-Tab:AddToggle({
-	Name = "ESP  显示名称",
-	Callback = function(enabled)
-       for _, player in ipairs(Players:GetPlayers()) do onPlayerAdded(player) end Players.PlayerAdded:Connect(onPlayerAdded) Players.PlayerRemoving:Connect(onPlayerRemoving) local localPlayer = Players.LocalPlayer if localPlayer and localPlayer.Character then for _, player in ipairs(Players:GetPlayers()) do if player.Character then createNameLabel(player) end end end RunService.Heartbeat:Connect(function() if ENABLED then for _, player in ipairs(Players:GetPlayers()) do if player.Character then createNameLabel(player) end end end end) else ENABLED = false for _, player in ipairs(Players:GetPlayers()) do onPlayerRemoving(player) end RunService:UnbindFromRenderStep("move") end
-   end
 })
 Tab:AddButton({
 	Name = "范围",
