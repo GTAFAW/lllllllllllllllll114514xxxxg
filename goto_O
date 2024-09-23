@@ -1964,28 +1964,28 @@ Tab:AddButton({
 local Section = Tab:AddSection({
 	Name = "传送岛屿"
 })
-TeleportTab:AddButton({
+Tab:AddButton({
 	Name = "城市",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-559.2, -7.45058e-08, 417.4))
 	end    
 })
 
-TeleportTab:AddButton({
+Tab:AddButton({
 	Name = "雪城",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-858.358, 0.5, 2170.35))
 	end    
 })
 
-TeleportTab:AddButton({
+Tab:AddButton({
 	Name = "岩浆城",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1707.25, 0.550008, 4331.05))
 	end    
 })
 
-TeleportTab:AddButton({
+Tab:AddButton({
 	Name = "传奇公路",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3594.68, 214.804, 7274.56))
