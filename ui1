@@ -12,7 +12,7 @@
             game:GetService("CoreGui")["frosty"]:Destroy()
         end
     )
-    local creds = window:Tab("火箭发射模拟器", "4483345875")
+    local creds = window:Tab("火箭发射模拟器", "16060333448")
     local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
     credits:Button(
         "小go制作",
@@ -52,6 +52,14 @@ credits:Button(
             loadstring(game:HttpGet("https://pastebin.com/raw/SrVZX318"))()
         end
     )
+
+credits:Button("传送加自动工作",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+end)
+
+credits:Button("小go俄亥俄州简易版",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E4%BF%84%E4%BA%A5%E4%BF%84%E5%B7%9E"))()
+end)
 credits:Button("指令",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
 end)
@@ -64,14 +72,6 @@ bin:Label("收物开—收物关")
 bin:Label("抢取款机开—抢取款机关")
 bin:Label("抢银行开—抢银行关")
 bin:Label("穿墙开—穿墙关")
-
-credits:Button("传送加自动工作",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
-end)
-
-credits:Button("YFHUB[修复版 用的是云ui]",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/nb/main/jm1051.lua"))()
-end)
 
 local creds = window:Tab("兵工厂", "16060333448")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
