@@ -2519,23 +2519,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"
   end
 })
 
-Fram:AddDropdown({
-    Name = '瞬移',
-    Default = '',
-    Options = {'银行','珠宝店','沙滩','武器店（撬锁）','武士刀','射线枪','加特林','锯掉','沙漠之鹰','警察局（M4A1）','AUG','军事基地（军甲）'},
-    Callback = function(Value)
-    local epoh2 = game:GetService('Players')
-    local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
-    if Value == '银行' then
-        local epoh1 = CFrame.new(1055.94153, 15.11950874, -344.58374)
-        epoh3.CFrame = epoh1
-    elseif Value == '珠宝店' then
-        local epoh1 = CFrame.new(1719.02637, 14.2831011, -714.293091)
-        epoh3.CFrame = epoh1
-    elseif Value == '沙滩' then
-        local epoh1 = CFrame.new(998.4656372070312, 15, 395.9789733886719)
-
-
 
 
 
