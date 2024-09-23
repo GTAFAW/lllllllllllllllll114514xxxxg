@@ -124,13 +124,37 @@ OrionLib:MakeNotification({
 
 local Tab = Window:MakeTab({
     Name = "小go音乐区",
-    Icon = "rbxassetid://16060333448",
+    Icon = "rbxassetid://18923878915",
     PremiumOnly = false
 })
+
 Tab:AddButton({
-    Name ="阿尔宙斯",
-    Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+    Name ="防空警报", 
+    Callback =function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://792323017"
+    sound.Parent = game.Workspace
+    sound:Play()
+    end
+})
+    
+    Tab:AddButton({
+    Name ="义勇军进行曲", 
+    Callback =function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1845918434"
+    sound.Parent = game.Workspace
+    sound:Play()
+    end
+})
+    
+    Tab:AddButton({
+    Name ="彩虹瀑布",
+    Callback =function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1837879082"
+    sound.Parent = game.Workspace
+    sound:Play()
     end
 })
 
