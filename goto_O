@@ -1964,45 +1964,34 @@ Tab:AddButton({
 local Section = Tab:AddSection({
 	Name = "传送岛屿"
 })
-Tab:AddButton({
-	Name = "返还出生岛",
+TeleportTab:AddButton({
+	Name = "城市",
 	Callback = function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9682.98828125, 58.87917709350586, 3099.033935546875)      
-  	end    
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-559.2, -7.45058e-08, 417.4))
+	end    
 })
-Tab:AddButton({
 
-	Name = "白雪城",
-
+TeleportTab:AddButton({
+	Name = "雪城",
 	Callback = function()
-
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9676.138671875, 58.87917709350586, 3782.69384765625)   
-
-  	end    
-
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-858.358, 0.5, 2170.35))
+	end    
 })
-Tab:AddButton({
 
-	Name = "熔岩城",
-
+TeleportTab:AddButton({
+	Name = "岩浆城",
 	Callback = function()
-
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11054.96875, 216.83917236328125, 4898.62841796875)       
-
-  	end    
-
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1707.25, 0.550008, 4331.05))
+	end    
 })
-Tab:AddButton({
 
+TeleportTab:AddButton({
 	Name = "传奇公路",
-
 	Callback = function()
-
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.87109375, 216.83917236328125, 5907.6279296875)    
-
-  	end    
-
+      	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(3594.68, 214.804, 7274.56))
+	end    
 })
+
 local Tab = Window:MakeTab({
     Name = "彩虹朋友🌈",
     Icon = "rbxassetid://1000140976",
