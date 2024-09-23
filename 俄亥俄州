@@ -30,9 +30,7 @@ end)
 local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
 local win = UILib:Window("小go俄亥俄州",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
 
-local Tab = win:Tab("goto_O🕊️🕊️资源功能区")
-
-Tab:Button("瞬移", function()
+local Tab = win:Tab("传送区域)
 
 Tab:Button("银行", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1055.94153, 15.11950874, -344.58374)
