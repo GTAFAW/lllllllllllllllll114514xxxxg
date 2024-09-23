@@ -52,6 +52,20 @@ credits:Button(
             loadstring(game:HttpGet("https://pastebin.com/raw/SrVZX318"))()
         end
     )
+credits:Button("指令",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
+end)
+
+
+
+bin:Label("在聊天框输入")
+bin:Label("透开—透关")
+bin:Label("追踪开—追踪关")
+bin:Label("收钱开—收钱关")
+bin:Label("收物开—收物关")
+bin:Label("抢取款机开—抢取款机关")
+bin:Label("抢银行开—抢银行关")
+bin:Label("穿墙开—穿墙关")
 
 local creds = window:Tab("兵工厂", "16060333448")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
