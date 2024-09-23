@@ -127,7 +127,20 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://18923878915",
     PremiumOnly = false
 })
-
+Tab:AddButton({
+    Name ="重新加入游戏 如果想换音乐只能重进",
+    Callback = function()
+      game:GetService("TeleportService"):TeleportToPlaceInstance(
+            game.PlaceId,
+            game.JobId,
+            game:GetService("Players").LocalPlayer
+        )
+    end
+})
+local Section = Tab:AddSection({ 
+       Name = "注意音乐功无法关闭"
+       Name = "杂音区"
+})
 Tab:AddButton({
     Name ="防空警报", 
     Callback =function()
