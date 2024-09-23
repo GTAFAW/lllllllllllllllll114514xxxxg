@@ -221,7 +221,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="卡哇伊黑洞（可以锁人的哦）",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-BLACK-HOLE/main/kawaii-black-hole.lua",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%BB%91%E6%B4%9E",true))()
     end
 })
 Tab:AddButton({
