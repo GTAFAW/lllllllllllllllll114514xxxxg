@@ -133,3 +133,11 @@ credits:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%B1%BF%E9%B1%BC%E6%B8%B8%E6%88%8F"))()
     end
 )
+local creds = window:Tab("住宅大屠杀", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+credits:Button(
+        "住宅大屠杀小go二改",
+        function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E4%BD%8F%E5%AE%85%E5%A4%A7%E5%B1%A0%E6%9D%80"))()
+    end
+)
