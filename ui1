@@ -56,7 +56,7 @@ credits:Button("指令",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
 end)
 
-local bin = creds:section("聊天框内输入指令", true)
+local bin = creds:section("聊天框内输入指令",false)
 bin:Label("透开—透关")
 bin:Label("追踪开—追踪关")
 bin:Label("收钱开—收钱关")
