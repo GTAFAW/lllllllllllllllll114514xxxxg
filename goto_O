@@ -1432,18 +1432,7 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://1000140976",
 	PremiumOnly = false
 })
-Tab:AddButton({
-    Name ="安",
-    Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/ninjalegend')))()
-    end
-})
-Tab:AddButton({
-	Name = "剑客:需加群组",
-	Callback = function()
-jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
-	end
-})
+
 local Section = Tab:AddSection({
 	Name = "小go内置"
 })
@@ -1918,6 +1907,22 @@ Tab:AddButton({
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4593.21337890625, 130.87181091308594, 1430.2239990234375)
     end
 })
+local Section = Tab:AddSection({
+	Name = "其他脚本"
+})
+Tab:AddButton({
+    Name ="安",
+    Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/wucan114514/gegeyxjb/main/ninjalegend')))()
+    end
+})
+Tab:AddButton({
+	Name = "剑客:需加群组",
+	Callback = function()
+jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
+	end
+})
+
 local Tab = Window:MakeTab({
     Name = "极速传奇⛷",
     Icon = "rbxassetid://18942670945",
@@ -1927,7 +1932,7 @@ local Section = Tab:AddSection({
 	Name = "小go内置"
 })
 Tab:AddTextbox({
-	Name = "腰角高  貌似无法移动",
+	Name = "腰角高  可在空中移动 设置高度",
 	Default = " ",
 	TextDisappear = false,
 	Callback = function(phh)
