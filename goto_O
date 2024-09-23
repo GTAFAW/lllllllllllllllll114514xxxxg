@@ -2043,13 +2043,13 @@ Tab:AddButton({
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(58.8, 1.007, -8684.72))
 	end    
 })
-TeleportTab:AddButton({
+Tab:AddButton({
 	Name = "岩浆赛道",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1013.4, 1.007, -10997))
 	end    
 })
-TeleportTab:AddButton({
+Tab:AddButton({
 	Name = "高速公路赛道",
 	Callback = function()
       	game.Players.LocalPlayer.Character:MoveTo(Vector3.new(2053.67, 71.93, 17943.08))
