@@ -146,6 +146,9 @@ end)
 about:Button("Project-Spectrum9.0",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/SpectrumX.lua"))() 
 end)
+about:Button("汉化版",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E6%B5%B7%E8%B4%BC%E7%8E%8Bbf.lua", true))()
+end)
 
 local UITab6 = win:Tab("『飞行靴子赛车模拟器』",'16060333448')
 
