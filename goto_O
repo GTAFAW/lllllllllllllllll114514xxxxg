@@ -818,7 +818,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="goto飞车",
     Callback = function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/n5SbuasR"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%A3%9E%E8%BD%A6"))()
     end
 })
 Tab:AddButton({
