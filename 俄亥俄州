@@ -6,18 +6,17 @@ OrionLib:MakeNotification({
     Image = 'rbxassetid://16060333448',
     Time = 5
 })
-
 local Fram = Window:MakeTab({
-    Name = '资源类',
+    Name = '简洁',
     Icon = 'rbxassetid://16060333448',
     PremiumOnly = false
 })
 local Cheat = Window:MakeTab({
-    Name = '修改类',
+    Name = '功能',
     Icon = 'rbxassetid://16060333448',
     PremiumOnly = false
 })
-Fram:AddToggle({
+Cheat:AddButton({
     Name ="传送",
     Callback = function()
     loadstring(game:HttpGet("https://pastebin.com/raw/J68iyHKY"))()
