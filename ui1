@@ -65,6 +65,14 @@ bin:Label("抢取款机开—抢取款机关")
 bin:Label("抢银行开—抢银行关")
 bin:Label("穿墙开—穿墙关")
 
+credits:Button("传送加自动工作",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+end)
+
+credits:Button("YFHUB[修复版 用的是云ui]",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/nb/main/jm1051.lua"))()
+end)
+
 local creds = window:Tab("兵工厂", "16060333448")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
