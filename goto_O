@@ -828,6 +828,12 @@ loadstring(game:HttpGet("https://pastebin.com/raw/c2FPNuRC"))()
     end
 })
 Tab:AddButton({
+    Name ="黑洞小go汉化",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%BB%91%E6%B4%9E2"))()
+    end
+})
+Tab:AddButton({
     Name ="黑洞 0.4",
     Callback = function()
 --blackhole script 0.4: fixed all issues
