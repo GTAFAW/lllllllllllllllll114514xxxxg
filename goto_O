@@ -138,13 +138,13 @@ Tab:AddButton({
     end
 })
 local Section = Tab:AddSection({ 
-       Name = "小go提示:音乐功无法关闭哦  bj区域"
+       Name = "小go提示:音乐功无法关闭哦  "
 })
 Tab:AddButton({
-    Name ="bj", 
+    Name ="", 
     Callback =function()
     local sound = Instance.new("Sound")
-    sound.SoundId = "rbxassetid://15689448519"
+    sound.SoundId = "rbxassetid://1837871067"
     sound.Parent = game.Workspace
     sound:Play()
     end
