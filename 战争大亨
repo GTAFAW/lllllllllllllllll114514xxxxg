@@ -27,7 +27,7 @@ ImageButton.MouseButton1Down:connect(function()
         local vim = game:service("VirtualInputManager")
         vim:SendKeyEvent(false, "RightControl", false, game)
 end)
-local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui')))()
 local win = UILib:Window("小go战争大亨",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("主要功能")
