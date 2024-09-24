@@ -3302,6 +3302,13 @@ Tab:AddButton({
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Game.CFrame * CFrame.new(0,5,0)
    end
 })
+Tab:AddButton({
+    Name = "自动比赛",
+    Callback = function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/r5b265Zy"))()
+    end
+})
+
 local Tab = Window:MakeTab({
     Name = "goto☃️",
     Icon = "rbxassetid://16060333448",
