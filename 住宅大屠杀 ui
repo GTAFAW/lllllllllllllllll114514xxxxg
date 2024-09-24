@@ -965,7 +965,7 @@ function redzlib:MakeWindow(Configs)
       
       local Frame, LabelFunc = ButtonFrame(Container, PName, PDesc, UDim2.new(1, -20))
       
-      local Paaragraph = {}
+      local Paragraph = {}
       function Paragraph:SetTitle(Val)
         LabelFunc:SetTitle(Val)
       end
@@ -1327,7 +1327,8 @@ function redzlib:MakeWindow(Configs)
           end)
         end
         
-        local function Disable()end
+        local function Disable()
+          if Selected[1] == OptionName then ActiveLabel.Text = "..." end
           Option:Destroy()
           for ind,Val in pairs(Options) do
             if Val.Button == Option then
@@ -1791,5 +1792,4 @@ function redzlib:MakeWindow(Configs)
   return Window
 end
 
-return redzlib
-         
+return redxlrb
