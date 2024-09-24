@@ -1304,8 +1304,7 @@ Tab:AddTextbox({
 })
 Tab:AddToggle({
 	Name = "名字透视",
-	Default = false,
-	Callback = function(Bool)
+	Callback = function()
 	Settings.Names = Bool
     end
 })
