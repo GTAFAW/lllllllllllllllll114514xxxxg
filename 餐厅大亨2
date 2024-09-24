@@ -1,0 +1,108 @@
+local IMAGE = "rbxassetid://16060333448"
+local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
+local Sizes = UDim2.new(0, 76, 0, 70)
+
+local KINGHUBMOBILE = Instance.new("ScreenGui")
+local _100x100 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+
+KINGHUBMOBILE.Name = "LinniScriptcharge"
+KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
+KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_100x100.Name = "100x100"
+_100x100.Parent = KINGHUBMOBILE
+_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100x100.Position = Positions
+_100x100.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = _100x100
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Size = Sizes
+ImageButton.Image = IMAGE
+ImageButton.MouseButton1Down:connect(function()
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(true, "RightControl", false, game)
+
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(false, "RightControl", false, game)
+end)
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E6%88%98%E4%BA%89%E5%A4%A7%E4%BA%A8')))()
+local win = UILib:Window("小go餐厅大亨2",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+
+local tab = win:Tab("主要")
+
+tab:Toggle("即时烹饪", false, function(Value)
+    local Cooking = game.Players.LocalPlayer.PlayerScripts.CookingNew
+local CookProgress = require(Cooking.CookProgress)
+local MultiClick = require(Cooking.InputDetectors.MultiClick)
+local MouseMovement = require(Cooking.InputDetectors.MouseMovement)
+local MouseSpin = require(Cooking.InputDetectors.MouseSpin)
+local run = CookProgress.run
+CookProgress.run = function(...)
+  local ARGS = {...}
+  ARGS[3] = 0
+  return run(unpack(ARGS))
+end
+MultiClick.start = function(...)
+  ({...})[3]()
+end
+MouseMovement.start = function(...)
+  ({...})[3]()
+end
+MouseSpin.start = function(...)
+  ({...})[3]()
+end
+end)
+
+tab:Toggle("自动收款", false, function(Value)
+    warn("Requiring API")do
+  loadstring(game:HttpGet("https://pastebin.com/raw/KMc6aBky"))();
+end warn("API Loaded")
+local child = object.child
+local descendant = object.descendant
+local check = object.check
+local Tycoon = game.Players.LocalPlayer.Tycoon.Value
+descendant.foreach(Tycoon.Items.OftenFiltered.Surface,"Bill",function(Bill)
+  local Settings = {
+          ["name"] = "CollectBill",
+          ["model"] = Bill.Parent
+  }
+  game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
+end)
+local Connection,Code = descendant.on_add(Tycoon.Items.OftenFiltered.Surface,function(Bill)
+  check.it(Bill.Name == "Bill",function()
+      local Settings = {
+              ["name"] = "CollectBill",
+              ["model"] = Bill.Parent
+      }
+      game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
+  end)
+end)
+end)
+
+tab:Toggle("NPC烹饪并送达", false, function(Value)
+    local chiefInstantCook = true
+local npcReach = true
+local Client = game.Players.LocalPlayer
+local PS = Client.PlayerScripts
+local Module = require(PS.ClientMain.Replications.Workers.WalkDummy)
+local Worker = require(PS.CookingNew.WorkerComponents.WorkerDefault)
+local M1 = require(PS.ClientMain.Replications.Customers.GetNPCFolder)
+if npcReach then
+   hookfunction(Module,function()
+       return task.wait()
+   end)
+end
+if chiefInstantCook then
+   Worker.event = function(...)
+      local args = {...}
+      local npc = M1.GetNPCFolder(args[1]).ClientWorkers:FindFirstChild(args[2])
+      local M2 = game.ReplicatedStorage.MiscModules.CookingSharedCharacter:FindFirstChild(args[4])
+      if M2 then
+          require(M2).finishInteract(npc,args[3],args[4])
+      end
+      return
+   end
+end
+end)
