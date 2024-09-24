@@ -1,0 +1,95 @@
+local IMAGE = "rbxassetid://16060333448"
+local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
+local Sizes = UDim2.new(0, 76, 0, 70)
+
+local KINGHUBMOBILE = Instance.new("ScreenGui")
+local _100x100 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+
+KINGHUBMOBILE.Name = "LinniScriptcharge"
+KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
+KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_100x100.Name = "100x100"
+_100x100.Parent = KINGHUBMOBILE
+_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100x100.Position = Positions
+_100x100.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = _100x100
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Size = Sizes
+ImageButton.Image = IMAGE
+ImageButton.MouseButton1Down:connect(function()
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(true, "RightControl", false, game)
+
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(false, "RightControl", false, game)
+end)
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui')))()
+local win = UILib:Window("小go合并滴管",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+
+local tab = win:Tab("主要功能")
+
+tab:Toggle("自动收集", false, function(bool)
+
+    getgenv().collect = bool 
+
+    while getgenv().collect and task.wait(0.25) do
+
+        for _,part in pairs(plot.DropParts:GetDescendants()) do
+
+            if part.Name == "Wool" then
+
+                part.CFrame = plr.Character.HumanoidRootPart.CFrame
+
+            end
+
+        end
+
+    end
+
+end)
+
+tab:Toggle("自动存款", false, function(bool)
+    
+    getgenv().deposit = bool 
+
+    while getgenv().deposit and task.wait(0.25) do
+
+        firetouchinterest(plot.Buttons_E.Put.Head, plr.Character.HumanoidRootPart, 0)
+
+        firetouchinterest(plot.Buttons_E.Put.Head, plr.Character.HumanoidRootPart, 1)
+
+    end
+
+end)
+
+tab:Toggle("自动升级", false, function(bool)
+    
+    getgenv().upgrade = bool 
+
+    while getgenv().upgrade and task.wait(0.25) do
+
+        firetouchinterest(plot.Buttons_E.Upgrade.Head, plr.Character.HumanoidRootPart, 0)
+
+        firetouchinterest(plot.Buttons_E.Upgrade.Head, plr.Character.HumanoidRootPart, 1)
+
+    end
+
+end)
+
+tab:Toggle("自动滴管", false, function(bool)
+    
+    getgenv().merge = bool 
+
+    while getgenv().merge and task.wait(0.25) do
+
+        firetouchinterest(plot.Buttons_E.Merge.Head, plr.Character.HumanoidRootPart, 0)
+
+        firetouchinterest(plot.Buttons_E.Merge.Head, plr.Character.HumanoidRootPart, 1)
+
+    end
+
+end)
