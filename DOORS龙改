@@ -208,7 +208,7 @@ _G.Avoid = (s and true or false)
 workspace.ChildAdded:Connect(function(inst)
 if inst.Name == "RushMoving" and _G.Avoid == true then
 Notification:Notify(
-    {Title = "请注意!", Description = "正在躲避 Rush."},
+    {Title = "小go来啦", Description = "正在躲避 Rush."},
     {OutlineColor = Color3.fromRGB(98, 37, 209),Time = 5, Type = "default"}
 )
 
@@ -223,7 +223,7 @@ game.Players.LocalPlayer.Character:MoveTo(OldPos)
 
 elseif inst.Name == "AmbushMoving" and _G.Avoid == true then
 Notification:Notify(
-    {Title = "小go", Description = "正在躲避 Ambush."},
+    {Title = "小go来啦", Description = "正在躲避 Ambush."},
     {OutlineColor = Color3.fromRGB(98, 37, 209),Time = 5, Type = "default"}
 )
 
