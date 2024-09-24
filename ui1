@@ -153,3 +153,9 @@ local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️
 credits:Button("小go造船寻宝", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%80%A0%E8%88%B9%E5%AF%BB%E5%AE%9D"))()
     end)
+local creds = window:Tab("高转轮赌场", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("无限获得钱", function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/564394c7d643564ac916cca8cecfe0d4.lua"))()
+    end)
