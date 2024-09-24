@@ -3303,17 +3303,6 @@ Tab:AddButton({
    end
 })
 Tab:AddButton({
-	Name = "自动比赛",
-	Callback = function()
-        if game.PlaceId == 4104106043 then
-	local space=game:GetService("Workspace")
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = space.Lobby.Teleporters.Enter.CFrame
-	wait(.5)
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = space.Lobby.SpawnLocation.CFrame
-	game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-   end
-})
-Tab:AddButton({
 	Name = "疯狂电梯1",
 	Callback = function()
        loadstring(game:HttpGet('https://raw.githubusercontent.com/Darkmoonxhubscript/Darkmoonx1/main/Script'))()
