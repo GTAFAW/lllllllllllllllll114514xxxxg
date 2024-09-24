@@ -29,6 +29,7 @@ ImageButton.MouseButton1Down:connect(function()
 end)
 local UILib = loadstring(game:HttpGet((https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui)))()
 local win = UILib:Window("小go河北唐县",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+
 local tab = win:Tab("主要功能")
 
 tab:Toggle("自动刷钱", false, function(value)
@@ -36,9 +37,9 @@ tab:Toggle("自动刷钱", false, function(value)
 	if value then
 		autoFarm()
 	end
-end)
+end
 
-game.RunService.Stepped:Connect(function()
+game.RunService.Stepped:Connect,function()
 local virtualUser = game:GetService('VirtualUser')
 virtualUser:CaptureController()
 
