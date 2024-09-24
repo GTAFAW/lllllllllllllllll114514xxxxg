@@ -1081,7 +1081,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "小go制作玩家控制喜欢俄亥俄的，可以搭配起来超级好用",
 	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/SrVZX318"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E7%8E%A9%E5%AE%B6%E6%8E%A7%E5%88%B6"))()
 end
 })
 Tab:AddButton({
