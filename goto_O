@@ -3297,7 +3297,12 @@ Tab:AddButton({
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Laaabby.CFrame * CFrame.new(0,10,0)
    end
 })
-
+Tab:AddButton({
+	Name = "疯狂电梯1",
+	Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/Darkmoonxhubscript/Darkmoonx1/main/Script'))()
+   end
+})
 Tab:AddButton({
 	Name = "传送游戏",
 	Callback = function()
