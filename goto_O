@@ -1302,10 +1302,9 @@ Tab:AddTextbox({
 		game.Workspace.Gravity = Value
 	end
 })
-local Section = Tab:AddSection({
+Tab:AddSection({
         Name = "教程: 先打开透视开关，然后开玩家透视和射线透视，这两个是一起开的 否则无效"
 })
-
 Tab:AddToggle({
        Name = "透视开关",
        Default = false,
