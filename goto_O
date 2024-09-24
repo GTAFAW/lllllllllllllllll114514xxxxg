@@ -221,6 +221,24 @@ Tab:AddButton({
     sound:Play()
     end
 })
+Tab:AddButton({
+    Name ="轻松7   女版", 
+    Callback =function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1847606454"
+    sound.Parent = game.Workspace
+    sound:Play()
+    end
+})
+Tab:AddButton({
+    Name ="轻松8", 
+    Callback =function()
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://1839721437"
+    sound.Parent = game.Workspace
+    sound:Play()
+    end
+})
 local Section = Tab:AddSection({ 
        Name = " Dj🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️"
 })
