@@ -96,7 +96,7 @@ onof.Size = UDim2.new(0, 56, 0, 28)
 
 onof.Font = Enum.Font.SourceSans
 
-onof.Text = "开/关(飞)"
+onof.Text = "开启"
 
 onof.TextColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -114,7 +114,7 @@ TextLabel.Size = UDim2.new(0, 100, 0, 28)
 
 TextLabel.Font = Enum.Font.SourceSans
 
-TextLabel.Text = "飞行脚本V3(落叶汉化;触摸此处以移动,百倍版)"
+TextLabel.Text = "小宇飞加强版（百倍）"
 
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -138,7 +138,7 @@ plus.Size = UDim2.new(0, 45, 0, 28)
 
 plus.Font = Enum.Font.SourceSans
 
-plus.Text = "加速度100"
+plus.Text = "+"
 
 plus.TextColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -186,7 +186,7 @@ mine.Size = UDim2.new(0, 45, 0, 29)
 
 mine.Font = Enum.Font.SourceSans
 
-mine.Text = "减速度100"
+mine.Text = "-"
 
 mine.TextColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -208,7 +208,7 @@ closebutton.Font = "SourceSans"
 
 closebutton.Size = UDim2.new(0, 45, 0, 28)
 
-closebutton.Text = "关闭"
+closebutton.Text = "小"
 
 closebutton.TextSize = 30
 
@@ -226,7 +226,7 @@ mini.Font = "SourceSans"
 
 mini.Size = UDim2.new(0, 45, 0, 28)
 
-mini.Text = "简"
+mini.Text = "宇子🕊️"
 
 mini.TextSize = 40
 
@@ -244,7 +244,7 @@ mini2.Font = "SourceSans"
 
 mini2.Size = UDim2.new(0, 45, 0, 28)
 
-mini2.Text = "繁"
+mini2.Text = "go🕊️"
 
 mini2.TextSize = 40
 
@@ -274,9 +274,9 @@ nowe = false
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 
-	Title = "飞行脚本V3";
+	Title = "小宇飞行1.5";
 
-	Text = "by 落叶出品必属精品(百倍版)";
+	Text = "百倍速度";
 
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 
