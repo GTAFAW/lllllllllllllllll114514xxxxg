@@ -141,3 +141,9 @@ credits:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E4%BD%8F%E5%AE%85%E5%A4%A7%E5%B1%A0%E6%9D%80"))()
     end
 )
+local creds = window:Tab("自然灾害", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("小go自然灾害", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E8%87%AA%E7%84%B6%E7%81%BE%E5%AE%B3"))()
+    end)
