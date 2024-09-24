@@ -3308,7 +3308,12 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://pastebin.com/raw/r5b265Zy"))()
     end
 })
-
+Tab:AddButton({
+    Name = "疯狂电梯1",
+    Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Darkmoonxhubscript/Darkmoonx1/main/Script'))()
+    end
+})
 local Tab = Window:MakeTab({
     Name = "goto☃️",
     Icon = "rbxassetid://16060333448",
