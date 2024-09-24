@@ -370,7 +370,13 @@ about:Button("骨折1",function()
 about:Button("骨折2",function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingResources/GamingResources-Script-Hub/main/Key%20System", true))()
     end)	
+local UITab21 = win:Tab("『鸭子大军！』",'16060333448')
 
+local about = UITab21:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
+
+about:Button("鸭子大军🕊️",function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EnchantedHub/Enchanted.github.io/refs/heads/main/DuckArmy!Script', true))()
+    end)	
 
 
 
