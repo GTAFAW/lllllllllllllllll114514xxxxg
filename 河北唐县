@@ -1,0 +1,80 @@
+local IMAGE = "rbxassetid://16060333448"
+local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
+local Sizes = UDim2.new(0, 76, 0, 70)
+
+local KINGHUBMOBILE = Instance.new("ScreenGui")
+local _100x100 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+
+KINGHUBMOBILE.Name = "LinniScriptcharge"
+KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
+KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_100x100.Name = "100x100"
+_100x100.Parent = KINGHUBMOBILE
+_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_100x100.Position = Positions
+_100x100.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = _100x100
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Size = Sizes
+ImageButton.Image = IMAGE
+ImageButton.MouseButton1Down:connect(function()
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(true, "RightControl", false, game)
+
+        local vim = game:service("VirtualInputManager")
+        vim:SendKeyEvent(false, "RightControl", false, game)
+end)
+local UILib = loadstring(game:HttpGet((https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui)))()
+local win = UILib:Window("小go河北唐县",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
+local tab = win:Tab("主要功能")
+local tab2 = win:Tab("传送")
+
+tab:Toggle("自动刷钱", false, function(value)
+	_G.autoFarm = value
+	if value then
+		autoFarm()
+	end
+end)
+
+game.RunService.Stepped:Connect(function()
+local virtualUser = game:GetService('VirtualUser')
+virtualUser:CaptureController()
+
+function teleportTo(CFrame) 
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame
+end
+
+_G.autoFarm = true
+
+function autoFarm()
+	while _G.autoFarm do
+		fireclickdetector(game:GetService("Workspace").DeliverySys.Misc["Package Pile"].ClickDetector)
+		task.wait(2.2)
+		for _,point in pairs(game:GetService("Workspace").DeliverySys.DeliveryPoints:GetChildren()) do
+			if point.Locate.Locate.Enabled then
+				teleportTo(point.CFrame)
+			end
+		end
+		task.wait(0)
+	end
+end
+end)
+
+tab2:Toggle("传送到警察局", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5513.97412109375, 8.656171798706055, 4964.291015625)
+end)
+Tab2:Toggle("传送到出生点", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3338.31982421875, 10.048742294311523, 3741.84033203125)
+end)
+Tab2:Toggle("传送到医院", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5471.482421875, 14.149418830871582, 4259.75341796875)
+end)
+Tab2:Toggle("传送到手机店", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6789.2041015625, 11.197686195373535, 1762.687255859375)
+end)
+Tab2:Toggle("传送到火锅店", function()
+  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5912.84765625, 12.217276573181152, 1058.29443359375)
+end)
