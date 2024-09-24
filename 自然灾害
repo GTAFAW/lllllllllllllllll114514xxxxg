@@ -81,5 +81,5 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.828
 end)
 
 tab2:Button("重生塔", function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-230, 230, 341, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-230, 200, 341, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 end)
