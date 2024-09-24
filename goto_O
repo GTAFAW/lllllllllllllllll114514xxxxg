@@ -3236,7 +3236,7 @@ local Tab = Window:MakeTab({
     PremiumOnly = false
 })
 Tab:AddButton({
-    Name ="小go",
+    Name ="小go（维护中）",
     Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E6%B2%B3%E5%8C%97%E5%94%90%E5%8E%BF"))()
     end
