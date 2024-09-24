@@ -3302,12 +3302,6 @@ Tab:AddButton({
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Game.CFrame * CFrame.new(0,5,0)
    end
 })
-Tab:AddButton({
-	Name = "疯狂电梯1",
-	Callback = function()
-       loadstring(game:HttpGet('https://raw.githubusercontent.com/Darkmoonxhubscript/Darkmoonx1/main/Script'))()
-   end
-})
 local Tab = Window:MakeTab({
     Name = "goto☃️",
     Icon = "rbxassetid://16060333448",
