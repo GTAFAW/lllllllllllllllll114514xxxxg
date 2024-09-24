@@ -1303,12 +1303,6 @@ Tab:AddTextbox({
 	end
 })
 Tab:AddToggle({
-	Name = "名字透视",
-	Callback = function()
-	Settings.Names = Bool
-    end
-})
-Tab:AddToggle({
 
 	Name = "穿墙",
 
