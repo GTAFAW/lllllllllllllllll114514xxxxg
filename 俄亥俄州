@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/GTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT", true))()
-local Window = OrionLib:MakeWindow({Name = 'YFHUB', HidePremium = false, SaveConfig = true, ConfigFolder = 'OrionTest', IntroText = '将就用吧'})
+local Window = OrionLib:MakeWindow({Name = '伤脑筋', HidePremium = false, SaveConfig = true, ConfigFolder = 'OrionTest', IntroText = '将就用吧'})
 OrionLib:MakeNotification({
     Name = '上一个版本制作失败，只能以这种ui形式出现：',
     Content = '🕊️🕊️🕊️🕊️🕊️🕊️🕊️',
