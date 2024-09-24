@@ -3278,7 +3278,32 @@ Tab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/ok/T%20ang%20County"))()
     end
 })
+local Tab = Window:MakeTab({
+    Name = "疯狂电梯",
+    Icon = "rbxassetid://1000140976",
+    PremiumOnly = false
+})
 
+Tab:AddButton({
+	Name = "传送VIP室",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Vip.CFrame * CFrame.new(0,5,0)
+   end
+})
+
+Tab:AddButton({
+	Name = "传送大厅",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Laaabby.CFrame * CFrame.new(0,10,0)
+   end
+})
+
+Tab:AddButton({
+	Name = "传送游戏",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace.Game.CFrame * CFrame.new(0,5,0)
+   end
+})
 local Tab = Window:MakeTab({
     Name = "goto☃️",
     Icon = "rbxassetid://16060333448",
