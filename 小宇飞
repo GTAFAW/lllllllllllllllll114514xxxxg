@@ -228,7 +228,7 @@ mini.Size = UDim2.new(0, 45, 0, 28)
 
 mini.Text = "宇子🕊️"
 
-mini.TextSize = 40
+mini.TextSize = 30
 
 mini.Position = UDim2.new(0, 44, -1, 27)
 
@@ -246,7 +246,7 @@ mini2.Size = UDim2.new(0, 45, 0, 28)
 
 mini2.Text = "go🕊️"
 
-mini2.TextSize = 40
+mini2.TextSize = 30
 
 mini2.Position = UDim2.new(0, 44, -1, 57)
 
