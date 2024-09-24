@@ -27,7 +27,7 @@ ImageButton.MouseButton1Down:connect(function()
         local vim = game:service("VirtualInputManager")
         vim:SendKeyEvent(false, "RightControl", false, game)
 end)
-local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E6%88%98%E4%BA%89%E5%A4%A7%E4%BA%A8')))()
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui')))()
 local win = UILib:Window("小go造船寻宝",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("主要")
