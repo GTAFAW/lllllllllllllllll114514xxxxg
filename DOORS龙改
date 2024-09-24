@@ -34,10 +34,10 @@ local Main = win:Tab("主要的")
 local ESP = win:Tab("追踪")
 local item = win:Tab("物品")
 local Other = win:Tab("其他")
-local tab = win:Tab("副主")
+local tab = win:Tab("次要")
 local tab1 = win:Tab("物品")
-local tab2 = win:Tab("商店免费物品")
-local tab3 = win:Tab("改模型")
+local tab2 = win:Tab("物品")
+local tab3 = win:Tab("武器")
 
 local pcl = Instance.new("SpotLight")
 pcl.Brightness = 1
@@ -179,7 +179,7 @@ _G.IE = (s and true or false)
             local n = ChaseStart.Value - LatestRoom.Value
             if 0 < n and n < 4 then
                 Notification:Notify(
-    {Title = "请注意", Description = "事件可能刷新于" .. tostring(n) .. " 房间"},
+    {Title = "小go提醒", Description = "事件可能刷新于" .. tostring(n) .. " 房间"},
     {OutlineColor = Color3.fromRGB(98, 37, 209),Time = 5, Type = "default"}
 )
             end
@@ -189,13 +189,13 @@ _G.IE = (s and true or false)
 workspace.ChildAdded:Connect(function(inst)
 if inst.Name == "RushMoving" and _G.IE == true then
 Notification:Notify(
-    {Title = "请注意", Description = "Rush 已刷新"},
+    {Title = "小go提醒", Description = "Rush 来了哦"},
     {OutlineColor = Color3.fromRGB(98, 37, 209),Time = 5, Type = "default"}
 )
 
 elseif inst.Name == "AmbushMoving" and _G.IE == true then
 Notification:Notify(
-    {Title = "请注意", Description = "Ambush 已刷新"},
+    {Title = "小go提醒", Description = "Ambush 来了哦"},
     {OutlineColor = Color3.fromRGB(98, 37, 209),Time = 5, Type = "default"}
 )
 
@@ -223,7 +223,7 @@ game.Players.LocalPlayer.Character:MoveTo(OldPos)
 
 elseif inst.Name == "AmbushMoving" and _G.Avoid == true then
 Notification:Notify(
-    {Title = "注意!", Description = "正在躲避 Ambush."},
+    {Title = "小go", Description = "正在躲避 Ambush."},
     {OutlineColor = Color3.fromRGB(98, 37, 209),Time = 5, Type = "default"}
 )
 
@@ -313,7 +313,7 @@ Other:Button("跳过房间", function()
         end)
 end)
 
-Main:Button("无恐惧", function()
+Main:Button("别怕恐惧", function()
         pcall(function()
             game:GetService("ReplicatedStorage").Bricks.Jumpscare:Destroy()
         end)
@@ -756,7 +756,7 @@ ESP:Toggle("金币透视", false, function(val)
     end
 end)
 
-item:Button("johnny制作的普通十字架", function()
+item:Button("普通十字架", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Johnny39871/assets/main/crucifixo'))()
 end)
 
