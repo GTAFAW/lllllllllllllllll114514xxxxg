@@ -168,6 +168,9 @@ end)
 about:Button("剑客v4需进群组",function()
 jianke_V4 = "作者_初夏"jianke__V4 = "作者QQ1412152634"jianke___V4 = "剑客QQ群347724155"loadstring(game:HttpGet(('https://raw.githubusercontent.com/JianKeCX/JianKeV4/main/ChuXia')))()
 end)
+about:Button("小go战争大亨",function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E6%88%98%E4%BA%89%E5%A4%A7%E4%BA%A8")))()
+end)
 
 local UITab6 = win:Tab("『鲨口求生』",'16060333448')
 
