@@ -104,6 +104,115 @@ elseif a=="11264iwqw"then
 _G.whitelisted=true
 elseif a=="31361id"then 
 _G.whitelisted=true
+elseif a=="dosnxksb"then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
+_G.whitelisted=true
+elseif a==""then 
 end
 if _G.whitelisted==true then
     local CoreGui = game:GetService("StarterGui")
