@@ -102,7 +102,7 @@ elseif a=="54188daboq"then
 _G.whitelisted=true
 elseif a=="11264iwqw"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="31361id"then 
 _G.whitelisted=true
 end
 if _G.whitelisted==true then
