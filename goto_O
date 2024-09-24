@@ -1302,6 +1302,41 @@ Tab:AddTextbox({
 		game.Workspace.Gravity = Value
 	end
 })
+local Section = Tab:AddSection({
+        Name = "教程: 先打开透视开关，然后开玩家透视和射线透视，这两个是一起开的 否则无效"
+})
+
+Tab:AddToggle({
+       Name = "透视开关",
+       Default = false,
+       Callback = function(State)
+       Settings.Esp = State
+       ESP:Toggle(Settings.Esp)
+   end
+})
+Tab:AddToggle({
+       Name = "玩家透视",
+       Default = false,
+       Callback = function(State)
+       Settings.PlayerEsp = State
+       ESP.Players = Settings.PlayerEsp
+   end
+})
+Tab:AddToggle({
+        Name = "射线透视",
+        Default = false,
+        Callback = function(State)
+        Settings.Tracers = State
+        ESP.Tracers = Settings.Tracers
+  end 
+})
+Tab:AddToggle({
+	Name = "名字透视",
+	Default = false,
+	Callback = function(Bool)
+	Settings.Names = Bool
+    end
+})
 Tab:AddToggle({
 
 	Name = "穿墙",
