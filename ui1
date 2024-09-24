@@ -147,3 +147,9 @@ local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️
 credits:Button("小go自然灾害", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E8%87%AA%E7%84%B6%E7%81%BE%E5%AE%B3"))()
     end)
+local creds = window:Tab("造船寻宝", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("小go造船寻宝", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%80%A0%E8%88%B9%E5%AF%BB%E5%AE%9D"))()
+    end)
