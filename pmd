@@ -110,7 +110,7 @@ elseif a=="sydgvdjdh"then
 _G.whitelisted=true
 elseif a=="Aerukyfff"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="xiaoheizi666nb"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
