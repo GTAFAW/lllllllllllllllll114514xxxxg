@@ -3318,7 +3318,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "传送大厅",
 	Callback = function()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new-1916.0081787109375, -396.90020751953125, 926.0120239257812)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1916.0081787109375, -396.90020751953125, 926.0120239257812)
    end
 })
 Tab:AddButton({
