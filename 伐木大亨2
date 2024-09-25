@@ -219,13 +219,13 @@ getgenv().jjdkekd30y9 = "HUA Script" --> 不要改, 改了会被踢
   local function checkModify()
 
     local develop = { --> 脚本开发者列表, 里面双引号填写游戏用户名, 脚本开发者可以免去白名单检查
-      "lixiang_c4",
-      "fifternoon",
-      "MIXI_SERVICE2",
-      "jjdkekd30y9",
-      "jjdkekd30y9",
-      "jjdkekd30y9",
-      "jjdkekd30y9",
+      "GTAFAW",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
     }
     local plr = game:GetService("Players").LocalPlayer;
     local is_dev = false;
@@ -255,8 +255,8 @@ getgenv().jjdkekd30y9 = "HUA Script" --> 不要改, 改了会被踢
   if whitelisted == true then
     local plr = game:GetService("Players").LocalPlayer;
     game.StarterGui:SetCore('SendNotification', {
-      Title = '白名单认证', --> 单引号里面的中文可以改, 加载脚本时的通知
-      Text = '玩家 : ' .. plr.Name .. ' 你是白名单玩家,稍后会加载脚本'
+      Title = '小go 已破解白名单', --> 单引号里面的中文可以改, 加载脚本时的通知
+      Text = '玩家 : ' .. plr.Name .. ' 哈哈哈哈🕊️🕊️🕊️'
     })
     local _warn = warn;
 
@@ -1546,7 +1546,7 @@ getgenv().jjdkekd30y9 = "HUA Script" --> 不要改, 改了会被踢
     end)
 
     Page1:NewButton("加入我们的群", function()
-      print("831780516")
+      print("8795512080")
     end)
 
     Page2:NewSlider("步行速度", "步行速度slider", 50, 16, 300, false, function(v)
