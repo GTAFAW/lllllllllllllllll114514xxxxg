@@ -1126,6 +1126,13 @@ Tab:AddButton({
 loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
 	end
 })
+Tab:AddButton({
+    Name="锁定视角 摄像机",
+    Callback=function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%94%81%E5%AE%9A%E8%A7%86%E8%A7%92"))()
+  end
+})
+
 local Tab = Window:MakeTab({
     Name = "玩家",
     Icon = "rbxassetid://1000140976",
