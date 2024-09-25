@@ -23,19 +23,19 @@ local Premium = GUI:Tab{
 
 Tab:Button{
 	Name = "goto脚本主页",
-	Description = "Space Hub",
+	Description = "小go 主页",
 	Callback = function() 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ym"))() end
 }
 Tab:Button{
 	Name = "🕊️小go游戏中心v1🕊️",
-	Description = "Space Hub Universal",
+	Description = "小go 游戏v1",
 	Callback = function()  
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))() end
 }
 Tab:Button{
 	Name = "🕊️小go游戏中心v2🕊️",
-	Description = "Space Hub",
+	Description = "小go 游戏V2",
 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))() end
 }
 GUI:Notification{
