@@ -90,7 +90,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
-    agreeFrame.Text = "1.脚本刚刚做好，目前可能会有bug,.\n脚本为缝合(其实是我懒得做）.\n2有什么需要添加通知我即可.\n 3.更新时间为9月16号･."
+    agreeFrame.Text = "1.脚本刚刚做好，目前可能会有bug,.\n2有什么需要添加通知我即可.制作时间为2024.9.0.\n3更新时间为9月16号･."
     agreeFrame.TextWrapped = true
 
     
