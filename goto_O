@@ -1636,7 +1636,12 @@ local Tab = Window:MakeTab({
     Icon = "rbxassetid://15613376871",
     PremiumOnly = false
 })
-
+Tab:AddButton({
+    Name ="小go制作",
+    Callback = function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/DOORS%E9%BE%99%E6%94%B9")))()
+    end
+})
 Tab:AddButton({
     Name ="zs lll 2 卡密:nrty",
     Callback = function()
