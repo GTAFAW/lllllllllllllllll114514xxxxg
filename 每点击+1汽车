@@ -14,19 +14,19 @@ end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BlockyCoder/Seraph-Hub/main/Ui%20Libarary%3A%20Seraph%20Hub"))()
  
-Library:Create("小go汉化 每点击+1车辆")
+Library:Create("小go汉化🕊️每点击+1车辆")
  
 local Main = Library:Tab("主要")
-local Egg = Library:Tab("抽奖鸡蛋")
+local Egg = Library:Tab("鸡蛋抽奖")
  
-Library:Button(Main, "ui透明化", function()
+Library:Button(Main, "透明ui", function()
     print("Button clicked!")
     Library:Destroy()
 end)
 
 
 
-Library:Toggle(小go, "自动挥剑", function(isToggled)
+Library:Toggle(Main, "自动挥剑", function(isToggled)
     getgenv().train = isToggled
     while getgenv().train do
       local args = {
@@ -40,7 +40,7 @@ end)
 
 
 
-Library:Toggle(Main, "无限获得奖杯", function(isToggled)
+Library:Toggle(Main, "无限奖杯", function(isToggled)
     getgenv().WinsINF = isToggled
     while getgenv().WinsINF do
      local args = { [1] = "Pet", [2] = 1, [3] = -math.huge} game:GetService("ReplicatedStorage").Remotes.Server.HatchEggs:InvokeServer(unpack(args))
@@ -59,7 +59,7 @@ end)
 
  Library:Label(Main, "世界: 1")
 
-Library:Dropdown(小go, "传送区域", world1, function(selectedOption)
+Library:Dropdown(Main, "选择区域", World1, function(selectedOption)
     getgenv().SelectedWor1 = selectedOption
 end)
 
@@ -79,7 +79,7 @@ end)
 
  Library:Label(Main, "世界: 2")
 
-Library:Dropdown(Main, "Select A Zone", World2, function(selectedOption)
+Library:Dropdown(Main, "选择区域", World2, function(selectedOption)
     getgenv().SelectedWor2 = selectedOption
 end)
 
