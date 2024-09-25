@@ -159,3 +159,21 @@ local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️
 credits:Button("无限获得钱", function()
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/564394c7d643564ac916cca8cecfe0d4.lua"))()
     end)
+local creds = window:Tab("钓鱼模拟器", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("小go", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%92%93%E9%B1%BC%E6%A8%A1%E6%8B%9F%E5%99%A8")))()
+    end)
+local creds = window:Tab("合并滴管", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("小go", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E5%90%88%E5%B9%B6%E6%BB%B4%E7%AE%A1")))()
+    end)
+local creds = window:Tab("躲避", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("小go", function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E8%BA%B2%E9%81%BF")))()
+    end)
