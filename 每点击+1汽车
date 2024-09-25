@@ -1,0 +1,112 @@
+local World1 = {}
+for _, v in pairs(game:GetService("Workspace").GlassZones.World1:GetChildren()) do
+    if not table.find(World1, v.Name) then
+        table.insert(World1, v.Name)
+    end
+end
+
+local World2 = {}
+for _, v in pairs(game:GetService("Workspace").GlassZones.World2:GetChildren()) do
+    if not table.find(World2, v.Name) then
+        table.insert(World2, v.Name)
+    end
+end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/BlockyCoder/Seraph-Hub/main/Ui%20Libarary%3A%20Seraph%20Hub"))()
+ 
+Library:Create("小go汉化 每点击+1车辆")
+ 
+local Main = Library:Tab("主要")
+local Egg = Library:Tab("抽奖鸡蛋")
+ 
+Library:Button(Main, "ui透明化", function()
+    print("Button clicked!")
+    Library:Destroy()
+end)
+
+
+
+Library:Toggle(小go, "自动挥剑", function(isToggled)
+    getgenv().train = isToggled
+    while getgenv().train do
+      local args = {
+    [1] = "Train"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Server.Action:FireServer(unpack(args))
+        game:GetService("RunService").Heartbeat:wait()
+    end
+end)
+
+
+
+Library:Toggle(Main, "无限获得奖杯", function(isToggled)
+    getgenv().WinsINF = isToggled
+    while getgenv().WinsINF do
+     local args = { [1] = "Pet", [2] = 1, [3] = -math.huge} game:GetService("ReplicatedStorage").Remotes.Server.HatchEggs:InvokeServer(unpack(args))
+        game:GetService("RunService").Heartbeat:wait()
+    end
+end)
+
+
+Library:Toggle(Main, "自动重生", function(isToggled)
+    getgenv().Rebirth = isToggled
+    while getgenv().Rebirth do
+        game:GetService("ReplicatedStorage").Remotes.Server.Rebirth:FireServer()
+        game:GetService("RunService").Heartbeat:wait()
+    end
+end)
+
+ Library:Label(Main, "世界: 1")
+
+Library:Dropdown(小go, "传送区域", world1, function(selectedOption)
+    getgenv().SelectedWor1 = selectedOption
+end)
+
+
+Library:Toggle(Main, "自动汽车: 世界1", function(isToggled)
+    getgenv().Damage = isToggled
+    while getgenv().Damage do
+       local args = {
+    [1] = "Hit",
+    [2] = getgenv().SelectedWor1
+}
+
+game:GetService("ReplicatedStorage").Remotes.Server.Action:FireServer(unpack(args))
+        game:GetService("RunService").Heartbeat:wait()
+    end
+end)
+
+ Library:Label(Main, "世界: 2")
+
+Library:Dropdown(Main, "Select A Zone", World2, function(selectedOption)
+    getgenv().SelectedWor2 = selectedOption
+end)
+
+
+Library:Toggle(Main, "自动汽车: 世界2", function(isToggled)
+    getgenv().Damage2 = isToggled
+    while getgenv().Damage2 do
+       local args = {
+    [1] = "Hit",
+    [2] = getgenv().SelectedWor2
+}
+
+game:GetService("ReplicatedStorage").Remotes.Server.Action:FireServer(unpack(args))
+        game:GetService("RunService").Heartbeat:wait()
+    end
+end)
+
+Library:Toggle(Egg, "自动购买最好的鸡蛋", function(isToggled)
+    getgenv().EGGS = isToggled
+    while getgenv().EGGS do
+      local args = {
+    [1] = "Pet",
+    [2] = 27, --pet type
+    [3] = 1 --wins amount
+}
+
+game:GetService("ReplicatedStorage").Remotes.Server.HatchEggs:InvokeServer(unpack(args))
+        game:GetService("RunService").Heartbeat:wait()
+    end
+end)
