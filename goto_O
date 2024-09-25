@@ -1138,6 +1138,12 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%94%81%E5%AE%9A%E8%A7%86%E8%A7%92"))()
   end
 })
+Tab:AddButton({
+    Name="小go 在外网找的几个道具",
+    Callback=function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/b04e28198c8eeb1408921a1560792152/raw/67739a2bc571093976e6cd7e51fb526dedd75861/tools",true))()
+  end
+})
 
 local Tab = Window:MakeTab({
     Name = "玩家",
