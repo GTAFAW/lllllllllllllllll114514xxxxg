@@ -264,6 +264,9 @@ local UITab15 = win:Tab("『餐厅大亨2』",'16060333448')
 
 local about = UITab15:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",true)
 
+about:Button("小go",function()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%A4%90%E5%8E%85%E5%A4%A7%E4%BA%A82")))()
+end)
 about:Button("zeld  Hub",function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/iz037/Zeld-Hub/main/Script/Restaurant%20Tycoon%202.lua"))()
 end)
