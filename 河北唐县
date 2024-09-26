@@ -27,7 +27,7 @@ ImageButton.MouseButton1Down:connect(function()
         local vim = game:service("VirtualInputManager")
         vim:SendKeyEvent(false, "RightControl", false, game)
 end)
-local UILib = loadstring(game:HttpGet((https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui)))()
+local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/UIP/main/UI%E6%BA%90%5Bvape%E9%80%8F%E6%98%8E%5D.lua')))()
 local win = UILib:Window("小go河北唐县",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("主要功能")
@@ -37,9 +37,9 @@ tab:Toggle("自动刷钱", false, function(value)
 	if value then
 		autoFarm()
 	end
-end
+end)
 
-game.RunService.Stepped:Connect,function()
+game.RunService.Stepped:Connect(function()
 local virtualUser = game:GetService('VirtualUser')
 virtualUser:CaptureController()
 
@@ -61,20 +61,4 @@ function autoFarm()
 		task.wait(0)
 	end
 end
-end)
-local tab = win:Tab("传送")
-tab2:Toggle("传送到警察局", function()
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5513.97412109375, 8.656171798706055, 4964.291015625)
-end)
-Tab2:Toggle("传送到出生点", function()
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3338.31982421875, 10.048742294311523, 3741.84033203125)
-end)
-Tab2:Toggle("传送到医院", function()
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5471.482421875, 14.149418830871582, 4259.75341796875)
-end)
-Tab2:Toggle("传送到手机店", function()
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6789.2041015625, 11.197686195373535, 1762.687255859375)
-end)
-Tab2:Toggle("传送到火锅店", function()
-  game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5912.84765625, 12.217276573181152, 1058.29443359375)
 end)
