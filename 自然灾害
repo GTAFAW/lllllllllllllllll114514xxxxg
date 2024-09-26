@@ -51,6 +51,55 @@ if bool == true then do game.Players.LocalPlayer.PlayerGui.MainGui.MapVotePage.V
 end
 end)
 
+tab:Toggle("预测灾害", "t", false, function(val)
+		nextdis = val
+
+		while wait(1) and nextdis do
+			local SurvivalTag = plr.Character:FindFirstChild("SurvivalTag")
+			if SurvivalTag then
+				if SurvivalTag.Value == "Blizzard" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：暴风雪"
+				elseif SurvivalTag.Value == "Sandstorm" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：沙尘暴"
+				elseif SurvivalTag.Value == "Tornado" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：龙卷风"
+				elseif SurvivalTag.Value == "Volcanic Eruption" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：火山"
+				elseif SurvivalTag.Value == "Flash Flood" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：洪水"
+				elseif SurvivalTag.Value == "Deadly Virus" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：病毒"
+				elseif SurvivalTag.Value == "Tsunami" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：海啸"
+				elseif SurvivalTag.Value == "Acid Rain" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：酸雨"
+				elseif SurvivalTag.Value == "Fire" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：火焰"
+				elseif SurvivalTag.Value == "Meteor Shower" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：流星雨"
+				elseif SurvivalTag.Value == "Earthquake" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：地震"
+				elseif SurvivalTag.Value == "Thunder Storm" and nextdis then
+					Message.Visible = true
+					Message.Text = "下一个灾难是：暴风雨"
+				else
+					Message.Visible = false
+				end
+			end
+		end
+	end)
+
 tab:Toggle("在水上行走", false, function(bool)
 if bool == false then do game.Workspace.WaterLevel.CanCollide = false
                             game.Workspace.WaterLevel.Size = Vector3.new(10, 1, 10)
