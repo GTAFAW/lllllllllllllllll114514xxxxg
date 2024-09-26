@@ -39,7 +39,7 @@ tab:Toggle("自动刷钱", false, function(value)
 	end
 end)
 
-game.RunService.Stepped:Connect(function()
+game.RunService.Stepped:Connect(function(value)
 local virtualUser = game:GetService('VirtualUser')
 virtualUser:CaptureController()
 
