@@ -17,8 +17,17 @@ credits:Button("脚本框架变小一点 抱歉暂时无法使用", "", false, f
         "关闭脚本",
         function()
             game:GetService("CoreGui")["frosty"]:Destroy()
-        end
-    )
+        end)
+credits:Button(
+        "小go主页",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ym"))()
+        end)
+credits:Button(
+        "小gov2",
+        function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))()
+        end)
     local creds = window:Tab("火箭发射模拟器", "16060333448")
     local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
     credits:Button(
