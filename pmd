@@ -124,7 +124,7 @@ elseif a=="wei_wen520"then
 _G.whitelisted=true
 elseif a=="29614G890"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="sjhekxz"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
