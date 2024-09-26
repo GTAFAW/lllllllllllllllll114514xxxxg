@@ -177,3 +177,9 @@ local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️
 credits:Button("小go", function()
         loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E8%BA%B2%E9%81%BF")))()
     end)
+local creds = window:Tab("每点击+1车辆", "16060333448")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("小go", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E6%AF%8F%E7%82%B9%E5%87%BB%2B1%E6%B1%BD%E8%BD%A6"))()
+    end)
