@@ -83,7 +83,7 @@ tab:Toggle("预测灾害", "t", false, function(val)
 					Message.Text = "下一个灾难是：酸雨"
 				elseif SurvivalTag.Value == "Fire" and nextdis then
 					Message.Visible = true
-					Message.Text = "下一个灾难是：火焰"
+					Message.Text = "下一个灾难是：火灾"
 				elseif SurvivalTag.Value == "Meteor Shower" and nextdis then
 					Message.Visible = true
 					Message.Text = "下一个灾难是：流星雨"
