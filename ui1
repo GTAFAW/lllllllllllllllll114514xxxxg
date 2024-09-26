@@ -26,7 +26,7 @@ credits:Button(
 credits:Button(
         "小gov2",
         function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
         end)
     local creds = window:Tab("火箭发射模拟器", "16060333448")
     local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
