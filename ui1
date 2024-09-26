@@ -199,7 +199,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebir
 task.wait()
 end
     end)
-local creds = window:Tab("Toilet Defense RNG（厕所RNG）", "16060333448")
+local creds = window:Tab("ToiletDefenseRNG（厕所RNG）", "16060333448")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
 credits:Button("自动抽100以上", function(value)
