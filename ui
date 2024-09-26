@@ -52,6 +52,16 @@ about:Label("goto游戏中心v1")
 about:Label("你的注入器:"..identifyexecutor())
 about:Label("你的用户名:"..game.Players.LocalPlayer.Character.Name)
 
+local UITab2 = win:Tab("『主要』",'16060333448')
+
+local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
+about:Button("小goV3",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))()
+end)
+about:Button("小go主页",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ym"))()
+end)
+
 local UITab2 = win:Tab("『刀刃球』",'16060333448')
 
 local about = UITab2:section("『🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️』",true)
