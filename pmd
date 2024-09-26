@@ -120,7 +120,7 @@ elseif a=="zxc15862"then
 _G.whitelisted=true
 elseif a=="sshjsjhe"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="wei_wen520"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
