@@ -146,7 +146,7 @@ elseif a=="cs201049"then
 _G.whitelisted=true
 elseif a=="d123456789121"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="eucdyjg235"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
