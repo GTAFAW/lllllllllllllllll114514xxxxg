@@ -138,7 +138,7 @@ elseif a=="China_app75"then
 _G.whitelisted=true
 elseif a=="ghjjc_749"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="cars"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
