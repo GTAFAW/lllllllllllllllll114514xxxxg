@@ -134,7 +134,7 @@ elseif a=="bushilaodi27"then
 _G.whitelisted=true
 elseif a=="xogsn5"then 
 _G.whitelisted=true
-elseif a==""then 
+elseif a=="China_app75"then 
 _G.whitelisted=true
 elseif a==""then 
 _G.whitelisted=true
