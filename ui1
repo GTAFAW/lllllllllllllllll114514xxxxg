@@ -1,4 +1,4 @@
-   local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E5%BD%A9%E8%99%B9ui", true))()
+   local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E5%BD%A9%E8%99%B9ui", true))()
     local window = library:new("小go游戏中心v2")
     local creds = window:Tab("关于", "6035145364")
     local bin = creds:section("信息", true)
