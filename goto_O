@@ -793,14 +793,14 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="小goFe合集",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/Fe"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/Fe"))()
     end
 })
  Tab:AddButton({
 	Name = "无限跳",
     Default = false,
 	Callback = function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E6%97%A0%E9%99%90%E8%B7%B3", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E6%97%A0%E9%99%90%E8%B7%B3", true))()
 	end
 })
  Tab:AddButton({
@@ -842,19 +842,19 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="goto制作小宇飞",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E4%B9%8B%E5%89%8D%E7%9A%84%E9%A3%9E%E8%A1%8C"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E4%B9%8B%E5%89%8D%E7%9A%84%E9%A3%9E%E8%A1%8C"))()
     end
 })
 Tab:AddButton({
     Name ="goto制作小宇飞1.5百倍飞行",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E5%B0%8F%E5%AE%87%E9%A3%9E"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E5%B0%8F%E5%AE%87%E9%A3%9E"))()
     end
 })
 Tab:AddButton({
     Name ="黑洞小go汉化",
     Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%BB%91%E6%B4%9E2"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E9%BB%91%E6%B4%9E2"))()
     end
 })
 Tab:AddButton({
@@ -885,7 +885,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="卡哇伊黑洞（可以锁人的哦）",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%BB%91%E6%B4%9E",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E9%BB%91%E6%B4%9E",true))()
     end
 })
 Tab:AddButton({
@@ -1659,7 +1659,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
     Name ="小go制作",
     Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/DOORS%E9%BE%99%E6%94%B9")))()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/DOORS%E9%BE%99%E6%94%B9")))()
     end
 })
 Tab:AddButton({
@@ -1683,7 +1683,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name = "小go汉化版",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/DOORS"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/DOORS"))()
     end
 })
 Tab:AddButton({
@@ -3360,7 +3360,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
     Name="游戏v1",
     Callback=function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/ui"))()
   end
 })
 
@@ -3376,7 +3376,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
     Name="游戏v2",
     Callback=function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/ui1"))()
   end
 })
 
