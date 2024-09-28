@@ -891,7 +891,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name ="甩人通用",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E7%94%A9%E4%BA%BA%E9%80%9A%E7%94%A8"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E7%94%A9%E4%BA%BA%E9%80%9A%E7%94%A8"))()
     end
 })
 Tab:AddButton({
