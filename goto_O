@@ -103,7 +103,7 @@ Tab:AddButton({
      setclipboard("3795512080")
   	end
 })
-Tab:AddButton({
+选项卡:添加按钮({
 	Name = "复制QQ群",
 	Callback = function()
      setclipboard("877251886")
@@ -775,7 +775,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "管理员权限 可获得游戏内的通行证",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E5%B0%8Fgo%E6%B1%89%E5%8C%96%E7%AE%A1%E7%90%86%E5%91%98"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E5%B0%8Fgo%E6%B1%89%E5%8C%96%E7%AE%A1%E7%90%86%E5%91%98"))()
 end
 })
 
