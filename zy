@@ -25,18 +25,18 @@ Tab:Button{
 	Name = "goto脚本主页",
 	Description = "小go 主页",
 	Callback = function() 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ym"))() end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/ym"))() end
 }
 Tab:Button{
 	Name = "🕊️小go游戏中心v1🕊️",
 	Description = "小go 游戏v1",
 	Callback = function()  
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui"))() end
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/ui"))() end
 }
 Tab:Button{
 	Name = "🕊️小go游戏中心v2🕊️",
 	Description = "小go 游戏V2",
-	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/ui1"))() end
+	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/ui1"))() end
 }
 GUI:Notification{
 	Title = "小go脚本ui界面🕊️🕊️🕊️🕊️",
