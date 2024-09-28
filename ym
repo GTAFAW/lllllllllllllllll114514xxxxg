@@ -165,7 +165,7 @@ local function CreateGUI(title)
     end)
     agreeButton.MouseButton1Click:Connect(function()
         AnimateExit()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/main/goto_O"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/goto_O"))()
     end)
 end
 local myTitle = "goto_Oʕ  •ᴥ•ʔ……" 
