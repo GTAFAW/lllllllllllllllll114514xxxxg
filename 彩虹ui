@@ -306,7 +306,7 @@
         ScriptTitle.Size = UDim2.new(0, 102, 0, 20)
         ScriptTitle.Font = Enum.Font.GothamSemibold
         ScriptTitle.Text = name
-        ScriptTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+        ScriptTitle.TextColor3 = Color3.fromRGB(1, 0.647, 0.765)
         ScriptTitle.TextSize = 14
         ScriptTitle.TextScaled = true
         ScriptTitle.TextXAlignment = Enum.TextXAlignment.Left
