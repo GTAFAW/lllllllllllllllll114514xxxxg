@@ -402,12 +402,12 @@
         )
         Open.Name = "Open"
         Open.Parent = dogent
-        Open.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+        Open.BackgroundColor3 = Color3.fromRGB(255, 192, 203)
         Open.Position = UDim2.new(0.00829315186, 0, 0.31107837, 0)
         Open.Size = UDim2.new(0, 61, 0, 32)
         Open.Font = Enum.Font.SourceSans
-        Open.Text = "隐藏/打开"
-        Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+        Open.Text = "隐藏/启动"
+        Open.TextColor3 = Color3.fromRGB(0, 0, 255)
         Open.TextSize = 14
         Open.Active = true
         Open.Draggable = true
@@ -437,7 +437,7 @@
             TabIco.BackgroundTransparency = 1
             TabIco.BorderSizePixel = 0
             TabIco.Size = UDim2.new(0, 24, 0, 24)
-            TabIco.Image = ("rbxassetid://%s"):format(icon or 16060333448)
+            TabIco.Image = ("rbxassetid://%s"):format(icon or 18923878915)
             TabIco.ImageTransparency = 0.2
             TabText.Name = "TabText"
             TabText.Parent = TabIco
