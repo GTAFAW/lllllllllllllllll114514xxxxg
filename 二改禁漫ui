@@ -537,7 +537,7 @@ end
           SectionText.Size = UDim2.new(0, 401, 0, 36)
           SectionText.Font = Enum.Font.GothamSemibold
           SectionText.Text = name
-          SectionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+          SectionText.TextColor3 = Color3.fromRGB(0, 0, 255)
           SectionText.TextSize = 16.000
           SectionText.TextXAlignment = Enum.TextXAlignment.Left
           
