@@ -1003,7 +1003,7 @@ end
             SliderBack.AutoButtonColor = false
             SliderBack.Font = Enum.Font.GothamSemibold
             SliderBack.Text = "   " .. text
-            SliderBack.TextColor3 = Color3.fromRGB(255, 255, 255)
+            SliderBack.TextColor3 = Color3.fromRGB(0, 0, 255)
             SliderBack.TextSize = 16.000
             SliderBack.TextXAlignment = Enum.TextXAlignment.Left
             
