@@ -6,7 +6,108 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFA
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("更新9月18日")
     bin:Label("进入游戏时间"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S").."秒")
- 
+
+local creds = window:Tab("主要", "18923878915")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Dropdown("自动播放",false,function(value)
+    getgenv().AutoPlay = value
+    while getgenv().AutoPlay do task.wait()
+        if PlayerTycoon.CurrencyToCollect.Value == 0 then
+            cango = false
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PlayerTycoon.PurchasedObjects:FindFirstChild("Oil 1").PromptDisplay.CFrame.Position)
+            task.wait(0.5)
+			vim:SendKeyEvent(true, 'E', false, game)
+			task.wait(0.5)
+			vim:SendKeyEvent(false, 'E', false, game)
+            task.wait(3)
+        elseif PlayerTycoon.CurrencyToCollect.Value >= 0 then
+          warn("[Debug]: User have more then 0 cash")
+          cango = true
+        end
+        if cango == true then
+         task.wait(tonumber(getgenv().WaitBeforeCollect))
+         local CashCollectorPart = PlayerTycoon.Essentials.CashCollector.CFrame.Position
+         local CashCollectorPart2 = PlayerTycoon.Essentials.CashCollector2.CFrame.Position
+         CashCollectorPart = CashCollectorPart + Vector3.new(0, 5, 0)
+         if PlayerTycoon.PurchasedObjects:FindFirstChild("Oil Drill 1") then
+             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CashCollectorPart)
+             task.wait(0.5)
+             CashCollectorPart2 = CashCollectorPart2 + Vector3.new(0, 5, 0)
+             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CashCollectorPart2)
+         else
+             game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CashCollectorPart)
+         end
+         for i= 1,tonumber(getgenv().ButtonPressAmmount) do task.wait(0.5)
+            local partsToTeleportTo = {}
+            for _, model in pairs(PlayerTycoon.UnpurchasedButtons:GetChildren()) do
+                if model:IsA("Model") then
+                    for _, part in pairs(model:GetChildren()) do
+                        if part.Name == "Part" then
+                            local ignore = false
+                            for _, name in pairs(partsToIgnore) do
+                                if part.Parent.Name == name then
+                                    ignore = true
+                                elseif getgenv().IgnoreRebirthButtons then
+                                    for _, name in pairs(RebirthButtons) do
+                                        if part.Parent.Name == name then
+                                            ignore = true
+                                            break
+                                        end
+                                    end
+                                end
+                            end
+                            if not ignore then
+                                table.insert(partsToTeleportTo, part)
+                            end
+                        end
+                    end
+                end
+            end
+            if #partsToTeleportTo > 0 then
+                local randomPart = partsToTeleportTo[math.random(1, #partsToTeleportTo)]
+                local newPosition = randomPart.CFrame.Position
+                newPosition = newPosition + Vector3.new(0, 5, 0)
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(newPosition)
+            end
+         end
+         task.wait(tonumber(getgenv().WaitAfterCollect))
+        end
+    end
+end)
+credits:Dropdown("自动油桶",false,function(value)
+    getgenv().AutoBarrel = value
+    while getgenv().AutoBarrel do task.wait()
+        for _, action in ipairs(actions) do 
+            task.wait(3)
+            moveAndSend(action[1], action[2])
+        end
+    end
+end)
+credits:Dropdown("自动重生",false,function(value)
+    getgenv().AutoRebirth = value
+    while getgenv().AutoRebirth do task.wait(1)
+        game:GetService("ReplicatedStorage"):WaitForChild("RebirthEVT"):FireServer()
+        
+    end
+end)
+credits:Dropdown("自动收集",false,function(value)
+    getgenv().autoCollect = value
+    while getgenv().autoCollect do task.wait(1)
+        local CashCollectorPart = PlayerTycoon.Essentials.CashCollector.CFrame.Position
+        local CashCollectorPart2 = PlayerTycoon.Essentials.CashCollector2.CFrame.Position
+        CashCollectorPart = CashCollectorPart + Vector3.new(0, 5, 0)
+        if PlayerTycoon.PurchasedObjects:FindFirstChild("Oil Drill 1") then
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CashCollectorPart)
+            task.wait(0.5)
+            CashCollectorPart2 = CashCollectorPart2 + Vector3.new(0, 5, 0)
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CashCollectorPart2)
+        else
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CashCollectorPart)
+        end
+    end
+end)
+
 local creds = window:Tab("传送功能", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
