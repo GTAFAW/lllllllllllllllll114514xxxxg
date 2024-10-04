@@ -580,3 +580,62 @@ end)
 credits:Button("iw指令", function()
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
+
+local IgnoreRebirthButtons = Tabs.FarmConfig:AddToggle("IgnoreRebirthButtons", {Title = "Ignore RebirthButtons", Default = false })
+IgnoreRebirthButtons:OnChanged(function(value)
+    getgenv().IgnoreRebirthButtons = value
+end)
+local WaitAfterCollect = Tabs.FarmConfig:AddInput("WaitAfterCollect", {
+    Title = "Wait After AutoCollect",
+    Default =  getgenv().WaitAfterCollect,
+    Placeholder = "1 or 2 or 3",
+    Numeric = true, 
+    Finished = true,
+    Callback = function(Value)
+      getgenv().WaitAfterCollect = Value
+    end
+})
+WaitAfterCollect:OnChanged(function()
+    Fluent:Notify({
+        Title = "awakenkn",
+        Content = "Button Press Ammount: "..WaitAfterCollect.Value,
+        Duration = 5
+    })
+end)
+local WaitBeforeCollect = Tabs.FarmConfig:AddInput("WaitBeforeCollect", {
+    Title = "Wait Before AutoCollect",
+    Default = getgenv().WaitBeforeCollect,
+    Placeholder = "1 or 2 or 3",
+    Numeric = true, 
+    Finished = true,
+    Callback = function(Value)
+        getgenv().WaitBeforeCollect = Value
+    end
+})
+WaitBeforeCollect:OnChanged(function()
+    Fluent:Notify({
+        Title = "awakenkn",
+        Content = "Wait Before AutoCollect: "..WaitBeforeCollect.Value,
+        Duration = 5
+    })
+end)
+local ButtonPressAmmount = Tabs.FarmConfig:AddInput("ButtonPressAmmount", {
+    Title = "How many buttons pressed?",
+    Default = getgenv().ButtonPressAmmount,
+    Placeholder = "1 or 2 or 3",
+    Numeric = true, 
+    Finished = true,
+    Callback = function(Value)
+        getgenv().ButtonPressAmmount = Value
+    end
+})
+ButtonPressAmmount:OnChanged(function()
+    Fluent:Notify({
+        Title = "awakenkn",
+        Content = "How many buttons pressed?: "..ButtonPressAmmount.Value,
+        Duration = 5
+    })
+end)
+end
+SaveManager:SetLibrary(Fluent)InterfaceManager:SetLibrary(Fluent)SaveManager:IgnoreThemeSettings()SaveManager:SetIgnoreIndexes({})InterfaceManager:SetFolder("awakenkn")SaveManager:SetFolder("awakenkn/WarTycoon")InterfaceManager:BuildInterfaceSection(Tabs.Settings)SaveManager:BuildConfigSection(Tabs.Settings)Window:SelectTab(1)SaveManager:LoadAutoloadConfig()
+warn("// script Loaded!")
