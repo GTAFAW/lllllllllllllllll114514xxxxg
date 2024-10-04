@@ -7,8 +7,6 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFA
 
 local creds = window:Tab("主要功能", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
-local creds2 = window:Tab("传送功能", "18923878915")
-local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
 credits:Dropdown("基地传送",{"Alpha","Bravo","Charlie","Delta","Echo", "Foxtrot", "Golf","Hotel","Kilo", "Lima", "Omega", "Romeo","Sierra","Tango","Victor","Zulu"}, function(Value)
 game:GetService("Players").LocalPlayer.Character:MoveTo(workspace.Tycoon.TycoonFloor[Value].Position)
@@ -51,29 +49,32 @@ end
 end
 end)
 
-credits2:Button("传送自己的基地", function()
+credits:Button("传送自己的基地", function()
 function getTycoon()
     game:GetService("Players").LocalPlayer.Character:MoveTo(workspace.Tycoon.Tycoons[game:GetService("Players").LocalPlayer.leaderstats.Team.Value].Essentials.Spawn.Position)
 end
 getTycoon()
 end)
 
-credits2:Button("传送旗帜", function()
+local creds = window:Tab("传送功能", "18923878915")
+local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
+
+credits:Button("传送旗帜", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(73.22032928466797, 47.9999885559082, 191.06993103027344)
 end)
 
-credits2:Button("传送油桶1", function()
+credits:Button("传送油桶1", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.748652458190918, 48.662540435791016, 700.2245483398438)
 end)
 
-credits2:Button("传送油桶2", function()
+credits:Button("传送油桶2", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(76.48243713378906, 105.25657653808594, -2062.3896484375)
 end)
 
-credits2:Button("传送油桶3", function()
+credits:Button("传送油桶3", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.840208053588867, 49.34040069580078, -416.9921569824219)
 end)
 
-credits2:Button("传送油桶4", function()
+credits:Button("传送油桶4", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.48390197753906, 105.25657653808594, 3434.9033203125)
 end)
