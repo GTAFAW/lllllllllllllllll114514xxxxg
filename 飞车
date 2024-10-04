@@ -28,7 +28,7 @@ Flymguiv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Drag.Name = "Drag"
 Drag.Parent = Flymguiv2
 Drag.Active = true
-Drag.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Drag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Drag.BorderSizePixel = 0
 Drag.Draggable = true
 Drag.Position = UDim2.new(0.482438415, 0, 0.454874992, 0)
@@ -36,7 +36,7 @@ Drag.Size = UDim2.new(0, 237, 0, 27)
 
 FlyFrame.Name = "FlyFrame"
 FlyFrame.Parent = Drag
-FlyFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+FlyFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 FlyFrame.BorderSizePixel = 0
 FlyFrame.Draggable = true
 FlyFrame.Position = UDim2.new(-0.00200000009, 0, 0.989000022, 0)
