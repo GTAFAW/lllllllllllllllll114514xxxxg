@@ -1,15 +1,48 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E5%BD%A9%E8%99%B9ui", true))()
     local window = library:new("小go战争大亨")
-    local GameTime = math.floor(workspace.DistributedGameTime + 0.5);
-	local Hour = math.floor(GameTime / 60 ^ 2) % 24;
-	local Minute = math.floor(GameTime / 60 ^ 1) % 60;
-	local Second = math.floor(GameTime / 60 ^ 0) % 60;
-	Time:Set("[游戏时长] : 时 : " .. Hour .. " 分 : " .. Minute .. " 秒 : " .. Second)
     local creds = window:Tab("关于", "6035145364")
     local bin = creds:section("信息", true)
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("更新9月18日")
-   
+
+Time = MainTab:Label("Executor Time");
+function UpdateTime()
+	local GameTime = math.floor(workspace.DistributedGameTime + 0.5);
+	local Hour = math.floor(GameTime / 60 ^ 2) % 24;
+	local Minute = math.floor(GameTime / 60 ^ 1) % 60;
+	local Second = math.floor(GameTime / 60 ^ 0) % 60;
+	Time:Set("[游戏时长] : 时 : " .. Hour .. " 分 : " .. Minute .. " 秒 : " .. Second);
+end;
+spawn(function()
+	while task.wait() do
+		pcall(function()
+			UpdateTime();
+		end);
+	end;
+end);
+Client = MainTab:Label("Client");
+function UpdateClient()
+	local Fps = workspace:GetRealPhysicsFPS();
+	Client:Set("[帧率] : " .. Fps);
+end;
+spawn(function()
+	while true do
+		wait(0.1);
+		UpdateClient();
+	end;
+end);
+Client1 = MainTab:Label("Client");
+function UpdateClient1()
+	local Ping = (game:GetService("Stats")).Network.ServerStatsItem["Data Ping"]:GetValueString();
+	Client1:Set("[Cpu] : " .. Ping);
+end;
+spawn(function()
+	while true do
+		wait(0.1);
+		UpdateClient1();
+	end;
+end);
+
 local creds = window:Tab("传送功能", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
