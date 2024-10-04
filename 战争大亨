@@ -379,7 +379,7 @@ end)
 local creds = window:Tab("传送功能", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
-credits:Dropdown("基地传送","FreeBoat",{"阿尔法","布拉沃","查理","德尔塔","回声","狐步舞","高尔夫","酒店","基洛","利马","欧米茄","罗密欧","塞拉","探戈","维克多","祖鲁"}, function(Value)
+credits:Dropdown("基地传送","FreeBoat",{"Alpha","Bravo","Charlie","Delta","Echo", "Foxtrot", "Golf","Hotel","Kilo", "Lima", "Omega", "Romeo","Sierra","Tango","Victor","Zulu"}, function(Value)
 game:GetService("Players").LocalPlayer.Character:MoveTo(workspace.Tycoon.TycoonFloor[Value].Position)
 end)
 credits:Button("传送自己的基地", function()
