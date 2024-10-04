@@ -4,11 +4,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFA
     local bin = creds:section("信息", true)
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("更新9月18日")
-    bin:Label("你好"," "..game.Players.LocalPlayer.Name.."欢迎使用xgo")
-    bin:Label("时间"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S").."秒")
-    bin:Label("[游戏时长] : 时 : " .. Hour .. " 分 : " .. Minute .. " 秒 : " .. Second)
-
-
+    
 
 local creds = window:Tab("传送功能", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
