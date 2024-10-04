@@ -56,29 +56,23 @@ end
 end)
 
 tab:Toggle("自动收款", false, function(Value)
-    warn("Requiring API")do
-  loadstring(game:HttpGet("https://pastebin.com/raw/KMc6aBky"))();
-end warn("API Loaded")
-local child = object.child
-local descendant = object.descendant
-local check = object.check
-local Tycoon = game.Players.LocalPlayer.Tycoon.Value
-descendant.foreach(Tycoon.Items.OftenFiltered.Surface,"Bill",function(Bill)
-  local Settings = {
-          ["name"] = "CollectBill",
-          ["model"] = Bill.Parent
-  }
-  game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
-end)
-local Connection,Code = descendant.on_add(Tycoon.Items.OftenFiltered.Surface,function(Bill)
-  check.it(Bill.Name == "Bill",function()
-      local Settings = {
-              ["name"] = "CollectBill",
-              ["model"] = Bill.Parent
-      }
-      game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
-  end)
-end)
+    local lp = game:GetService('Players').LocalPlayer
+local cti = game:GetService("ReplicatedStorage").Events.ClientTycoonInput
+local srfc, tcn
+
+for _,v in pairs(workspace.Tycoons:GetChildren()) do
+    if v.Player.Value == lp then
+        tcn = v
+        srfc = tcn.Items.OftenFiltered.Surface
+        break
+    end
+end
+
+while wait() do
+    for _,v in pairs(srfc:GetChildren()) do
+        cti:FireServer(tcn, {['name'] = 'CollectBill', ['model'] = v})
+    end
+end
 end)
 
 tab:Toggle("NPC烹饪并送达", false, function(Value)
