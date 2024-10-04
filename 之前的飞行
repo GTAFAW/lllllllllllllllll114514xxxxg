@@ -88,7 +88,7 @@ speed.TextWrapped = true
 
 mine.Name = "mine"
 mine.Parent = Frame
-mine.BackgroundColor3 = Color3.fromRGB(70,70,70)
+mine.BackgroundColor3 = Color3.fromRGB(1,0.647,0)
 mine.Position = UDim2.new(0.231578946, 0, 0.491228074, 0)
 mine.Size = UDim2.new(0, 45, 0, 29)
 mine.Font = Enum.Font.SourceSans
@@ -100,7 +100,7 @@ mine.TextWrapped = true
 
 closebutton.Name = "Close"
 closebutton.Parent = main.Frame
-closebutton.BackgroundColor3 = Color3.fromRGB(255, 0, 0 )
+closebutton.BackgroundColor3 = Color3.fromRGB(1, 0.647, 0 )
 closebutton.Font = "SourceSans"
 closebutton.Size = UDim2.new(0, 45, 0, 29)
 closebutton.Text = "小宇"
