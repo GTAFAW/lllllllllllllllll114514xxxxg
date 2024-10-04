@@ -471,3 +471,6 @@ end
 end)
    end)
 
+credits:Button("iw指令", function()
+  loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
