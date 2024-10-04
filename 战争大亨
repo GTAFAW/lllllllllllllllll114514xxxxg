@@ -15,13 +15,13 @@ game:GetService("TeleportService"):TeleportToPlaceInstance(
             game:GetService("Players").LocalPlayer
         )
     end)
-credits:Slider("步行速度!", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
+credits:Slider("速度调试", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
   spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Speed end end)
 end)
-credits:Slider("跳跃高度!", "JumpPower", game.Players.LocalPlayer.Character.Humanoid.JumpPower, 50, 400, false, function(Jump)
+credits:Slider("跳跃调试", "JumpPower", game.Players.LocalPlayer.Character.Humanoid.JumpPower, 50, 400, false, function(Jump)
   spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jump end end)
 end)
-credits:Textbox("重力设置!", "Gravity", "输入", function(Gravity)
+credits:Textbox("重力选择", "Gravity", "数值", function(Gravity)
   spawn(function() while task.wait() do game.Workspace.Gravity = Gravity end end)
 end)
 credits:Button("人物框架", function()
@@ -363,7 +363,7 @@ end
 end
 end)
     end)
-credits:Button("范围修改", "Gravity","输入", function(value)
+credits:Button("范围修改", "value","输入", function(value)
 	  print(value)
 _G.HeadSize = value
 _G.Disabled = true
