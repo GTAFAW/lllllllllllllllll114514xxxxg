@@ -1,47 +1,22 @@
-local IMAGE = "rbxassetid://16060333448"
-local Positions = UDim2.new(0.822025776, 0, 0.0401606411, 0)
-local Sizes = UDim2.new(0, 76, 0, 70)
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E5%BD%A9%E8%99%B9ui", true))()
+    local window = library:new("小go战争大亨")
+    local creds = window:Tab("关于", "6035145364")
+    local bin = creds:section("信息", true)
+    bin:Label("你的注入器:" .. identifyexecutor())
+    bin:Label("更新9月18日")
 
-local KINGHUBMOBILE = Instance.new("ScreenGui")
-local _100x100 = Instance.new("Frame")
-local ImageButton = Instance.new("ImageButton")
+local creds = window:Tab("主要功能", "18923878915")
+local creds2 = window:Tab("传送功能", "18923878915")
 
-KINGHUBMOBILE.Name = "LinniScriptcharge"
-KINGHUBMOBILE.Parent = game:WaitForChild("CoreGui")
-KINGHUBMOBILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-_100x100.Name = "100x100"
-_100x100.Parent = KINGHUBMOBILE
-_100x100.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-_100x100.Position = Positions
-_100x100.Size = UDim2.new(0, 76, 0, 70)
-
-ImageButton.Parent = _100x100
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.Size = Sizes
-ImageButton.Image = IMAGE
-ImageButton.MouseButton1Down:connect(function()
-        local vim = game:service("VirtualInputManager")
-        vim:SendKeyEvent(true, "RightControl", false, game)
-
-        local vim = game:service("VirtualInputManager")
-        vim:SendKeyEvent(false, "RightControl", false, game)
-end)
-local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E9%9A%90%E5%BD%A2ui')))()
-local win = UILib:Window("小go战争大亨",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
-
-local tab = win:Tab("主要功能")
-local tab2 = win:Tab("传送功能")
-
-tab:Dropdown("基地传送",{"Alpha","Bravo","Charlie","Delta","Echo", "Foxtrot", "Golf","Hotel","Kilo", "Lima", "Omega", "Romeo","Sierra","Tango","Victor","Zulu"}, function(Value)
+credits:Dropdown("基地传送",{"Alpha","Bravo","Charlie","Delta","Echo", "Foxtrot", "Golf","Hotel","Kilo", "Lima", "Omega", "Romeo","Sierra","Tango","Victor","Zulu"}, function(Value)
 game:GetService("Players").LocalPlayer.Character:MoveTo(workspace.Tycoon.TycoonFloor[Value].Position)
 end)
 
-tab:Button("飞行", function()
+credits:Button("飞行", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/goto/refs/heads/main/%E4%B9%8B%E5%89%8D%E7%9A%84%E9%A3%9E%E8%A1%8C"))()
 end)
 
-tab:Button("范围", function()
+credits:Button("范围", function()
 _G.HeadSize = 20
 _G.Disabled = true
 
@@ -62,7 +37,7 @@ end
 end)
 end)
 
-tab:Button("传送到空投", function()
+credits:Button("传送到空投", function()
 local Folder = workspace["Game Systems"]
 local player = game.Players.LocalPlayer.Character.HumanoidRootPart
 
@@ -74,29 +49,29 @@ end
 end
 end)
 
-tab2:Button("传送自己的基地", function()
+credits2:Button("传送自己的基地", function()
 function getTycoon()
     game:GetService("Players").LocalPlayer.Character:MoveTo(workspace.Tycoon.Tycoons[game:GetService("Players").LocalPlayer.leaderstats.Team.Value].Essentials.Spawn.Position)
 end
 getTycoon()
 end)
 
-tab2:Button("传送旗帜", function()
+credits2:Button("传送旗帜", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(73.22032928466797, 47.9999885559082, 191.06993103027344)
 end)
 
-tab2:Button("传送油桶1", function()
+credits2:Button("传送油桶1", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.748652458190918, 48.662540435791016, 700.2245483398438)
 end)
 
-tab2:Button("传送油桶2", function()
+credits2:Button("传送油桶2", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(76.48243713378906, 105.25657653808594, -2062.3896484375)
 end)
 
-tab2:Button("传送油桶3", function()
+credits2:Button("传送油桶3", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.840208053588867, 49.34040069580078, -416.9921569824219)
 end)
 
-tab2:Button("传送油桶4", function()
+credits2:Button("传送油桶4", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.48390197753906, 105.25657653808594, 3434.9033203125)
 end)
