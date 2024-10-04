@@ -901,7 +901,7 @@ end
             TextboxBack.AutoButtonColor = false
             TextboxBack.Font = Enum.Font.GothamSemibold
             TextboxBack.Text = "   " .. text
-            TextboxBack.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextboxBack.TextColor3 = Color3.fromRGB(0, 0, 255)
             TextboxBack.TextSize = 16.000
             TextboxBack.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -918,7 +918,7 @@ end
             BoxBG.AutoButtonColor = false
             BoxBG.Font = Enum.Font.Gotham
             BoxBG.Text = ""
-            BoxBG.TextColor3 = Color3.fromRGB(255, 255, 255)
+            BoxBG.TextColor3 = Color3.fromRGB(0, 0, 255)
             BoxBG.TextSize = 14.000
             
             BoxBGC.CornerRadius = UDim.new(0, 6)
@@ -933,7 +933,7 @@ end
             TextBox.Size = UDim2.new(1, 0, 1, 0)
             TextBox.Font = Enum.Font.Gotham
             TextBox.Text = default
-            TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextBox.TextColor3 = Color3.fromRGB(0, 0, 255)
             TextBox.TextSize = 14.000
             
             TextboxBackL.Name = "TextboxBackL"
