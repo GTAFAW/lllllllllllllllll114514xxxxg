@@ -5,7 +5,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFA
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("更新9月18日")
 
-local creds = window:Tab("主要功能", "18923878915")
+local creds = window:Tab("玩家", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
 credits:Button("重新加入", function()
@@ -15,7 +15,15 @@ game:GetService("TeleportService"):TeleportToPlaceInstance(
             game:GetService("Players").LocalPlayer
         )
     end)
-
+credits:Slider("步行速度!", "WalkSpeed", game.Players.LocalPlayer.Character.Humanoid.WalkSpeed, 16, 400, false, function(Speed)
+  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Speed end end)
+end)
+credits:Slider("跳跃高度!", "JumpPower", game.Players.LocalPlayer.Character.Humanoid.JumpPower, 50, 400, false, function(Jump)
+  spawn(function() while task.wait() do game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jump end end)
+end)
+credits:Textbox("重力设置!", "Gravity", "输入", function(Gravity)
+  spawn(function() while task.wait() do game.Workspace.Gravity = Gravity end end)
+end)
 credits:Button("人物框架", function()
     -- xgo
 local Settings = {
@@ -355,7 +363,7 @@ end
 end
 end)
     end)
-credits:Button("范围修改", function(value)
+credits:Button("范围修改", "Gravity","输入", function(value)
 	  print(value)
 _G.HeadSize = value
 _G.Disabled = true
