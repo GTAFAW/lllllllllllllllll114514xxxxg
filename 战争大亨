@@ -1,22 +1,12 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFAW/neilonmacedo153/refs/heads/main/%E5%BD%A9%E8%99%B9ui", true))()
     local window = library:new("小go战争大亨")
     local creds = window:Tab("关于", "6035145364")
-    bin:Label("你好:"," "..game.Players.LocalPlayer.Name.."")
     local bin = creds:section("信息", true)
+    bin:Label("你好:"," "..game.Players.LocalPlayer.Name.."")
     bin:Label("你的注入器:" .. identifyexecutor())
     bin:Label("更新9月18日")
-    bin:Label(for Index = #FrameUpdateTable, 1, -1 do
-        FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
-    end
-       FrameUpdateTable[1] = LastIteration
-    local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
-    CurrentFPS = CurrentFPS - CurrentFPS % 1
-    FpsLabel.Text = ("时间"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S").."秒"))
-    
-    
-
-    
-
+    bin:Label("进入游戏时间"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S").."秒")
+ 
 local creds = window:Tab("传送功能", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
