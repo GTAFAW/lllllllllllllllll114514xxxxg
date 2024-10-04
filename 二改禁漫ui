@@ -1071,7 +1071,7 @@ end
             MinSlider.Size = UDim2.new(0, 20, 0, 20)
             MinSlider.Font = Enum.Font.Gotham
             MinSlider.Text = "-"
-            MinSlider.TextColor3 = Color3.fromRGB(255, 255, 255)
+            MinSlider.TextColor3 = Color3.fromRGB(0, 0, 255)
             MinSlider.TextSize = 24.000
             MinSlider.TextWrapped = true
             
@@ -1085,7 +1085,7 @@ end
             AddSlider.Size = UDim2.new(0, 20, 0, 20)
             AddSlider.Font = Enum.Font.Gotham
             AddSlider.Text = "+"
-            AddSlider.TextColor3 = Color3.fromRGB(255, 255, 255)
+            AddSlider.TextColor3 = Color3.fromRGB(0, 0, 255)
             AddSlider.TextSize = 24.000
             AddSlider.TextWrapped = true
             
@@ -1232,7 +1232,7 @@ end
             DropdownTop.AutoButtonColor = false
             DropdownTop.Font = Enum.Font.GothamSemibold
             DropdownTop.Text = ""
-            DropdownTop.TextColor3 = Color3.fromRGB(255, 255, 255)
+            DropdownTop.TextColor3 = Color3.fromRGB(0, 0, 255)
             DropdownTop.TextSize = 16.000
             DropdownTop.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -1250,7 +1250,7 @@ end
             DropdownOpen.Size = UDim2.new(0, 20, 0, 20)
             DropdownOpen.Font = Enum.Font.Gotham
             DropdownOpen.Text = "+"
-            DropdownOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+            DropdownOpen.TextColor3 = Color3.fromRGB(0, 0, 255)
             DropdownOpen.TextSize = 24.000
             DropdownOpen.TextWrapped = true
             
@@ -1266,7 +1266,7 @@ end
             DropdownText.PlaceholderText = text
             DropdownText.BackgroundTransparency = DTTransparency
             DropdownText.Text = ""
-            DropdownText.TextColor3 = Color3.fromRGB(255, 255, 255)
+            DropdownText.TextColor3 = Color3.fromRGB(0, 0, 255)
             DropdownText.TextSize = 16.000
             DropdownText.TextXAlignment = Enum.TextXAlignment.Left
             
@@ -1342,7 +1342,7 @@ end
               Option.Font = Enum.Font.Gotham
               Option.BackgroundTransparency = DTTransparency
               Option.Text = option
-              Option.TextColor3 = Color3.fromRGB(255, 255, 255)
+              Option.TextColor3 = Color3.fromRGB(0, 0, 255)
               Option.TextSize = 14.000
               
               OptionC.CornerRadius = UDim.new(0, 6)
