@@ -10,7 +10,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GTAFA
 local creds = window:Tab("主要", "18923878915")
 local credits = creds:section("🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️", true)
 
-credits:Dropdown("自动播放",false,function(value)
+credits:Button("自动播放",false,function(value)
     getgenv().AutoPlay = value
     while getgenv().AutoPlay do task.wait()
         if PlayerTycoon.CurrencyToCollect.Value == 0 then
@@ -75,7 +75,7 @@ credits:Dropdown("自动播放",false,function(value)
         end
     end
 end)
-credits:Dropdown("自动油桶",false,function(value)
+credits:Button("自动油桶",false,function(value)
     getgenv().AutoBarrel = value
     while getgenv().AutoBarrel do task.wait()
         for _, action in ipairs(actions) do 
@@ -84,14 +84,14 @@ credits:Dropdown("自动油桶",false,function(value)
         end
     end
 end)
-credits:Dropdown("自动重生",false,function(value)
+credits:Button("自动重生",false,function(value)
     getgenv().AutoRebirth = value
     while getgenv().AutoRebirth do task.wait(1)
         game:GetService("ReplicatedStorage"):WaitForChild("RebirthEVT"):FireServer()
         
     end
 end)
-credits:Dropdown("自动收集",false,function(value)
+credits:Button("自动收集",false,function(value)
     getgenv().autoCollect = value
     while getgenv().autoCollect do task.wait(1)
         local CashCollectorPart = PlayerTycoon.Essentials.CashCollector.CFrame.Position
