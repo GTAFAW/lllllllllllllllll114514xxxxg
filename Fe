@@ -31,7 +31,7 @@ local UILib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/krlpl/
 local win = UILib:Window("小goFe合集",Color3.fromRGB(0, 150, 150), Enum.KeyCode.RightControl)
 
 local Tab = win:Tab("小goFe")
-
+local Tab1 = win:Tab("变身菜单")
 Tab:Button("FE C00lgui", function()
 loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
 end)
@@ -44,19 +44,19 @@ end)
 Tab:Button("FE用头", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/BK4Q0DfU"))()
 end)
-Tab:Button("复仇者", function()
+Tab1:Button("复仇者", function()
     loadstring(game:HttpGet(('https://pastefy.ga/iGyVaTvs/raw'),true))()
 end)
 Tab:Button("鼠标", function()
     loadstring(game:HttpGet(('https://pastefy.ga/V75mqzaz/raw'),true))()
 end)
-Tab:Button("变怪物", function()
+Tab1:Button("怪物", function()
     loadstring(game:HttpGetAsync("https://pastebin.com/raw/jfryBKds"))()
 end)
-Tab:Button("变警察", function()
+Tab1:Button("警察", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Good%20Cop%20Bad%20Cop"))()
 end)
-Tab:Button("琦玉", function()
+Tab1:Button("琦玉", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Xingtaiduan/Script/refs/heads/main/FE/Saitama"))()
 end)
 Tab:Button("香蕉枪", function()
@@ -80,15 +80,151 @@ end)
 Tab:Button("FE动画中心", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
 end)
-Tab:Button("FE变玩家", function()
+Tab1:Button("FE变玩家", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/XR4sGcgJ"))()
 end)
-Tab:Button("FE猫娘R63", function()
+Tab1:Button("FE猫娘R63", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
 end)
 Tab:Button("FE", function()
     loadstring(game:HttpGet('https://pastefy.ga/a7RTi4un/raw'))()
 end)
-Tab:Button("变身🐓巴去操人", function()
+Tab:Button("完了", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Linked%20Sword"))()
+end)
+end)
+Tab1:Button("变身🐓巴去操人", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/LemonSquizerr/Universal-FE/refs/heads/main/Leaker%20v2'))()
 end)
+Tab:Button("连接剑", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Gale%20Fighter"))()
+end)
+Tab:Button("牙帽战斗机", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Ban%20Hammer"))()
+end)
+Tab:Button("禁止锤子", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Neptunian%20V"))()
+end)
+Tab:Button("NeptunianV", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Krystal%20Dance"))()
+end)
+Tab:Button("克里斯塔尔舞蹈", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Good%20Cop%20Bad%20Cop"))()
+end)
+Tab1:Button("星夹具", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Star%20Glitcher"))()   
+end)
+Tab1:Button("狙击手", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sniper"))()
+end)
+Tab1:Button("虐待狂的种族传播者", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Sadist%20Genocider"))()
+end)
+Tab:Button("迷你枪", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Minigun"))()
+end)
+Tab1:Button("木偶大师", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Puppet%20Master"))()
+end)
+Tab:Button("Dearsister", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Dearsister"))()
+end)
+Tab:Button("Ak-47", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/AK-47"))()
+end)
+Tab:Button("工作室假人", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Studio%20Dummy"))()
+end)
+Tab:Button("照明大炮", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GenesisFE/Genesis/main/Obfuscations/Lightning%20Cannon"))()
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
