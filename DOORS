@@ -19,18 +19,21 @@ if Players.LocalPlayer.PlayerGui:FindFirstChild("LoadingUI") and Players.LocalPl
 end
 
 --// Variables \\--
+local fireTouch = firetouchinterest or firetouchtransmitter
+local isnetowner = isnetworkowner or function(part: BasePart)
+    if not part then return false end
+
+    return part.ReceiveAge == 0
+end
+local firesignal = firesignal or function(signal: RBXScriptSignal, ...)
+    for _, connection in pairs(getconnections(signal)) do
+        connection:Fire(...)
+    end
+end
+
 local Script = {
     Binded = {}, -- ty geo for idea :smartindividual:
     Connections = {},
-    FeatureConnections = {
-        Character = {},
-        Clip = {},
-        Door = {},
-        Humanoid = {},
-        Player = {},
-        RootPart = {},
-    },
-
     ESPTable = {
         Chest = {},
         Door = {},
@@ -44,171 +47,29 @@ local Script = {
         HidingSpot = {},
         None = {}
     },
-
-    Functions = {
-        Minecart = {},
-        Notifs = {Linoria = {}, Doors = {}}
-    },
-
-    Lagback = {
-        Detected = false,
-        Threshold = 1,
-        Anchors = 0,
-        LastAnchored = 0,
-        LastSpeed = 0,
-        LastFlySpeed = 0,
-    },
-
+    Functions = {},
     Temp = {
         AnchorFinished = {},
-        AutoWardrobeEntities = {},
-        Bridges = {},
         FlyBody = nil,
         Guidance = {},
-        PaintingDebounce = false,
-        UsedBreakers = {},
-    },
-
-    FakeRevive = {
-        Debounce = false,
-        Enabled = false,
-        Connections = {}
     }
 }
 
-local WhitelistConfig = {
-    [45] = {firstKeep = 3, lastKeep = 2},
-    [46] = {firstKeep = 2, lastKeep = 2},
-    [47] = {firstKeep = 2, lastKeep = 2},
-    [48] = {firstKeep = 2, lastKeep = 2},
-    [49] = {firstKeep = 2, lastKeep = 4},
+local EntityName = {"BackdoorRush", "BackdoorLookman", "RushMoving", "AmbushMoving", "Eyes", "JeffTheKiller", "A60", "A120"}
+local SideEntityName = {"FigureRig", "GiggleCeiling", "GrumbleRig", "Snare"}
+local ShortNames = {
+    ["BackdoorRush"] = "Blitz",
+    ["JeffTheKiller"] = "Jeff The Killer"
 }
-
-local SuffixPrefixes = {
-    ["Backdoor"] = "",
-    ["Ceiling"] = "",
-    ["Moving"] = "",
-    ["Ragdoll"] = "",
-    ["Rig"] = "",
-    ["Wall"] = "",
-    ["Clock"] = " Clock",
-    ["Key"] = " Key",
-    ["Pack"] = " Pack",
-    ["Pointer"] = " Pointer",
-    ["Swarm"] = " Swarm",
+local EntityNotify = {
+    ["GloombatSwarm"] = "下一个房间有怪物！"
 }
-local PrettyFloorName = {
-    ["Fools"] = "Super Hard Mode",
-}
-
-
-local EntityTable = {
-    ["Names"] = {"BackdoorRush", "BackdoorLookman", "RushMoving", "AmbushMoving", "Eyes", "JeffTheKiller", "A60", "A120"},
-    ["SideNames"] = {"FigureRig", "GiggleCeiling", "GrumbleRig", "Snare"},
-    ["ShortNames"] = {
-        ["BackdoorRush"] = "Blitz",
-        ["JeffTheKiller"] = "Jeff The Killer"
-    },
-    ["NotifyMessage"] = {
-        ["GloombatSwarm"] = "隔壁房间有蝙蝠"
-    },
-    ["Avoid"] = {
-        "RushMoving",
-        "AmbushMoving"
-    },
-    ["NotifyReason"] = {
-        ["A60"] = {
-            ["Image"] = "12350986086",
-        },
-        ["A120"] = {
-            ["Image"] = "12351008553",
-        },
-        ["BackdoorRush"] = {
-            ["Image"] = "11102256553",
-        },
-        ["RushMoving"] = {
-            ["Image"] = "11102256553",
-        },
-        ["AmbushMoving"] = {
-            ["Image"] = "10938726652",
-        },
-        ["Eyes"] = {
-            ["Image"] = "10865377903",
-            ["Spawned"] = true
-        },
-        ["BackdoorLookman"] = {
-            ["Image"] = "16764872677",
-            ["Spawned"] = true
-        },
-        ["JeffTheKiller"] = {
-            ["Image"] = "98993343",
-            ["Spawned"] = true
-        },
-        ["GloombatSwarm"] = {
-            ["Image"] = "79221203116470",
-            ["Spawned"] = true
-        }
-    },
-    ["NoCheck"] = {
-        "Eyes",
-        "BackdoorLookman",
-        "JeffTheKiller"
-    },
-    ["InfCrucifixVelocity"] = {
-        ["RushMoving"] = {
-            threshold = 52,
-            minDistance = 55,
-        },
-        ["RushNew"] = {
-            threshold = 52,
-            minDistance = 55,
-        },    
-        ["AmbushMoving"] = {
-            threshold = 70,
-            minDistance = 80,
-        }
-    },
-    ["AutoWardrobe"] = {
-        ["Entities"] = {
-            "RushMoving",
-            "AmbushMoving",
-            "BackdoorRush",
-            "A60",
-            "A120",
-        },
-        ["Distance"] = {
-            ["RushMoving"] = {
-                Distance = 100,
-                Loader = 175
-            },
-            ["BackdoorRush"] = {
-                Distance = 100,
-                Loader = 175
-            },
-
-            ["AmbushMoving"] = {
-                Distance = 155,
-                Loader = 200
-            },
-            ["A60"] = {
-                Distance = 200,
-                Loader = 200
-            },
-            ["A120"] = {
-                Distance = 200,
-                Loader = 200
-            }
-        }
-    }
-}
-
 local HidingPlaceName = {
-    ["Hotel"] = "柜子",
-    ["Backdoor"] = "柜子",
-    ["Fools"] = "柜子",
-    ["Retro"] = "柜子",
+    ["Hotel"] = "Closet",
+    ["Backdoor"] = "Closet",
+    ["Fools"] = "Closet",
 
-    ["Rooms"] = "柜子",
+    ["Rooms"] = "Locker",
     ["Mines"] = "柜子"
 }
 local CutsceneExclude = {
@@ -237,7 +98,6 @@ local PromptTable = {
         ["SkullPrompt"] = false,
         ["UnlockPrompt"] = true,
         ["ValvePrompt"] = false,
-        ["PropPrompt"] = true
     },
     AuraObjects = {
         "Lock",
@@ -266,46 +126,11 @@ local PromptTable = {
     },
 
     Excluded = {
-        Prompt = {
-            "HintPrompt",
-            "InteractPrompt"
-        },
-
-        Parent = {
-            "KeyObtainFake",
-            "Padlock"
-        },
-
-        ModelAncestor = {
-            "DoorFake"
-        }
+        "HintPrompt",
+        "InteractPrompt"
     }
 }
 
-local RBXGeneral = TextChatService.TextChannels.RBXGeneral
-
---// Exploits Variables \\--
-local fireTouch = firetouchinterest or firetouchtransmitter
-local firePrompt = ExecutorSupport["fireproximityprompt"] and fireproximityprompt or _fireproximityprompt
-local forceFirePrompt = ExecutorSupport["fireproximityprompt"] and fireproximityprompt or _forcefireproximityprompt
-local isnetowner = ExecutorSupport["isnetworkowner"] and isnetworkowner or _isnetworkowner
-
---// Player Variables \\--
-local camera = workspace.CurrentCamera
-
-local localPlayer = Players.LocalPlayer
-local playerGui = localPlayer.PlayerGui
-local playerScripts = localPlayer.PlayerScripts
-
-local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
-local alive = localPlayer:GetAttribute("Alive")
-local humanoid: Humanoid
-local rootPart: BasePart
-local collision
-local collisionClone
-local velocityLimiter
-
---// DOORS Variables \\--
 local entityModules = ReplicatedStorage:WaitForChild("ClientModules"):WaitForChild("EntityModules")
 
 local gameData = ReplicatedStorage:WaitForChild("GameData")
@@ -314,48 +139,53 @@ local latestRoom = gameData:WaitForChild("LatestRoom")
 
 local liveModifiers = ReplicatedStorage:WaitForChild("LiveModifiers")
 
+local floorReplicated
+local remotesFolder
+
+local camera = workspace.CurrentCamera
+local localPlayer = Players.LocalPlayer
+
+local playerGui = localPlayer.PlayerGui
+local mainUI = playerGui:WaitForChild("MainUI")
+local mainGame = mainUI:WaitForChild("Initiator"):WaitForChild("Main_Game")
+local mainGameSrc = require(mainGame)
+
+local playerScripts = localPlayer.PlayerScripts
+local controlModule = require(playerScripts:WaitForChild("PlayerModule"):WaitForChild("ControlModule"))
+
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+local alive = localPlayer:GetAttribute("Alive")
+local humanoid: Humanoid
+local rootPart: BasePart
+local collision
+local collisionClone
+
+local mtHook
+local _fixDistanceFromCharacter
+
 local isMines = floor.Value == "Mines"
 local isRooms = floor.Value == "Rooms"
 local isHotel = floor.Value == "Hotel"
 local isBackdoor = floor.Value == "Backdoor"
 local isFools = floor.Value == "Fools"
-local isRetro = floor.Value == "Retro"
 
-local floorReplicated = if not isFools then ReplicatedStorage:WaitForChild("FloorReplicated") else nil
-local remotesFolder = if not isFools then ReplicatedStorage:WaitForChild("RemotesFolder") else ReplicatedStorage:WaitForChild("EntityInfo")
-
---// Player DOORS Variables \\--
 local currentRoom = localPlayer:GetAttribute("CurrentRoom") or 0
 local nextRoom = currentRoom + 1
 
-local mainUI = playerGui:WaitForChild("MainUI")
-local mainGame = mainUI:WaitForChild("Initiator"):WaitForChild("Main_Game")
-local mainGameSrc = if ExecutorSupport["require"] then require(mainGame) else nil
-local controlModule = if ExecutorSupport["require"] then require(playerScripts:WaitForChild("PlayerModule"):WaitForChild("ControlModule")) else nil
-
---// Other Variables \\--
 local speedBypassing = false
-
+local fakeReviveDebounce = false
+local fakeReviveEnabled = false
+local fakeReviveConnections = {}
 local lastSpeed = 0
 local bypassed = false
 
-local MinecartPathNodeColor = {
-    Disabled = nil,
-    Red = Color3.new(1, 0, 0),
-    Yellow = Color3.new(1, 1, 0),
-    Purple = Color3.new(1, 0, 1),
-    Green = Color3.new(0, 1, 0),
-    Cyan = Color3.new(0, 1, 1),
-    Orange = Color3.new(1, 0.5, 0),
-    White = Color3.new(1, 1, 1),
-}
+if not isFools then
+    floorReplicated = ReplicatedStorage:WaitForChild("FloorReplicated")
+    remotesFolder = ReplicatedStorage:WaitForChild("RemotesFolder")
+else
+    remotesFolder = ReplicatedStorage:WaitForChild("EntityInfo")
+end
 
-local MinecartPathfind = {
-    -- ground chase [41 to 44]
-    -- minecart chase [45 to 49]
-}
-
---// Types \\--
 type ESP = {
     Color: Color3,
     IsEntity: boolean,
@@ -365,20 +195,6 @@ type ESP = {
     Text: string,
     TextParent: Instance,
     Type: string,
-}
-
-type tPathfind = {
-    esp: boolean,
-    room_number: number, -- the room number
-    real: table,
-    fake: table,
-    destroyed: boolean -- if the pathfind was destroyed for the Teleport
-}
-
-type tGroupTrack = {
-    nodes: table,
-    hasStart: boolean,
-    hasEnd: boolean,
 }
 
 --// Library \\--
@@ -391,7 +207,7 @@ local Options = getgenv().Linoria.Options
 local Toggles = getgenv().Linoria.Toggles
 
 local Window = Library:CreateWindow({
-	Title = "小go 汉化🕊️🕊️🕊️🕊️🕊️🕊️🕊️🕊️",
+	Title = "小go 能用就行",
 	Center = true,
 	AutoShow = true,
 	Resizable = true,
