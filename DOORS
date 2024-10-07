@@ -14,7 +14,7 @@ local ProximityPromptService = game:GetService("ProximityPromptService")
 
 --// Loading Wait \\--
 if not game.IsLoaded then game.Loaded:Wait() end
-if Players.LocalPlayer.PlayerGui:FindFirstChild("LoadingUI") and Players.LocalPlayer.PlayerGui.LoadingUI.Enabled then
+if Players.LocalPlayer.PlayerGui:FindFirstChild("启动UI") and Players.LocalPlayer.PlayerGui.LoadingUI.Enabled then
     repeat task.wait() until not game.Players.LocalPlayer.PlayerGui.LoadingUI.Enabled
 end
 
@@ -198,7 +198,7 @@ type ESP = {
 }
 
 --// Library \\--
-local repo = "https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/"
+local repo = "https://raw.githubusercontent.com/mstudio45/LinoriaLib/refs/heads/main/Library.lua"
 
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))()
 local ThemeManager = loadstring(game:HttpGet(repo .. "addons/ThemeManager.lua"))()
