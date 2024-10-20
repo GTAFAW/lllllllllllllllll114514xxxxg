@@ -139,7 +139,344 @@ end)
 Tab:Button("变身🐓巴去操人", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/LemonSquizerr/Universal-FE/refs/heads/main/Leaker%20v2'))()
 end)
+Tab:Button("FE僵尸模式", function()
+    local player = game.Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+gui.Parent = player:WaitForChild("PlayerGui")
 
+local notification = Instance.new("TextButton")
+notification.Size = UDim2.new(0, 300, 0, 50)
+notification.Position = UDim2.new(0.5, 0, 0, -100)
+notification.AnchorPoint = Vector2.new(0.5, 0.5)
+notification.Text = ""
+notification.BorderSizePixel = 0
+notification.BackgroundTransparency = 0
+notification.Parent = gui
+notification.ClipsDescendants = true
+notification.AutoButtonColor = false
+notification.ZIndex = 100
+
+local roundcorners = Instance.new("UICorner")
+roundcorners.CornerRadius = UDim.new(0, 15)
+roundcorners.Parent = notification
+
+local gradient = Instance.new("UIGradient")
+gradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.new(0, 1, 0)),
+    ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))
+}
+gradient.Rotation = 125
+gradient.Parent = notification
+
+local textlabel = Instance.new("TextLabel")
+textlabel.Size = UDim2.new(1, 0, 1, 0)
+textlabel.Position = UDim2.new(0, 0, 0, 0)
+textlabel.BackgroundTransparency = 1
+textlabel.Text = "xgo提醒:这是r6 Fe"
+textlabel.Font = Enum.Font.GothamBold
+textlabel.TextSize = 22
+textlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+textlabel.TextScaled = true
+textlabel.ZIndex = 101
+textlabel.Parent = notification
+
+notification:TweenPosition(UDim2.new(0.5, 0, 0.33, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce, 1, true)
+
+wait(1.83)
+
+notification:TweenPosition(
+    UDim2.new(0.5, 0, 0, -100),
+    Enum.EasingDirection.In,
+    Enum.EasingStyle.Quad,
+    0.5,
+    true,
+    function()
+        gui:Destroy()
+    end
+)
+
+local players = game:GetService("Players")
+local tweenservice = game:GetService("TweenService")
+local soundservice = game:GetService("SoundService")
+local userinputservice = game:GetService("UserInputService")
+local localplayer = players.LocalPlayer
+local gyattchar = localplayer.Character or localplayer.CharacterAdded:Wait()
+local rizzhum = gyattchar:WaitForChild("Humanoid")
+
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+
+gui.Parent = localplayer:WaitForChild("PlayerGui")
+gui.IgnoreGuiInset = true
+frame.Parent = gui
+frame.BackgroundColor3 = Color3.fromRGB(0, 100, 0)
+frame.Size = UDim2.new(1, 0, 1, 0)
+frame.BackgroundTransparency = 1
+
+local siganime = Instance.new("Animation")
+siganime.AnimationId = "rbxassetid://183294396"
+local rizzanim = rizzhum:LoadAnimation(siganime)
+
+local tweeninfo = TweenInfo.new(0.5, Enum.EasingStyle.Elastic, Enum.EasingDirection.Out)
+local skibidiweight = Instance.new("NumberValue")
+skibidiweight.Value = 0
+
+skibidiweight.Changed:Connect(function(val)
+    rizzanim:AdjustWeight(val)
+end)
+
+rizzanim:Play()
+rizzanim:AdjustSpeed(0)
+local sigtween = tweenservice:Create(skibidiweight, tweeninfo, {Value = 1})
+sigtween:Play()
+
+local function fade()
+    local fadein = tweenservice:Create(frame, TweenInfo.new(1), {BackgroundTransparency = 0.5})
+    local fadeout = tweenservice:Create(frame, TweenInfo.new(1), {BackgroundTransparency = 1})
+    fadein:Play()
+    fadein.Completed:Wait()
+    fadeout:Play()
+end
+
+local rizzdeathsound = Instance.new("Sound")
+rizzdeathsound.SoundId = "rbxassetid://574998190"
+rizzdeathsound.Volume = 4
+rizzdeathsound.Looped = false
+rizzdeathsound.Parent = soundservice
+
+local skibidisound = Instance.new("Sound")
+skibidisound.SoundId = "rbxassetid://574999280"
+skibidisound.Volume = 1
+skibidisound.Looped = false
+skibidisound.Parent = soundservice
+
+local function playskibidi()
+    skibidisound:Play()
+end
+
+playskibidi()
+
+local rizzloop = true
+task.spawn(function()
+    while rizzloop do
+        local delaytime = math.random(5, 10)
+        task.wait(delaytime)
+        if rizzloop then
+            playskibidi()
+        end
+    end
+end)
+
+local fadeactive = true
+task.spawn(function()
+    while fadeactive do
+        fade()
+        task.wait(2)
+    end
+end)
+
+local function shake()
+    local gyatthum = rizzhum
+    local runservice = game:GetService("RunService")
+
+    local conn
+    conn = runservice.RenderStepped:Connect(function()
+        local ct = tick()
+        if gyatthum.MoveDirection.Magnitude > 0 then
+            local bobx = math.cos(ct * 10)
+            local boby = math.abs(math.sin(ct * 10))
+            local bob = Vector3.new(bobx, boby, 0)
+            gyatthum.CameraOffset = gyatthum.CameraOffset:lerp(bob, 0.1)
+        else
+            gyatthum.CameraOffset = gyatthum.CameraOffset * 0.75
+        end
+    end)
+    return conn
+end
+
+local camerashakeconn = shake()
+
+local espactive = true
+
+local function disableesp()
+    for _, player in pairs(players:GetPlayers()) do
+        if player.Character then
+            local highlight = player.Character:FindFirstChildOfClass("Highlight")
+            if highlight then
+                highlight:Destroy()
+            end
+
+            local head = player.Character:FindFirstChild("Head")
+            if head then
+                for _, gui in pairs(head:GetChildren()) do
+                    if gui:IsA("BillboardGui") then
+                        gui:Destroy()
+                    end
+                end
+            end
+        end
+    end
+end
+
+local function ondeath()
+    rizzanim:Stop()
+    skibidisound:Stop()
+    rizzloop = false
+    fadeactive = false
+    rizzdeathsound:Play()
+    gui:Destroy()
+    espactive = false
+
+    disableesp()
+end
+
+rizzhum.Died:Connect(ondeath)
+
+local function createhighlight(player)
+    if player.Character and player.Character:FindFirstChild("Head") then
+        local highlightcolor = player == players.LocalPlayer and Color3.fromRGB(0, 255, 0) or Color3.fromRGB(120, 0, 0)
+        if not player.Character:FindFirstChildOfClass("Highlight") then
+            local highlight = Instance.new("Highlight")
+            highlight.Parent = player.Character
+            highlight.Adornee = player.Character
+            highlight.FillColor = highlightcolor
+            highlight.OutlineColor = highlightcolor
+            highlight.FillTransparency = 0.75
+            highlight.OutlineTransparency = 0.2
+
+            local head = player.Character:FindFirstChild("Head")
+            if head then
+                local billboardgui = Instance.new("BillboardGui")
+                billboardgui.Parent = head
+                billboardgui.Adornee = head
+                billboardgui.Size = UDim2.new(3, 0, 1, 0)
+                billboardgui.StudsOffset = Vector3.new(0, 2, 0)
+
+                local nametag = Instance.new("TextLabel")
+                nametag.Parent = billboardgui
+                nametag.Size = UDim2.new(1, 0, 1, 0)
+                nametag.BackgroundTransparency = 1
+                nametag.Text = player == players.LocalPlayer and "僵尸" or "人类"
+                nametag.TextColor3 = highlightcolor
+                nametag.TextScaled = true
+                nametag.Font = Enum.Font.GothamBold
+                nametag.TextSize = 24
+                nametag.ZIndex = 2
+            end
+        end
+    end
+end
+
+local function applyesp()
+    if espactive then
+        for _, player in pairs(players:GetPlayers()) do
+            createhighlight(player)
+        end
+    end
+end
+
+local function oncharadded(character)
+    createhighlight(localplayer)
+end
+
+local function onplayadded(player)
+    player.CharacterAdded:Connect(function()
+        createhighlight(player)
+    end)
+end
+
+local function onplayrespawned(player)
+    if player.Character then
+        createhighlight(player)
+    end
+end
+
+players.PlayerAdded:Connect(onplayadded)
+localplayer.CharacterAdded:Connect(oncharadded)
+
+for _, player in pairs(players:GetPlayers()) do
+    player.CharacterAdded:Connect(function()
+        createhighlight(player)
+    end)
+end
+
+local function onplayjoined(player)
+    player.CharacterAdded:Connect(function(character)
+        createhighlight(player)
+    end)
+end
+
+local function onplayrespawn(player)
+    player.CharacterAdded:Connect(function(character)
+        createhighlight(player)
+    end)
+end
+
+applyesp()
+
+local rizzkeyactive = true
+local animcheck = false
+
+userinputservice.InputBegan:Connect(function(input, processed)
+    if processed or not rizzkeyactive then return end
+    if input.KeyCode == Enum.KeyCode.R and not animcheck then
+        animcheck = true
+
+        local skibidianim = Instance.new("Animation")
+        skibidianim.AnimationId = "rbxassetid://163209885"
+        local rizzanim = rizzhum:LoadAnimation(skibidianim)
+
+        local gyattsound = Instance.new("Sound")
+        gyattsound.SoundId = "rbxassetid://574998739"
+        gyattsound.Volume = 1
+        gyattsound.Looped = false
+        gyattsound.Parent = soundservice
+
+        gyattsound:Play()
+        rizzanim:Play()
+
+        task.delay(2.5, function()
+            gyattsound:Stop()
+            rizzanim:Stop()
+            animcheck = false
+        end)
+    end
+end)
+
+local function disablerizz()
+    rizzkeyactive = false
+end
+
+rizzhum.Died:Connect(disablerizz)
+
+local function resetcam()
+    localplayer.CameraMinZoomDistance = 3
+    localplayer.CameraMaxZoomDistance = 7
+end
+
+localplayer.CharacterRemoving:Connect(resetcam)
+
+resetcam()
+
+players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function()
+        createhighlight(player)
+    end)
+end)
+
+for _, player in pairs(players:GetPlayers()) do
+    player.CharacterAdded:Connect(function()
+        onplayrespawned(player)
+    end)
+end
+
+while true do
+    if espactive then
+        applyesp()
+    end
+    task.wait(1)
+end
+end)
 
 
 
