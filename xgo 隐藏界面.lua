@@ -43,6 +43,61 @@ for _, v in ipairs(game:GetService("CoreGui"):GetChildren()) do
         local frame = v:FindFirstChild("Frame")
         if frame and frame:FindFirstChild("UIListLayout") then
             v:Destroy()        end    end  end
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Name = "xgo Hub Status"
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- TextLabel Properties
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 0.5
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, -125, 0, -30)  -- 
+TextLabel.Size = UDim2.new(0, 250, 0, 30)  -- 
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "xgo Hub TIME"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 11.5  -- 
+TextLabel.TextStrokeTransparency = 0.8  -- 
+TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)  -- 
+TextLabel.TextWrapped = true
+
+-- UI Gradient for TextLabel background
+local TextLabel_Gradient = Instance.new("UIGradient")
+TextLabel_Gradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 192, 203)),  -- 
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(135, 206, 250))   -- 
+}
+TextLabel_Gradient.Rotation = 45  -- Diagonal gradient effect
+TextLabel_Gradient.Parent = TextLabel
+
+-- UICorner for rounded edges
+UICorner.Parent = TextLabel
+UICorner.CornerRadius = UDim.new(0, 8) 
+
+local NG = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+-- FPS, PING, and Timer updating logic
+spawn(function()
+    local startTime = tick()
+    while task.wait() do
+        pcall(function()
+            local elapsedTime = tick() - startTime
+            local hours = math.floor(elapsedTime / 3600)
+            local minutes = math.floor((elapsedTime % 3600) / 60)
+            local seconds = math.floor(elapsedTime % 60)
+            TextLabel.Text = "脚本时长: " .. hours .. ":" .. minutes .. ":" .. seconds ..
+                " | 帧率: " .. math.floor(workspace:GetRealPhysicsFPS()) ..
+                " | PING: " .. game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString() ..
+                "\n正在玩:  " .. NG
+        end)
+    end
+end)
 local Converted = {
 	["_YARHM"] = Instance.new("ScreenGui");
 	["_Open"] = Instance.new("TextButton");
