@@ -7,7 +7,7 @@ if not game:IsLoaded() then
 end
 
 -- 检查许可证层
-local Pro = true -- 我们现在开放源！
+local Pro = true --开源！
 
 -- 为Roblox服务创建变量
 local coreGui = game:GetService("CoreGui")
